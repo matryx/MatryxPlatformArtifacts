@@ -1,0 +1,10 @@
+{
+  "name": "MatryxPlatformArtifacts",
+  "version": "1.0.0",
+  "description": "Artifacts for MatryxPlatform",
+  "repository": "https://github.com/matryx/MatryxPlatformArtifacts.git",
+  "license": "MIT",
+  "scripts": {
+    "copy-artifacts": "./copy-artifacts.sh"
+  }
+}
