@@ -22,24 +22,24 @@
       "type": "fallback"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516040806101d6833981018060405261002f9190810190610078565b60009190915560018054600160a060020a031916600160a060020a039092169190911790556100c1565b600061006582516100b2565b9392505050565b600061006582516100be565b6000806040838503121561008b57600080fd5b6000610097858561006c565b92505060206100a885828601610059565b9150509250929050565b600160a060020a031690565b90565b610106806100d06000396000f3006080604052348015600f57600080fd5b506040517c01000000000000000000000000000000000000000000000000000000007f4d6174727978506c6174666f726d0000000000000000000000000000000000006000546001600001548363c53cfd9a028552816004860152826024860152602060006044876000855af1801515608757600080fd5b6000519350600460008737336004870152826024870152600436036004604488013760008060403601886000885af1905080151560c357600080fd5b3d6000873e3d86f300a265627a7a7230582051838cb2aa5923ce32ed026b298e10e9a376f371560349384b9bd5532831415b6c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506040517c01000000000000000000000000000000000000000000000000000000007f4d6174727978506c6174666f726d0000000000000000000000000000000000006000546001600001548363c53cfd9a028552816004860152826024860152602060006044876000855af1801515608757600080fd5b6000519350600460008737336004870152826024870152600436036004604488013760008060403601886000885af1905080151560c357600080fd5b3d6000873e3d86f300a265627a7a7230582051838cb2aa5923ce32ed026b298e10e9a376f371560349384b9bd5532831415b6c6578706572696d656e74616cf50037",
-  "sourceMap": "60:2577:23:-;;;179:125;8:9:-1;5:2;;;30:1;27;20:12;5:2;179:125:23;;;;;;;;;;;;;;;;;;;;;;243:4;:23;;;;276:11;:21;;-1:-1:-1;;;;;;276:21:23;-1:-1:-1;;;;;276:21:23;;;;;;;;;60:2577;;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:122;;212:39;243:6;237:13;212:39;;263:399;;;395:2;383:9;374:7;370:23;366:32;363:2;;;411:1;408;401:12;363:2;446:1;463:64;519:7;499:9;463:64;;;453:74;;425:108;564:2;582:64;638:7;629:6;618:9;614:22;582:64;;;572:74;;543:109;357:305;;;;;;669:128;-1:-1;;;;;738:54;;721:76;804:79;873:5;856:27;;60:2577:23;;;;;;",
-  "deployedSourceMap": "60:2577:23:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;60:2577:23;603:4;597:11;635:59;723:66;823:9;817:16;881:1;870:9;866:17;860:24;978:6;966:10;962:23;957:3;950:36;1085:7;1078:4;1073:3;1069:14;1062:31;1202:8;1195:4;1190:3;1186:14;1179:32;1397:4;1394:1;1388:4;1383:3;1380:1;1372:6;1367:3;1362:40;1474:3;1467:11;1464:2;;;1491:1;1488;1481:12;1464:2;1578:1;1572:8;1560:20;;1687:4;1684:1;1679:3;1666:26;1858:6;1851:4;1846:3;1842:14;1835:30;1959:7;1952:4;1947:3;1943:14;1936:31;2087:4;2073:12;2069:23;2063:4;2056;2051:3;2047:14;2034:59;2209:1;2206;2199:4;2185:12;2181:23;2176:3;2173:1;2163:8;2158:3;2153:58;2146:65;;2272:3;2265:11;2262:2;;;2289:1;2286;2279:12;2262:2;2426:14;2423:1;2418:3;2403:38;2523:14;2518:3;2511:27",
-  "source": "pragma solidity ^0.4.24;\npragma experimental ABIEncoderV2;\n\ncontract MatryxTrinity {\n    struct Info {\n        uint256 version;\n        address system;\n    }\n\n    Info info;\n\n    constructor(uint256 _version, address _system) public {\n        info.version = _version;\n        info.system = _system;\n    }\n\n    /// @dev\n    /// Gets the address of the current version of Platform and forwards the\n    /// received calldata to this address. Injects msg.sender at the front so\n    /// Platform and libraries can know calling address\n    function () public {\n        assembly {\n            let ptr := mload(0x40)\n            let offset := 0x100000000000000000000000000000000000000000000000000000000\n            let platform := 0x4d6174727978506c6174666f726d000000000000000000000000000000000000\n            let version := sload(info_slot)\n            let system := sload(add(info_slot, 1))\n\n            // prepare for lookup platform from MSC\n            mstore(ptr, mul(0xc53cfd9a, offset))                                // getContract(uint256,bytes32)\n            mstore(add(ptr, 0x04), version)                                     // arg 0 - version of this forwarder\n            mstore(add(ptr, 0x24), platform)                                    // arg 1 - 'MatryxPlatform'\n\n            // call getContract to get MatryxPlatform from MSC\n            let res := call(gas, system, 0, ptr, 0x44, 0, 0x20)                 // call MatryxSystem.getContract\n            if iszero(res) { revert(0, 0) }                                     // safety check\n            platform := mload(0)                                                // load platform address\n\n            calldatacopy(ptr, 0, 0x04)                                          // copy signature\n\n            // forward method to MatryxPlatform, injecting msg.sender\n            mstore(add(ptr, 0x04), caller)                                      // inject msg.sender\n            mstore(add(ptr, 0x24), version)                                     // inject version\n            calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize, 0x04))         // copy calldata for forwarding\n            res := call(gas, platform, 0, ptr, add(calldatasize, 0x40), 0, 0)   // forward method to MatryxPlatform\n            if iszero(res) { revert(0, 0) }                                     // safety check\n\n            // forward returndata to caller\n            returndatacopy(ptr, 0, returndatasize)                              // copy returndata into ptr\n            return(ptr, returndatasize)                                         // return returndata from forwarded call\n        }\n    }\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806101d6833981018060405261002f9190810190610078565b60009190915560018054600160a060020a031916600160a060020a039092169190911790556100c1565b600061006582516100b2565b9392505050565b600061006582516100be565b6000806040838503121561008b57600080fd5b6000610097858561006c565b92505060206100a885828601610059565b9150509250929050565b600160a060020a031690565b90565b610106806100d06000396000f3006080604052348015600f57600080fd5b506040517c01000000000000000000000000000000000000000000000000000000007f4d6174727978506c6174666f726d0000000000000000000000000000000000006000546001600001548363c53cfd9a028552816004860152826024860152602060006044876000855af1801515608757600080fd5b6000519350600460008737336004870152826024870152600436036004604488013760008060403601886000885af1905080151560c357600080fd5b3d6000873e3d86f300a265627a7a72305820d1391e5b85a4b951788c68aa019e4f7fe12a59b68bb5c7be0978501225de6beb6c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506040517c01000000000000000000000000000000000000000000000000000000007f4d6174727978506c6174666f726d0000000000000000000000000000000000006000546001600001548363c53cfd9a028552816004860152826024860152602060006044876000855af1801515608757600080fd5b6000519350600460008737336004870152826024870152600436036004604488013760008060403601886000885af1905080151560c357600080fd5b3d6000873e3d86f300a265627a7a72305820d1391e5b85a4b951788c68aa019e4f7fe12a59b68bb5c7be0978501225de6beb6c6578706572696d656e74616cf50037",
+  "sourceMap": "60:2576:23:-;;;179:125;8:9:-1;5:2;;;30:1;27;20:12;5:2;179:125:23;;;;;;;;;;;;;;;;;;;;;;243:4;:23;;;;276:11;:21;;-1:-1:-1;;;;;;276:21:23;-1:-1:-1;;;;;276:21:23;;;;;;;;;60:2576;;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:122;;212:39;243:6;237:13;212:39;;263:399;;;395:2;383:9;374:7;370:23;366:32;363:2;;;411:1;408;401:12;363:2;446:1;463:64;519:7;499:9;463:64;;;453:74;;425:108;564:2;582:64;638:7;629:6;618:9;614:22;582:64;;;572:74;;543:109;357:305;;;;;;669:128;-1:-1;;;;;738:54;;721:76;804:79;873:5;856:27;;60:2576:23;;;;;;",
+  "deployedSourceMap": "60:2576:23:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;60:2576:23;603:4;597:11;635:59;723:66;823:9;817:16;881:1;870:9;866:17;860:24;978:6;966:10;962:23;957:3;950:36;1085:7;1078:4;1073:3;1069:14;1062:31;1202:8;1195:4;1190:3;1186:14;1179:32;1397:4;1394:1;1388:4;1383:3;1380:1;1372:6;1367:3;1362:40;1474:3;1467:11;1464:2;;;1491:1;1488;1481:12;1464:2;1578:1;1572:8;1560:20;;1757:4;1754:1;1749:3;1736:26;1857:6;1850:4;1845:3;1841:14;1834:30;1958:7;1951:4;1946:3;1942:14;1935:31;2086:4;2072:12;2068:23;2062:4;2055;2050:3;2046:14;2033:59;2208:1;2205;2198:4;2184:12;2180:23;2175:3;2172:1;2162:8;2157:3;2152:58;2145:65;;2271:3;2264:11;2261:2;;;2288:1;2285;2278:12;2261:2;2425:14;2422:1;2417:3;2402:38;2522:14;2517:3;2510:27",
+  "source": "pragma solidity ^0.4.24;\npragma experimental ABIEncoderV2;\n\ncontract MatryxTrinity {\n    struct Info {\n        uint256 version;\n        address system;\n    }\n\n    Info info;\n\n    constructor(uint256 _version, address _system) public {\n        info.version = _version;\n        info.system = _system;\n    }\n\n    /// @dev\n    /// Gets the address of the current version of Platform and forwards the\n    /// received calldata to this address. Injects msg.sender at the front so\n    /// Platform and libraries can know calling address\n    function () public {\n        assembly {\n            let ptr := mload(0x40)\n            let offset := 0x100000000000000000000000000000000000000000000000000000000\n            let platform := 0x4d6174727978506c6174666f726d000000000000000000000000000000000000\n            let version := sload(info_slot)\n            let system := sload(add(info_slot, 1))\n\n            // prepare for lookup platform from MSC\n            mstore(ptr, mul(0xc53cfd9a, offset))                                // getContract(uint256,bytes32)\n            mstore(add(ptr, 0x04), version)                                     // arg 0 - version of this forwarder\n            mstore(add(ptr, 0x24), platform)                                    // arg 1 - 'MatryxPlatform'\n\n            // call getContract to get MatryxPlatform from MSC\n            let res := call(gas, system, 0, ptr, 0x44, 0, 0x20)                 // call MatryxSystem.getContract\n            if iszero(res) { revert(0, 0) }                                     // safety check\n            platform := mload(0)                                                // load platform address\n\n            // forward method to MatryxPlatform, injecting msg.sender\n            calldatacopy(ptr, 0, 0x04)                                          // copy signature\n            mstore(add(ptr, 0x04), caller)                                      // inject msg.sender\n            mstore(add(ptr, 0x24), version)                                     // inject version\n            calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize, 0x04))         // copy calldata for forwarding\n            res := call(gas, platform, 0, ptr, add(calldatasize, 0x40), 0, 0)   // forward method to MatryxPlatform\n            if iszero(res) { revert(0, 0) }                                     // safety check\n\n            // forward returndata to caller\n            returndatacopy(ptr, 0, returndatasize)                              // copy returndata into ptr\n            return(ptr, returndatasize)                                         // return returndata from forwarded call\n        }\n    }\n}\n",
   "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxTrinity.sol",
   "ast": {
     "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxTrinity.sol",
     "exportedSymbols": {
       "MatryxTrinity": [
-        9797
+        9902
       ]
     },
-    "id": 9798,
+    "id": 9903,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9763,
+        "id": 9868,
         "literals": [
           "solidity",
           "^",
@@ -50,7 +50,7 @@
         "src": "0:24:23"
       },
       {
-        "id": 9764,
+        "id": 9869,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -64,23 +64,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9797,
+        "id": 9902,
         "linearizedBaseContracts": [
-          9797
+          9902
         ],
         "name": "MatryxTrinity",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "MatryxTrinity.Info",
-            "id": 9769,
+            "id": 9874,
             "members": [
               {
                 "constant": false,
-                "id": 9766,
+                "id": 9871,
                 "name": "version",
                 "nodeType": "VariableDeclaration",
-                "scope": 9769,
+                "scope": 9874,
                 "src": "111:15:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -89,7 +89,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 9765,
+                  "id": 9870,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "111:7:23",
@@ -103,10 +103,10 @@
               },
               {
                 "constant": false,
-                "id": 9768,
+                "id": 9873,
                 "name": "system",
                 "nodeType": "VariableDeclaration",
-                "scope": 9769,
+                "scope": 9874,
                 "src": "136:14:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -115,7 +115,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 9767,
+                  "id": 9872,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "136:7:23",
@@ -130,32 +130,32 @@
             ],
             "name": "Info",
             "nodeType": "StructDefinition",
-            "scope": 9797,
+            "scope": 9902,
             "src": "89:68:23",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 9771,
+            "id": 9876,
             "name": "info",
             "nodeType": "VariableDeclaration",
-            "scope": 9797,
+            "scope": 9902,
             "src": "163:9:23",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Info_$9769_storage",
+              "typeIdentifier": "t_struct$_Info_$9874_storage",
               "typeString": "struct MatryxTrinity.Info"
             },
             "typeName": {
               "contractScope": null,
-              "id": 9770,
+              "id": 9875,
               "name": "Info",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9769,
+              "referencedDeclaration": 9874,
               "src": "163:4:23",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Info_$9769_storage_ptr",
+                "typeIdentifier": "t_struct$_Info_$9874_storage_ptr",
                 "typeString": "struct MatryxTrinity.Info"
               }
             },
@@ -164,14 +164,14 @@
           },
           {
             "body": {
-              "id": 9790,
+              "id": 9895,
               "nodeType": "Block",
               "src": "233:71:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9782,
+                    "id": 9887,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -180,25 +180,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9778,
+                        "id": 9883,
                         "name": "info",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9771,
+                        "referencedDeclaration": 9876,
                         "src": "243:4:23",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Info_$9769_storage",
+                          "typeIdentifier": "t_struct$_Info_$9874_storage",
                           "typeString": "struct MatryxTrinity.Info storage ref"
                         }
                       },
-                      "id": 9780,
+                      "id": 9885,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "version",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9766,
+                      "referencedDeclaration": 9871,
                       "src": "243:12:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -209,11 +209,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9781,
+                      "id": 9886,
                       "name": "_version",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9773,
+                      "referencedDeclaration": 9878,
                       "src": "258:8:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -226,14 +226,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 9783,
+                  "id": 9888,
                   "nodeType": "ExpressionStatement",
                   "src": "243:23:23"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9788,
+                    "id": 9893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -242,25 +242,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9784,
+                        "id": 9889,
                         "name": "info",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9771,
+                        "referencedDeclaration": 9876,
                         "src": "276:4:23",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Info_$9769_storage",
+                          "typeIdentifier": "t_struct$_Info_$9874_storage",
                           "typeString": "struct MatryxTrinity.Info storage ref"
                         }
                       },
-                      "id": 9786,
+                      "id": 9891,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "system",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9768,
+                      "referencedDeclaration": 9873,
                       "src": "276:11:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -271,11 +271,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9787,
+                      "id": 9892,
                       "name": "_system",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9775,
+                      "referencedDeclaration": 9880,
                       "src": "290:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -288,14 +288,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 9789,
+                  "id": 9894,
                   "nodeType": "ExpressionStatement",
                   "src": "276:21:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 9791,
+            "id": 9896,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -303,15 +303,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9776,
+              "id": 9881,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9773,
+                  "id": 9878,
                   "name": "_version",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9791,
+                  "scope": 9896,
                   "src": "191:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -320,7 +320,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9772,
+                    "id": 9877,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:7:23",
@@ -334,10 +334,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9775,
+                  "id": 9880,
                   "name": "_system",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9791,
+                  "scope": 9896,
                   "src": "209:15:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -346,7 +346,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9774,
+                    "id": 9879,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:7:23",
@@ -363,12 +363,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9777,
+              "id": 9882,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "233:0:23"
             },
-            "scope": 9797,
+            "scope": 9902,
             "src": "179:125:23",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -376,15 +376,15 @@
           },
           {
             "body": {
-              "id": 9795,
+              "id": 9900,
               "nodeType": "Block",
-              "src": "553:2082:23",
+              "src": "553:2081:23",
               "statements": [
                 {
                   "externalReferences": [
                     {
                       "info_slot": {
-                        "declaration": 9771,
+                        "declaration": 9876,
                         "isOffset": false,
                         "isSlot": true,
                         "src": "823:9:23",
@@ -393,7 +393,7 @@
                     },
                     {
                       "info_slot": {
-                        "declaration": 9771,
+                        "declaration": 9876,
                         "isOffset": false,
                         "isSlot": true,
                         "src": "870:9:23",
@@ -401,15 +401,15 @@
                       }
                     }
                   ],
-                  "id": 9794,
+                  "id": 9899,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let ptr := mload(0x40)\n    let offset := 0x100000000000000000000000000000000000000000000000000000000\n    let platform := 0x4d6174727978506c6174666f726d000000000000000000000000000000000000\n    let version := sload(info_slot)\n    let system := sload(add(info_slot, 1))\n    mstore(ptr, mul(0xc53cfd9a, offset))\n    mstore(add(ptr, 0x04), version)\n    mstore(add(ptr, 0x24), platform)\n    let res := call(gas(), system, 0, ptr, 0x44, 0, 0x20)\n    if iszero(res)\n    {\n        revert(0, 0)\n    }\n    platform := mload(0)\n    calldatacopy(ptr, 0, 0x04)\n    mstore(add(ptr, 0x04), caller())\n    mstore(add(ptr, 0x24), version)\n    calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize(), 0x04))\n    res := call(gas(), platform, 0, ptr, add(calldatasize(), 0x40), 0, 0)\n    if iszero(res)\n    {\n        revert(0, 0)\n    }\n    returndatacopy(ptr, 0, returndatasize())\n    return(ptr, returndatasize())\n}",
-                  "src": "563:2072:23"
+                  "src": "563:2071:23"
                 }
               ]
             },
             "documentation": "@dev\n Gets the address of the current version of Platform and forwards the\n received calldata to this address. Injects msg.sender at the front so\n Platform and libraries can know calling address",
-            "id": 9796,
+            "id": 9901,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -417,43 +417,43 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9792,
+              "id": 9897,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "543:2:23"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9793,
+              "id": 9898,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "553:0:23"
             },
-            "scope": 9797,
-            "src": "534:2101:23",
+            "scope": 9902,
+            "src": "534:2100:23",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9798,
-        "src": "60:2577:23"
+        "scope": 9903,
+        "src": "60:2576:23"
       }
     ],
-    "src": "0:2638:23"
+    "src": "0:2637:23"
   },
   "legacyAST": {
     "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxTrinity.sol",
     "exportedSymbols": {
       "MatryxTrinity": [
-        9797
+        9902
       ]
     },
-    "id": 9798,
+    "id": 9903,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9763,
+        "id": 9868,
         "literals": [
           "solidity",
           "^",
@@ -464,7 +464,7 @@
         "src": "0:24:23"
       },
       {
-        "id": 9764,
+        "id": 9869,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -478,23 +478,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9797,
+        "id": 9902,
         "linearizedBaseContracts": [
-          9797
+          9902
         ],
         "name": "MatryxTrinity",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "MatryxTrinity.Info",
-            "id": 9769,
+            "id": 9874,
             "members": [
               {
                 "constant": false,
-                "id": 9766,
+                "id": 9871,
                 "name": "version",
                 "nodeType": "VariableDeclaration",
-                "scope": 9769,
+                "scope": 9874,
                 "src": "111:15:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -503,7 +503,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 9765,
+                  "id": 9870,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "111:7:23",
@@ -517,10 +517,10 @@
               },
               {
                 "constant": false,
-                "id": 9768,
+                "id": 9873,
                 "name": "system",
                 "nodeType": "VariableDeclaration",
-                "scope": 9769,
+                "scope": 9874,
                 "src": "136:14:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -529,7 +529,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 9767,
+                  "id": 9872,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "136:7:23",
@@ -544,32 +544,32 @@
             ],
             "name": "Info",
             "nodeType": "StructDefinition",
-            "scope": 9797,
+            "scope": 9902,
             "src": "89:68:23",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 9771,
+            "id": 9876,
             "name": "info",
             "nodeType": "VariableDeclaration",
-            "scope": 9797,
+            "scope": 9902,
             "src": "163:9:23",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Info_$9769_storage",
+              "typeIdentifier": "t_struct$_Info_$9874_storage",
               "typeString": "struct MatryxTrinity.Info"
             },
             "typeName": {
               "contractScope": null,
-              "id": 9770,
+              "id": 9875,
               "name": "Info",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9769,
+              "referencedDeclaration": 9874,
               "src": "163:4:23",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Info_$9769_storage_ptr",
+                "typeIdentifier": "t_struct$_Info_$9874_storage_ptr",
                 "typeString": "struct MatryxTrinity.Info"
               }
             },
@@ -578,14 +578,14 @@
           },
           {
             "body": {
-              "id": 9790,
+              "id": 9895,
               "nodeType": "Block",
               "src": "233:71:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9782,
+                    "id": 9887,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -594,25 +594,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9778,
+                        "id": 9883,
                         "name": "info",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9771,
+                        "referencedDeclaration": 9876,
                         "src": "243:4:23",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Info_$9769_storage",
+                          "typeIdentifier": "t_struct$_Info_$9874_storage",
                           "typeString": "struct MatryxTrinity.Info storage ref"
                         }
                       },
-                      "id": 9780,
+                      "id": 9885,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "version",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9766,
+                      "referencedDeclaration": 9871,
                       "src": "243:12:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -623,11 +623,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9781,
+                      "id": 9886,
                       "name": "_version",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9773,
+                      "referencedDeclaration": 9878,
                       "src": "258:8:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -640,14 +640,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 9783,
+                  "id": 9888,
                   "nodeType": "ExpressionStatement",
                   "src": "243:23:23"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9788,
+                    "id": 9893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -656,25 +656,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9784,
+                        "id": 9889,
                         "name": "info",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9771,
+                        "referencedDeclaration": 9876,
                         "src": "276:4:23",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Info_$9769_storage",
+                          "typeIdentifier": "t_struct$_Info_$9874_storage",
                           "typeString": "struct MatryxTrinity.Info storage ref"
                         }
                       },
-                      "id": 9786,
+                      "id": 9891,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "system",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9768,
+                      "referencedDeclaration": 9873,
                       "src": "276:11:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -685,11 +685,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9787,
+                      "id": 9892,
                       "name": "_system",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9775,
+                      "referencedDeclaration": 9880,
                       "src": "290:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -702,14 +702,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 9789,
+                  "id": 9894,
                   "nodeType": "ExpressionStatement",
                   "src": "276:21:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 9791,
+            "id": 9896,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -717,15 +717,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9776,
+              "id": 9881,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9773,
+                  "id": 9878,
                   "name": "_version",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9791,
+                  "scope": 9896,
                   "src": "191:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -734,7 +734,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9772,
+                    "id": 9877,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:7:23",
@@ -748,10 +748,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9775,
+                  "id": 9880,
                   "name": "_system",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9791,
+                  "scope": 9896,
                   "src": "209:15:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -760,7 +760,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9774,
+                    "id": 9879,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:7:23",
@@ -777,12 +777,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9777,
+              "id": 9882,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "233:0:23"
             },
-            "scope": 9797,
+            "scope": 9902,
             "src": "179:125:23",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -790,15 +790,15 @@
           },
           {
             "body": {
-              "id": 9795,
+              "id": 9900,
               "nodeType": "Block",
-              "src": "553:2082:23",
+              "src": "553:2081:23",
               "statements": [
                 {
                   "externalReferences": [
                     {
                       "info_slot": {
-                        "declaration": 9771,
+                        "declaration": 9876,
                         "isOffset": false,
                         "isSlot": true,
                         "src": "823:9:23",
@@ -807,7 +807,7 @@
                     },
                     {
                       "info_slot": {
-                        "declaration": 9771,
+                        "declaration": 9876,
                         "isOffset": false,
                         "isSlot": true,
                         "src": "870:9:23",
@@ -815,15 +815,15 @@
                       }
                     }
                   ],
-                  "id": 9794,
+                  "id": 9899,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    let ptr := mload(0x40)\n    let offset := 0x100000000000000000000000000000000000000000000000000000000\n    let platform := 0x4d6174727978506c6174666f726d000000000000000000000000000000000000\n    let version := sload(info_slot)\n    let system := sload(add(info_slot, 1))\n    mstore(ptr, mul(0xc53cfd9a, offset))\n    mstore(add(ptr, 0x04), version)\n    mstore(add(ptr, 0x24), platform)\n    let res := call(gas(), system, 0, ptr, 0x44, 0, 0x20)\n    if iszero(res)\n    {\n        revert(0, 0)\n    }\n    platform := mload(0)\n    calldatacopy(ptr, 0, 0x04)\n    mstore(add(ptr, 0x04), caller())\n    mstore(add(ptr, 0x24), version)\n    calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize(), 0x04))\n    res := call(gas(), platform, 0, ptr, add(calldatasize(), 0x40), 0, 0)\n    if iszero(res)\n    {\n        revert(0, 0)\n    }\n    returndatacopy(ptr, 0, returndatasize())\n    return(ptr, returndatasize())\n}",
-                  "src": "563:2072:23"
+                  "src": "563:2071:23"
                 }
               ]
             },
             "documentation": "@dev\n Gets the address of the current version of Platform and forwards the\n received calldata to this address. Injects msg.sender at the front so\n Platform and libraries can know calling address",
-            "id": 9796,
+            "id": 9901,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -831,30 +831,30 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9792,
+              "id": 9897,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "543:2:23"
             },
             "payable": false,
             "returnParameters": {
-              "id": 9793,
+              "id": 9898,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "553:0:23"
             },
-            "scope": 9797,
-            "src": "534:2101:23",
+            "scope": 9902,
+            "src": "534:2100:23",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9798,
-        "src": "60:2577:23"
+        "scope": 9903,
+        "src": "60:2576:23"
       }
     ],
-    "src": "0:2638:23"
+    "src": "0:2637:23"
   },
   "compiler": {
     "name": "solc",
@@ -862,5 +862,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-27T19:28:51.282Z"
+  "updatedAt": "2018-12-08T00:22:28.697Z"
 }
