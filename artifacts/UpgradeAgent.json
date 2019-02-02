@@ -1,0 +1,539 @@
+{
+  "contractName": "UpgradeAgent",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "originalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isUpgradeAgent",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "upgradeFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/**\n * This smart contract code is Copyright 2017 TokenMarket Ltd. For more information see https://tokenmarket.net\n *\n * Licensed under the Apache License, version 2.0: https://github.com/TokenMarketNet/ico/blob/master/LICENSE.txt\n */\n\npragma solidity ^0.5.0;\n\n/**\n * Upgrade agent interface inspired by Lunyr.\n *\n * Upgrade agent transfers tokens to a new contract.\n * Upgrade agent itself can be the token contract, or just a middle man contract doing the heavy lifting.\n */\ncontract UpgradeAgent {\n\n  uint public originalSupply;\n\n  /** Interface marker */\n  function isUpgradeAgent() public pure returns (bool) {\n    return true;\n  }\n\n  function upgradeFrom(address _from, uint256 _value) public;\n\n}\n",
+  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/ownership/UpgradeAgent.sol",
+  "ast": {
+    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/ownership/UpgradeAgent.sol",
+    "exportedSymbols": {
+      "UpgradeAgent": [
+        4536
+      ]
+    },
+    "id": 4537,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4518,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "237:23:20"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "Upgrade agent interface inspired by Lunyr.\n * Upgrade agent transfers tokens to a new contract.\nUpgrade agent itself can be the token contract, or just a middle man contract doing the heavy lifting.",
+        "fullyImplemented": false,
+        "id": 4536,
+        "linearizedBaseContracts": [
+          4536
+        ],
+        "name": "UpgradeAgent",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4520,
+            "name": "originalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 4536,
+            "src": "505:26:20",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4519,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "505:4:20",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4527,
+              "nodeType": "Block",
+              "src": "615:22:20",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 4525,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "628:4:20",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 4524,
+                  "id": 4526,
+                  "nodeType": "Return",
+                  "src": "621:11:20"
+                }
+              ]
+            },
+            "documentation": "Interface marker ",
+            "id": 4528,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isUpgradeAgent",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4521,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "585:2:20"
+            },
+            "returnParameters": {
+              "id": 4524,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4523,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4528,
+                  "src": "609:4:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4522,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "608:6:20"
+            },
+            "scope": 4536,
+            "src": "562:75:20",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4535,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeFrom",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4533,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4530,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4535,
+                  "src": "662:13:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4529,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4532,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4535,
+                  "src": "677:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4531,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "677:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "661:31:20"
+            },
+            "returnParameters": {
+              "id": 4534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "699:0:20"
+            },
+            "scope": 4536,
+            "src": "641:59:20",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 4537,
+        "src": "478:225:20"
+      }
+    ],
+    "src": "237:467:20"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/ownership/UpgradeAgent.sol",
+    "exportedSymbols": {
+      "UpgradeAgent": [
+        4536
+      ]
+    },
+    "id": 4537,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4518,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "237:23:20"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "Upgrade agent interface inspired by Lunyr.\n * Upgrade agent transfers tokens to a new contract.\nUpgrade agent itself can be the token contract, or just a middle man contract doing the heavy lifting.",
+        "fullyImplemented": false,
+        "id": 4536,
+        "linearizedBaseContracts": [
+          4536
+        ],
+        "name": "UpgradeAgent",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4520,
+            "name": "originalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 4536,
+            "src": "505:26:20",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4519,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "505:4:20",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4527,
+              "nodeType": "Block",
+              "src": "615:22:20",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 4525,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "628:4:20",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 4524,
+                  "id": 4526,
+                  "nodeType": "Return",
+                  "src": "621:11:20"
+                }
+              ]
+            },
+            "documentation": "Interface marker ",
+            "id": 4528,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isUpgradeAgent",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4521,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "585:2:20"
+            },
+            "returnParameters": {
+              "id": 4524,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4523,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4528,
+                  "src": "609:4:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4522,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "609:4:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "608:6:20"
+            },
+            "scope": 4536,
+            "src": "562:75:20",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4535,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeFrom",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4533,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4530,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4535,
+                  "src": "662:13:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4529,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4532,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4535,
+                  "src": "677:14:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4531,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "677:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "661:31:20"
+            },
+            "returnParameters": {
+              "id": 4534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "699:0:20"
+            },
+            "scope": 4536,
+            "src": "641:59:20",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 4537,
+        "src": "478:225:20"
+      }
+    ],
+    "src": "237:467:20"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-02-02T22:52:34.523Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {
+      "isUpgradeAgent()": {
+        "notice": "Interface marker "
+      }
+    },
+    "notice": "Upgrade agent interface inspired by Lunyr. * Upgrade agent transfers tokens to a new contract. Upgrade agent itself can be the token contract, or just a middle man contract doing the heavy lifting."
+  }
+}
