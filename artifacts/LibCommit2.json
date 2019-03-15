@@ -1,0 +1,877 @@
+{
+  "contractName": "LibCommit2",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "self",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "MatryxPlatform.Data storage"
+        },
+        {
+          "name": "commitHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getAvailableRewardForUser",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6101a8610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100575763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634f4abca8811461005c575b600080fd5b61006f61006a3660046100af565b610085565b60405161007c9190610133565b60405180910390f35b602a95945050505050565b600061009c8235610163565b9392505050565b600061009c8235610160565b600080600080600060a086880312156100c757600080fd5b60006100d38888610090565b95505060206100e488828901610090565b94505060406100f5888289016100a3565b9350506060610106888289016100a3565b925050608061011788828901610090565b9150509295509295909350565b61012d81610160565b82525050565b602081016101418284610124565b92915050565b73ffffffffffffffffffffffffffffffffffffffff1690565b90565b60006101418261014756fea265627a7a7230582003a74250d3cb4adfb71835656608ddd6ec02b843f11cf7ebb99e286fd34d86b66c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100575763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634f4abca8811461005c575b600080fd5b61006f61006a3660046100af565b610085565b60405161007c9190610133565b60405180910390f35b602a95945050505050565b600061009c8235610163565b9392505050565b600061009c8235610160565b600080600080600060a086880312156100c757600080fd5b60006100d38888610090565b95505060206100e488828901610090565b94505060406100f5888289016100a3565b9350506060610106888289016100a3565b925050608061011788828901610090565b9150509295509295909350565b61012d81610160565b82525050565b602081016101418284610124565b92915050565b73ffffffffffffffffffffffffffffffffffffffff1690565b90565b60006101418261014756fea265627a7a7230582003a74250d3cb4adfb71835656608ddd6ec02b843f11cf7ebb99e286fd34d86b66c6578706572696d656e74616cf50037",
+  "sourceMap": "206:204:29:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
+  "deployedSourceMap": "206:204:29:-;;;;;;;;;;;;;;;;;;;;;;;;;;231:177;;;;;;;;;;;;;;;;;;;;;;;;;;;399:2;231:177;;;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:118;;197:46;235:6;222:20;197:46;;426:789;;;;;;621:3;609:9;600:7;596:23;592:33;589:2;;;638:1;635;628:12;589:2;673:1;690:53;735:7;715:9;690:53;;;680:63;;652:97;780:2;798:53;843:7;834:6;823:9;819:22;798:53;;;788:63;;759:98;888:2;906:76;974:7;965:6;954:9;950:22;906:76;;;896:86;;867:121;1019:2;1037:53;1082:7;1073:6;1062:9;1058:22;1037:53;;;1027:63;;998:98;1127:3;1146:53;1191:7;1182:6;1171:9;1167:22;1146:53;;;1136:63;;1106:99;583:632;;;;;;;;;1222:118;1303:31;1328:5;1303:31;;;1298:3;1291:44;1285:55;;;1347:209;1463:2;1448:18;;1477:69;1452:9;1519:6;1477:69;;;1434:122;;;;;1563:128;1643:42;1632:54;;1615:76;1698:79;1767:5;1750:27;1784:105;;1853:31;1878:5;1853:31;",
+  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nimport \"../MatryxPlatform.sol\";\n\ninterface ICommit2 {\n    function getAvailableRewardForUser(bytes32, address) external pure returns (uint256);\n}\n\nlibrary LibCommit2 {\n    function getAvailableRewardForUser(address self, address, MatryxPlatform.Data storage, bytes32 commitHash, address user) public pure returns (uint256) {\n        return 42;\n    }\n}\n",
+  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+  "ast": {
+    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+    "exportedSymbols": {
+      "ICommit2": [
+        7274
+      ],
+      "LibCommit2": [
+        7293
+      ]
+    },
+    "id": 7294,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7262,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:29"
+      },
+      {
+        "id": 7263,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:29"
+      },
+      {
+        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "file": "../MatryxPlatform.sol",
+        "id": 7264,
+        "nodeType": "ImportDirective",
+        "scope": 7294,
+        "sourceUnit": 5175,
+        "src": "59:31:29",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7274,
+        "linearizedBaseContracts": [
+          7274
+        ],
+        "name": "ICommit2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7273,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAvailableRewardForUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7269,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7266,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "152:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7265,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7268,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "161:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7267,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "161:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:18:29"
+            },
+            "returnParameters": {
+              "id": 7272,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7271,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "193:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7270,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "192:9:29"
+            },
+            "scope": 7274,
+            "src": "117:85:29",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7294,
+        "src": "92:112:29"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7293,
+        "linearizedBaseContracts": [
+          7293
+        ],
+        "name": "LibCommit2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 7291,
+              "nodeType": "Block",
+              "src": "382:26:29",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "3432",
+                    "id": 7289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "399:2:29",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_42_by_1",
+                      "typeString": "int_const 42"
+                    },
+                    "value": "42"
+                  },
+                  "functionReturnParameters": 7288,
+                  "id": 7290,
+                  "nodeType": "Return",
+                  "src": "392:9:29"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7292,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAvailableRewardForUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7285,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7276,
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "266:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7275,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "266:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7278,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "280:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7277,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "280:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7280,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "289:27:29",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeString": "struct MatryxPlatform.Data"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 7279,
+                    "name": "MatryxPlatform.Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "289:19:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeString": "struct MatryxPlatform.Data"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7282,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "318:18:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7281,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7284,
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "338:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7283,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "265:86:29"
+            },
+            "returnParameters": {
+              "id": 7288,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7287,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "373:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7286,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "373:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "372:9:29"
+            },
+            "scope": 7293,
+            "src": "231:177:29",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7294,
+        "src": "206:204:29"
+      }
+    ],
+    "src": "0:411:29"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+    "exportedSymbols": {
+      "ICommit2": [
+        7274
+      ],
+      "LibCommit2": [
+        7293
+      ]
+    },
+    "id": 7294,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7262,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:29"
+      },
+      {
+        "id": 7263,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:29"
+      },
+      {
+        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "file": "../MatryxPlatform.sol",
+        "id": 7264,
+        "nodeType": "ImportDirective",
+        "scope": 7294,
+        "sourceUnit": 5175,
+        "src": "59:31:29",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7274,
+        "linearizedBaseContracts": [
+          7274
+        ],
+        "name": "ICommit2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7273,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAvailableRewardForUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7269,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7266,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "152:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7265,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7268,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "161:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7267,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "161:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:18:29"
+            },
+            "returnParameters": {
+              "id": 7272,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7271,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7273,
+                  "src": "193:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7270,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "193:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "192:9:29"
+            },
+            "scope": 7274,
+            "src": "117:85:29",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7294,
+        "src": "92:112:29"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7293,
+        "linearizedBaseContracts": [
+          7293
+        ],
+        "name": "LibCommit2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 7291,
+              "nodeType": "Block",
+              "src": "382:26:29",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "3432",
+                    "id": 7289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "399:2:29",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_42_by_1",
+                      "typeString": "int_const 42"
+                    },
+                    "value": "42"
+                  },
+                  "functionReturnParameters": 7288,
+                  "id": 7290,
+                  "nodeType": "Return",
+                  "src": "392:9:29"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7292,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAvailableRewardForUser",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7285,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7276,
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "266:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7275,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "266:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7278,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "280:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7277,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "280:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7280,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "289:27:29",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeString": "struct MatryxPlatform.Data"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 7279,
+                    "name": "MatryxPlatform.Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4844,
+                    "src": "289:19:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeString": "struct MatryxPlatform.Data"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7282,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "318:18:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7281,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "318:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7284,
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "338:12:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7283,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "338:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "265:86:29"
+            },
+            "returnParameters": {
+              "id": 7288,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7287,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7292,
+                  "src": "373:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7286,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "373:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "372:9:29"
+            },
+            "scope": 7293,
+            "src": "231:177:29",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7294,
+        "src": "206:204:29"
+      }
+    ],
+    "src": "0:411:29"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-15T16:49:03.059Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
