@@ -142,8 +142,8 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x610625610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100785763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166336359f2e811461007d5780636852c33e146100b35780638a1250dd146100d3578063d8bf2551146100e6575b600080fd5b81801561008957600080fd5b5061009d6100983660046104b0565b610106565b6040516100aa91906105bf565b60405180910390f35b6100c66100c1366004610463565b610231565b6040516100aa919061059d565b61009d6100e1366004610463565b6102be565b6100f96100f4366004610463565b6102cf565b6040516100aa91906105b1565b6000610110610324565b6020808201805161303990819052815183018190528151604090810182905291516060015273ffffffffffffffffffffffffffffffffffffffff881660009081526003860183529081206005018054600181018083559183529183902084518051805193958795600b02909301939192849261018f928492019061034b565b506020828101516001830155604083015180518051919260028501926101b8928492019061034b565b5060208281015180516101d1926001850192019061034b565b5060409182015160029190910155606092830151600592909201805460ff19169215159290921790915560209384015180516006850155938401516007840155830151600883015591909101516009909101555060009695505050505050565b610239610396565b73ffffffffffffffffffffffffffffffffffffffff8416600090815260038301602052604081206005018054909190811061027057fe5b90600052602060002090600b02016006016080604051908101604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090509392505050565b68055de6a779bbac00009392505050565b6102d76103bf565b5073ffffffffffffffffffffffffffffffffffffffff9283166000908152600391909101602090815260409182902082518084019093528054835260010154909316928101929092525090565b610140604051908101604052806103396103d6565b8152602001610346610396565b905290565b828054828255906000526020600020908101928215610386579160200282015b8281111561038657825182559160200191906001019061036b565b50610392929150610405565b5090565b608060405190810160405280600081526020016000815260200160008152602001600081525090565b604080518082019091526000808252602082015290565b60c06040519081016040528060608152602001600081526020016103f8610422565b8152600060209091015290565b61041f91905b80821115610392576000815560010161040b565b90565b6060604051908101604052806060815260200160608152602001600081525090565b600061045082356105cd565b9392505050565b6000610450823561041f565b60008060006060848603121561047857600080fd5b60006104848686610444565b935050602061049586828701610444565b92505060406104a686828701610457565b9150509250925092565b600080600080608085870312156104c657600080fd5b60006104d28787610444565b94505060206104e387828801610444565b93505060406104f487828801610457565b925050606061050587828801610457565b91505092959194509250565b61051a816105cd565b82525050565b805160808301906105318482610594565b5060208201516105446020850182610594565b5060408201516105576040850182610594565b50606082015161056a6060850182610594565b50505050565b805160408301906105818482610594565b50602082015161056a6020850182610511565b61051a8161041f565b608081016105ab8284610520565b92915050565b604081016105ab8284610570565b602081016105ab8284610594565b600073ffffffffffffffffffffffffffffffffffffffff82166105ab56fea265627a7a72305820bcb4cbdef95ea64942d3f6262b5eb788bc55cbcf09c004ab5a4b560ce4a7407d6c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100785763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166336359f2e811461007d5780636852c33e146100b35780638a1250dd146100d3578063d8bf2551146100e6575b600080fd5b81801561008957600080fd5b5061009d6100983660046104b0565b610106565b6040516100aa91906105bf565b60405180910390f35b6100c66100c1366004610463565b610231565b6040516100aa919061059d565b61009d6100e1366004610463565b6102be565b6100f96100f4366004610463565b6102cf565b6040516100aa91906105b1565b6000610110610324565b6020808201805161303990819052815183018190528151604090810182905291516060015273ffffffffffffffffffffffffffffffffffffffff881660009081526003860183529081206005018054600181018083559183529183902084518051805193958795600b02909301939192849261018f928492019061034b565b506020828101516001830155604083015180518051919260028501926101b8928492019061034b565b5060208281015180516101d1926001850192019061034b565b5060409182015160029190910155606092830151600592909201805460ff19169215159290921790915560209384015180516006850155938401516007840155830151600883015591909101516009909101555060009695505050505050565b610239610396565b73ffffffffffffffffffffffffffffffffffffffff8416600090815260038301602052604081206005018054909190811061027057fe5b90600052602060002090600b02016006016080604051908101604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090509392505050565b68055de6a779bbac00009392505050565b6102d76103bf565b5073ffffffffffffffffffffffffffffffffffffffff9283166000908152600391909101602090815260409182902082518084019093528054835260010154909316928101929092525090565b610140604051908101604052806103396103d6565b8152602001610346610396565b905290565b828054828255906000526020600020908101928215610386579160200282015b8281111561038657825182559160200191906001019061036b565b50610392929150610405565b5090565b608060405190810160405280600081526020016000815260200160008152602001600081525090565b604080518082019091526000808252602082015290565b60c06040519081016040528060608152602001600081526020016103f8610422565b8152600060209091015290565b61041f91905b80821115610392576000815560010161040b565b90565b6060604051908101604052806060815260200160608152602001600081525090565b600061045082356105cd565b9392505050565b6000610450823561041f565b60008060006060848603121561047857600080fd5b60006104848686610444565b935050602061049586828701610444565b92505060406104a686828701610457565b9150509250925092565b600080600080608085870312156104c657600080fd5b60006104d28787610444565b94505060206104e387828801610444565b93505060406104f487828801610457565b925050606061050587828801610457565b91505092959194509250565b61051a816105cd565b82525050565b805160808301906105318482610594565b5060208201516105446020850182610594565b5060408201516105576040850182610594565b50606082015161056a6060850182610594565b50505050565b805160408301906105818482610594565b50602082015161056a6020850182610511565b61051a8161041f565b608081016105ab8284610520565b92915050565b604081016105ab8284610570565b602081016105ab8284610594565b600073ffffffffffffffffffffffffffffffffffffffff82166105ab56fea265627a7a72305820bcb4cbdef95ea64942d3f6262b5eb788bc55cbcf09c004ab5a4b560ce4a7407d6c6578706572696d656e74616cf50037",
+  "bytecode": "0x610625610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100785763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166336359f2e811461007d5780636852c33e146100b35780638a1250dd146100d3578063d8bf2551146100e6575b600080fd5b81801561008957600080fd5b5061009d6100983660046104b0565b610106565b6040516100aa91906105bf565b60405180910390f35b6100c66100c1366004610463565b610231565b6040516100aa919061059d565b61009d6100e1366004610463565b6102be565b6100f96100f4366004610463565b6102cf565b6040516100aa91906105b1565b6000610110610324565b6020808201805161303990819052815183018190528151604090810182905291516060015273ffffffffffffffffffffffffffffffffffffffff881660009081526003860183529081206005018054600181018083559183529183902084518051805193958795600b02909301939192849261018f928492019061034b565b506020828101516001830155604083015180518051919260028501926101b8928492019061034b565b5060208281015180516101d1926001850192019061034b565b5060409182015160029190910155606092830151600592909201805460ff19169215159290921790915560209384015180516006850155938401516007840155830151600883015591909101516009909101555060009695505050505050565b610239610396565b73ffffffffffffffffffffffffffffffffffffffff8416600090815260038301602052604081206005018054909190811061027057fe5b90600052602060002090600b02016006016080604051908101604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090509392505050565b68055de6a779bbac00009392505050565b6102d76103bf565b5073ffffffffffffffffffffffffffffffffffffffff9283166000908152600391909101602090815260409182902082518084019093528054835260010154909316928101929092525090565b610140604051908101604052806103396103d6565b8152602001610346610396565b905290565b828054828255906000526020600020908101928215610386579160200282015b8281111561038657825182559160200191906001019061036b565b50610392929150610405565b5090565b608060405190810160405280600081526020016000815260200160008152602001600081525090565b604080518082019091526000808252602082015290565b60c06040519081016040528060608152602001600081526020016103f8610422565b8152600060209091015290565b61041f91905b80821115610392576000815560010161040b565b90565b6060604051908101604052806060815260200160608152602001600081525090565b600061045082356105cd565b9392505050565b6000610450823561041f565b60008060006060848603121561047857600080fd5b60006104848686610444565b935050602061049586828701610444565b92505060406104a686828701610457565b9150509250925092565b600080600080608085870312156104c657600080fd5b60006104d28787610444565b94505060206104e387828801610444565b93505060406104f487828801610457565b925050606061050587828801610457565b91505092959194509250565b61051a816105cd565b82525050565b805160808301906105318482610594565b5060208201516105446020850182610594565b5060408201516105576040850182610594565b50606082015161056a6060850182610594565b50505050565b805160408301906105818482610594565b50602082015161056a6020850182610511565b61051a8161041f565b608081016105ab8284610520565b92915050565b604081016105ab8284610570565b602081016105ab8284610594565b600073ffffffffffffffffffffffffffffffffffffffff82166105ab56fea265627a7a72305820cae5931aebb091aa96b89aedacb816b938d4ea546bff9915e2d9a292828b25b26c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100785763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166336359f2e811461007d5780636852c33e146100b35780638a1250dd146100d3578063d8bf2551146100e6575b600080fd5b81801561008957600080fd5b5061009d6100983660046104b0565b610106565b6040516100aa91906105bf565b60405180910390f35b6100c66100c1366004610463565b610231565b6040516100aa919061059d565b61009d6100e1366004610463565b6102be565b6100f96100f4366004610463565b6102cf565b6040516100aa91906105b1565b6000610110610324565b6020808201805161303990819052815183018190528151604090810182905291516060015273ffffffffffffffffffffffffffffffffffffffff881660009081526003860183529081206005018054600181018083559183529183902084518051805193958795600b02909301939192849261018f928492019061034b565b506020828101516001830155604083015180518051919260028501926101b8928492019061034b565b5060208281015180516101d1926001850192019061034b565b5060409182015160029190910155606092830151600592909201805460ff19169215159290921790915560209384015180516006850155938401516007840155830151600883015591909101516009909101555060009695505050505050565b610239610396565b73ffffffffffffffffffffffffffffffffffffffff8416600090815260038301602052604081206005018054909190811061027057fe5b90600052602060002090600b02016006016080604051908101604052908160008201548152602001600182015481526020016002820154815260200160038201548152505090509392505050565b68055de6a779bbac00009392505050565b6102d76103bf565b5073ffffffffffffffffffffffffffffffffffffffff9283166000908152600391909101602090815260409182902082518084019093528054835260010154909316928101929092525090565b610140604051908101604052806103396103d6565b8152602001610346610396565b905290565b828054828255906000526020600020908101928215610386579160200282015b8281111561038657825182559160200191906001019061036b565b50610392929150610405565b5090565b608060405190810160405280600081526020016000815260200160008152602001600081525090565b604080518082019091526000808252602082015290565b60c06040519081016040528060608152602001600081526020016103f8610422565b8152600060209091015290565b61041f91905b80821115610392576000815560010161040b565b90565b6060604051908101604052806060815260200160608152602001600081525090565b600061045082356105cd565b9392505050565b6000610450823561041f565b60008060006060848603121561047857600080fd5b60006104848686610444565b935050602061049586828701610444565b92505060406104a686828701610457565b9150509250925092565b600080600080608085870312156104c657600080fd5b60006104d28787610444565b94505060206104e387828801610444565b93505060406104f487828801610457565b925050606061050587828801610457565b91505092959194509250565b61051a816105cd565b82525050565b805160808301906105318482610594565b5060208201516105446020850182610594565b5060408201516105576040850182610594565b50606082015161056a6060850182610594565b50505050565b805160408301906105818482610594565b50602082015161056a6020850182610511565b61051a8161041f565b608081016105ab8284610520565b92915050565b604081016105ab8284610570565b602081016105ab8284610594565b600073ffffffffffffffffffffffffffffffffffffffff82166105ab56fea265627a7a72305820cae5931aebb091aa96b89aedacb816b938d4ea546bff9915e2d9a292828b25b26c6578706572696d656e74616cf50037",
   "sourceMap": "433:995:32:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
   "deployedSourceMap": "433:995:32:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1006:419;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1006:419:32;;;;;;;;;;;;;;;;;;;;;;;;;652:196;;;;;;;;;;;;;;;;;;854:146;;;;;;;;;;463:183;;;;;;;;;;;;;;;;;;1006:419;1141:7;1160:36;;:::i;:::-;1206:13;;;;;;1228:5;1206:27;;;;1243:13;;:22;;:30;;;1283:13;;:20;;;;:28;;;1321:13;;:20;;:28;1359:22;;;1206:19;1359:22;;;:16;;;:22;;;;;:29;;27:10:-1;;39:1;23:18;;45:23;;;1359:41:32;;;;;;;;;;;;;23:18:-1;;1206:5:32;;1359:41;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;1359:41:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;1359:41:32;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;1359:41:32;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;1359:41:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;1006:419:32;-1:-1:-1;;;;;;1006:419:32:o;652:196::-;749:33;;:::i;:::-;801:22;;;;;;;:16;;;:22;;;;;:29;;:32;;:29;;:22;:32;;;;;;;;;;;;;;;;:40;;794:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;652:196;;;;;:::o;854:146::-;973:20;854:146;;;;;:::o;463:183::-;558:35;;:::i;:::-;-1:-1:-1;612:22:32;;;;;;;;:16;;;;;:22;;;;;;;;;605:34;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;605:34:32;463:183::o;433:995::-;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;433:995:32;;;-1:-1:-1;433:995:32;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;-1:-1:-1;433:995:32;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:164;;220:69;281:6;268:20;220:69;;472:537;;;;633:2;621:9;612:7;608:23;604:32;601:2;;;649:1;646;639:12;601:2;684:1;701:53;746:7;726:9;701:53;;;691:63;;663:97;791:2;809:53;854:7;845:6;834:9;830:22;809:53;;;799:63;;770:98;899:2;917:76;985:7;976:6;965:9;961:22;917:76;;;907:86;;878:121;595:414;;;;;;1016:709;;;;;1217:3;1205:9;1196:7;1192:23;1188:33;1185:2;;;1234:1;1231;1224:12;1185:2;1269:1;1286:53;1331:7;1311:9;1286:53;;;1276:63;;1248:97;1376:2;1394:53;1439:7;1430:6;1419:9;1415:22;1394:53;;;1384:63;;1355:98;1484:2;1502:76;1570:7;1561:6;1550:9;1546:22;1502:76;;;1492:86;;1463:121;1615:2;1633:76;1701:7;1692:6;1681:9;1677:22;1633:76;;;1623:86;;1594:121;1179:546;;;;;;;;1732:118;1813:31;1838:5;1813:31;;;1808:3;1801:44;1795:55;;;1934:887;2155:22;;2085:4;2076:14;;;2189:69;2080:3;2155:22;2189:69;;;2105:165;2350:4;2343:5;2339:16;2333:23;2368:70;2432:4;2427:3;2423:14;2410:11;2368:70;;;2280:170;2528:4;2521:5;2517:16;2511:23;2546:70;2610:4;2605:3;2601:14;2588:11;2546:70;;;2460:168;2706:4;2699:5;2695:16;2689:23;2724:70;2788:4;2783:3;2779:14;2766:11;2724:70;;;2638:168;2058:763;;;;2909:534;3136:22;;3064:4;3055:14;;;3170:69;3059:3;3136:22;3170:69;;;3084:167;3328:4;3321:5;3317:16;3311:23;3346:70;3410:4;3405:3;3401:14;3388:11;3346:70;;3450:118;3531:31;3556:5;3531:31;;3575:330;3751:3;3736:19;;3766:129;3740:9;3868:6;3766:129;;;3722:183;;;;;3912:337;4092:2;4077:18;;4106:133;4081:9;4212:6;4106:133;;4256:209;4372:2;4357:18;;4386:69;4361:9;4428:6;4386:69;;4472:105;;4664:42;4653:54;;4541:31;4636:76",
   "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nimport \"../MatryxPlatform.sol\";\nimport \"../LibTournament.sol\";\n\ninterface ITournament2 {\n    function getInfo() external pure returns (LibTournament.TournamentInfo memory);\n    function getRounds() external view returns (LibTournament.RoundDetails memory);\n    function getBalance() external pure returns (uint256);\n    function createRound() external returns (uint256);\n}\n\nlibrary LibTournament2 {\n\n    function getInfo(address self, address, MatryxPlatform.Data storage data) public view returns (LibTournament.TournamentInfo memory) {\n        return data.tournaments[self].info;\n    }\n\n    function getRounds(address self, address, MatryxPlatform.Data storage data) public view returns (LibTournament.RoundDetails memory) {\n        return data.tournaments[self].rounds[0].details;\n    }\n\n    function getBalance(address self, address, MatryxPlatform.Data storage) public pure returns (uint256) {\n        return 99000000000000000000;\n    }\n\n    function createRound(address self, address sender, MatryxPlatform.Info storage info, MatryxPlatform.Data storage data) public returns (uint256) {\n        LibTournament.RoundData memory round;\n        round.details.start = 12345;\n        round.details.duration = 12345;\n        round.details.review = 12345;\n        round.details.bounty = 12345;\n        data.tournaments[self].rounds.push(round);\n        return 0;\n    }\n\n}",
@@ -152,17 +152,17 @@
     "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibTournament2.sol",
     "exportedSymbols": {
       "ITournament2": [
-        7673
+        7729
       ],
       "LibTournament2": [
-        7790
+        7846
       ]
     },
-    "id": 7791,
+    "id": 7847,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7649,
+        "id": 7705,
         "literals": [
           "solidity",
           "^",
@@ -173,7 +173,7 @@
         "src": "0:23:32"
       },
       {
-        "id": 7650,
+        "id": 7706,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -184,10 +184,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
         "file": "../MatryxPlatform.sol",
-        "id": 7651,
+        "id": 7707,
         "nodeType": "ImportDirective",
-        "scope": 7791,
-        "sourceUnit": 5175,
+        "scope": 7847,
+        "sourceUnit": 5231,
         "src": "59:31:32",
         "symbolAliases": [],
         "unitAlias": ""
@@ -195,10 +195,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibTournament.sol",
         "file": "../LibTournament.sol",
-        "id": 7652,
+        "id": 7708,
         "nodeType": "ImportDirective",
-        "scope": 7791,
-        "sourceUnit": 4586,
+        "scope": 7847,
+        "sourceUnit": 4634,
         "src": "91:30:32",
         "symbolAliases": [],
         "unitAlias": ""
@@ -209,9 +209,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7673,
+        "id": 7729,
         "linearizedBaseContracts": [
-          7673
+          7729
         ],
         "name": "ITournament2",
         "nodeType": "ContractDefinition",
@@ -219,44 +219,44 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7657,
+            "id": 7713,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getInfo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7653,
+              "id": 7709,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "168:2:32"
             },
             "returnParameters": {
-              "id": 7656,
+              "id": 7712,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7655,
+                  "id": 7711,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7657,
+                  "scope": 7713,
                   "src": "194:35:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TournamentInfo_$1952_memory_ptr",
+                    "typeIdentifier": "t_struct$_TournamentInfo_$1975_memory_ptr",
                     "typeString": "struct LibTournament.TournamentInfo"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7654,
+                    "id": 7710,
                     "name": "LibTournament.TournamentInfo",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1952,
+                    "referencedDeclaration": 1975,
                     "src": "194:28:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage_ptr",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage_ptr",
                       "typeString": "struct LibTournament.TournamentInfo"
                     }
                   },
@@ -266,7 +266,7 @@
               ],
               "src": "193:37:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "152:79:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -275,44 +275,44 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7662,
+            "id": 7718,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRounds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7658,
+              "id": 7714,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "254:2:32"
             },
             "returnParameters": {
-              "id": 7661,
+              "id": 7717,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7660,
+                  "id": 7716,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7662,
+                  "scope": 7718,
                   "src": "280:33:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RoundDetails_$2001_memory_ptr",
+                    "typeIdentifier": "t_struct$_RoundDetails_$2024_memory_ptr",
                     "typeString": "struct LibTournament.RoundDetails"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7659,
+                    "id": 7715,
                     "name": "LibTournament.RoundDetails",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2001,
+                    "referencedDeclaration": 2024,
                     "src": "280:26:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage_ptr",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage_ptr",
                       "typeString": "struct LibTournament.RoundDetails"
                     }
                   },
@@ -322,7 +322,7 @@
               ],
               "src": "279:35:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "236:79:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -331,28 +331,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7667,
+            "id": 7723,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7663,
+              "id": 7719,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "339:2:32"
             },
             "returnParameters": {
-              "id": 7666,
+              "id": 7722,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7665,
+                  "id": 7721,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7667,
+                  "scope": 7723,
                   "src": "365:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -361,7 +361,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7664,
+                    "id": 7720,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "365:7:32",
@@ -376,7 +376,7 @@
               ],
               "src": "364:9:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "320:54:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -385,28 +385,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7672,
+            "id": 7728,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "createRound",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7668,
+              "id": 7724,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "399:2:32"
             },
             "returnParameters": {
-              "id": 7671,
+              "id": 7727,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7670,
+                  "id": 7726,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7672,
+                  "scope": 7728,
                   "src": "420:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -415,7 +415,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7669,
+                    "id": 7725,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "420:7:32",
@@ -430,14 +430,14 @@
               ],
               "src": "419:9:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "379:50:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7791,
+        "scope": 7847,
         "src": "123:308:32"
       },
       {
@@ -446,16 +446,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7790,
+        "id": 7846,
         "linearizedBaseContracts": [
-          7790
+          7846
         ],
         "name": "LibTournament2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7690,
+              "id": 7746,
               "nodeType": "Block",
               "src": "595:51:32",
               "statements": [
@@ -468,39 +468,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7684,
+                          "id": 7740,
                           "name": "data",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7679,
+                          "referencedDeclaration": 7735,
                           "src": "612:4:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                            "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                             "typeString": "struct MatryxPlatform.Data storage pointer"
                           }
                         },
-                        "id": 7685,
+                        "id": 7741,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "tournaments",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4800,
+                        "referencedDeclaration": 4848,
                         "src": "612:16:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                           "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                         }
                       },
-                      "id": 7687,
+                      "id": 7743,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7686,
+                        "id": 7742,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7675,
+                        "referencedDeclaration": 7731,
                         "src": "629:4:32",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -514,48 +514,48 @@
                       "nodeType": "IndexAccess",
                       "src": "612:22:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                        "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                         "typeString": "struct LibTournament.TournamentData storage ref"
                       }
                     },
-                    "id": 7688,
+                    "id": 7744,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "info",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 1961,
+                    "referencedDeclaration": 1984,
                     "src": "612:27:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage",
                       "typeString": "struct LibTournament.TournamentInfo storage ref"
                     }
                   },
-                  "functionReturnParameters": 7683,
-                  "id": 7689,
+                  "functionReturnParameters": 7739,
+                  "id": 7745,
                   "nodeType": "Return",
                   "src": "605:34:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7691,
+            "id": 7747,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getInfo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7680,
+              "id": 7736,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7675,
+                  "id": 7731,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "480:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -564,7 +564,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7674,
+                    "id": 7730,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "480:7:32",
@@ -579,10 +579,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7677,
+                  "id": 7733,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "494:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -591,7 +591,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7676,
+                    "id": 7732,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:7:32",
@@ -606,26 +606,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7679,
+                  "id": 7735,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "503:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7678,
+                    "id": 7734,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "503:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -636,31 +636,31 @@
               "src": "479:57:32"
             },
             "returnParameters": {
-              "id": 7683,
+              "id": 7739,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7682,
+                  "id": 7738,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "558:35:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TournamentInfo_$1952_memory_ptr",
+                    "typeIdentifier": "t_struct$_TournamentInfo_$1975_memory_ptr",
                     "typeString": "struct LibTournament.TournamentInfo"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7681,
+                    "id": 7737,
                     "name": "LibTournament.TournamentInfo",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1952,
+                    "referencedDeclaration": 1975,
                     "src": "558:28:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage_ptr",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage_ptr",
                       "typeString": "struct LibTournament.TournamentInfo"
                     }
                   },
@@ -670,7 +670,7 @@
               ],
               "src": "557:37:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "463:183:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -678,7 +678,7 @@
           },
           {
             "body": {
-              "id": 7711,
+              "id": 7767,
               "nodeType": "Block",
               "src": "784:64:32",
               "statements": [
@@ -695,39 +695,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7702,
+                              "id": 7758,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7697,
+                              "referencedDeclaration": 7753,
                               "src": "801:4:32",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                                "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                                 "typeString": "struct MatryxPlatform.Data storage pointer"
                               }
                             },
-                            "id": 7703,
+                            "id": 7759,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "tournaments",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4800,
+                            "referencedDeclaration": 4848,
                             "src": "801:16:32",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                               "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                             }
                           },
-                          "id": 7705,
+                          "id": 7761,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 7704,
+                            "id": 7760,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7693,
+                            "referencedDeclaration": 7749,
                             "src": "818:4:32",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -741,29 +741,29 @@
                           "nodeType": "IndexAccess",
                           "src": "801:22:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                            "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                             "typeString": "struct LibTournament.TournamentData storage ref"
                           }
                         },
-                        "id": 7706,
+                        "id": 7762,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rounds",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1966,
+                        "referencedDeclaration": 1989,
                         "src": "801:29:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2019_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2042_storage_$dyn_storage",
                           "typeString": "struct LibTournament.RoundData storage ref[] storage ref"
                         }
                       },
-                      "id": 7708,
+                      "id": 7764,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "30",
-                        "id": 7707,
+                        "id": 7763,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -785,48 +785,48 @@
                       "nodeType": "IndexAccess",
                       "src": "801:32:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RoundData_$2019_storage",
+                        "typeIdentifier": "t_struct$_RoundData_$2042_storage",
                         "typeString": "struct LibTournament.RoundData storage ref"
                       }
                     },
-                    "id": 7709,
+                    "id": 7765,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "details",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2014,
+                    "referencedDeclaration": 2037,
                     "src": "801:40:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage",
                       "typeString": "struct LibTournament.RoundDetails storage ref"
                     }
                   },
-                  "functionReturnParameters": 7701,
-                  "id": 7710,
+                  "functionReturnParameters": 7757,
+                  "id": 7766,
                   "nodeType": "Return",
                   "src": "794:47:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7712,
+            "id": 7768,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRounds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7698,
+              "id": 7754,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7693,
+                  "id": 7749,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "671:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -835,7 +835,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7692,
+                    "id": 7748,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "671:7:32",
@@ -850,10 +850,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7695,
+                  "id": 7751,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "685:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -862,7 +862,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7694,
+                    "id": 7750,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "685:7:32",
@@ -877,26 +877,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7697,
+                  "id": 7753,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "694:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7696,
+                    "id": 7752,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "694:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -907,31 +907,31 @@
               "src": "670:57:32"
             },
             "returnParameters": {
-              "id": 7701,
+              "id": 7757,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7700,
+                  "id": 7756,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "749:33:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RoundDetails_$2001_memory_ptr",
+                    "typeIdentifier": "t_struct$_RoundDetails_$2024_memory_ptr",
                     "typeString": "struct LibTournament.RoundDetails"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7699,
+                    "id": 7755,
                     "name": "LibTournament.RoundDetails",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2001,
+                    "referencedDeclaration": 2024,
                     "src": "749:26:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage_ptr",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage_ptr",
                       "typeString": "struct LibTournament.RoundDetails"
                     }
                   },
@@ -941,7 +941,7 @@
               ],
               "src": "748:35:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "652:196:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -949,7 +949,7 @@
           },
           {
             "body": {
-              "id": 7725,
+              "id": 7781,
               "nodeType": "Block",
               "src": "956:44:32",
               "statements": [
@@ -957,7 +957,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "3939303030303030303030303030303030303030",
-                    "id": 7723,
+                    "id": 7779,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -972,30 +972,30 @@
                     },
                     "value": "99000000000000000000"
                   },
-                  "functionReturnParameters": 7722,
-                  "id": 7724,
+                  "functionReturnParameters": 7778,
+                  "id": 7780,
                   "nodeType": "Return",
                   "src": "966:27:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7726,
+            "id": 7782,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7719,
+              "id": 7775,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7714,
+                  "id": 7770,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "874:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1004,7 +1004,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7713,
+                    "id": 7769,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "874:7:32",
@@ -1019,10 +1019,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7716,
+                  "id": 7772,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "888:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1031,7 +1031,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7715,
+                    "id": 7771,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "888:7:32",
@@ -1046,26 +1046,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7718,
+                  "id": 7774,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "897:27:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7717,
+                    "id": 7773,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "897:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -1076,15 +1076,15 @@
               "src": "873:52:32"
             },
             "returnParameters": {
-              "id": 7722,
+              "id": 7778,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7721,
+                  "id": 7777,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "947:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1093,7 +1093,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7720,
+                    "id": 7776,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "947:7:32",
@@ -1108,7 +1108,7 @@
               ],
               "src": "946:9:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "854:146:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1116,37 +1116,37 @@
           },
           {
             "body": {
-              "id": 7788,
+              "id": 7844,
               "nodeType": "Block",
               "src": "1150:275:32",
               "statements": [
                 {
                   "assignments": [
-                    7742
+                    7798
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7742,
+                      "id": 7798,
                       "name": "round",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7788,
+                      "scope": 7844,
                       "src": "1160:36:32",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                        "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                         "typeString": "struct LibTournament.RoundData"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 7741,
+                        "id": 7797,
                         "name": "LibTournament.RoundData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2019,
+                        "referencedDeclaration": 2042,
                         "src": "1160:23:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_storage_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_storage_ptr",
                           "typeString": "struct LibTournament.RoundData"
                         }
                       },
@@ -1154,7 +1154,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7743,
+                  "id": 7799,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1160:36:32"
@@ -1162,7 +1162,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7750,
+                    "id": 7806,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1173,39 +1173,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7744,
+                          "id": 7800,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1206:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7747,
+                        "id": 7803,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1206:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7748,
+                      "id": 7804,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "start",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1994,
+                      "referencedDeclaration": 2017,
                       "src": "1206:19:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1217,7 +1217,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7749,
+                      "id": 7805,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1238,14 +1238,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7751,
+                  "id": 7807,
                   "nodeType": "ExpressionStatement",
                   "src": "1206:27:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7758,
+                    "id": 7814,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1256,39 +1256,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7752,
+                          "id": 7808,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1243:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7755,
+                        "id": 7811,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1243:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7756,
+                      "id": 7812,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "duration",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1996,
+                      "referencedDeclaration": 2019,
                       "src": "1243:22:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1300,7 +1300,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7757,
+                      "id": 7813,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1321,14 +1321,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7759,
+                  "id": 7815,
                   "nodeType": "ExpressionStatement",
                   "src": "1243:30:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7766,
+                    "id": 7822,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1339,39 +1339,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7760,
+                          "id": 7816,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1283:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7763,
+                        "id": 7819,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1283:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7764,
+                      "id": 7820,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "review",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1998,
+                      "referencedDeclaration": 2021,
                       "src": "1283:20:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1383,7 +1383,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7765,
+                      "id": 7821,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1404,14 +1404,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7767,
+                  "id": 7823,
                   "nodeType": "ExpressionStatement",
                   "src": "1283:28:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7774,
+                    "id": 7830,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1422,39 +1422,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7768,
+                          "id": 7824,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1321:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7771,
+                        "id": 7827,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1321:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7772,
+                      "id": 7828,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "bounty",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2000,
+                      "referencedDeclaration": 2023,
                       "src": "1321:20:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1466,7 +1466,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7773,
+                      "id": 7829,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1487,7 +1487,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7775,
+                  "id": 7831,
                   "nodeType": "ExpressionStatement",
                   "src": "1321:28:32"
                 },
@@ -1497,14 +1497,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 7783,
+                        "id": 7839,
                         "name": "round",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7742,
+                        "referencedDeclaration": 7798,
                         "src": "1394:5:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                           "typeString": "struct LibTournament.RoundData memory"
                         }
                       }
@@ -1512,7 +1512,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                           "typeString": "struct LibTournament.RoundData memory"
                         }
                       ],
@@ -1524,39 +1524,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7776,
+                              "id": 7832,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7734,
+                              "referencedDeclaration": 7790,
                               "src": "1359:4:32",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                                "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                                 "typeString": "struct MatryxPlatform.Data storage pointer"
                               }
                             },
-                            "id": 7779,
+                            "id": 7835,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "tournaments",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4800,
+                            "referencedDeclaration": 4848,
                             "src": "1359:16:32",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                               "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                             }
                           },
-                          "id": 7780,
+                          "id": 7836,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 7778,
+                            "id": 7834,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7728,
+                            "referencedDeclaration": 7784,
                             "src": "1376:4:32",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1570,25 +1570,25 @@
                           "nodeType": "IndexAccess",
                           "src": "1359:22:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                            "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                             "typeString": "struct LibTournament.TournamentData storage ref"
                           }
                         },
-                        "id": 7781,
+                        "id": 7837,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rounds",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1966,
+                        "referencedDeclaration": 1989,
                         "src": "1359:29:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2019_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2042_storage_$dyn_storage",
                           "typeString": "struct LibTournament.RoundData storage ref[] storage ref"
                         }
                       },
-                      "id": 7782,
+                      "id": 7838,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1598,11 +1598,11 @@
                       "referencedDeclaration": null,
                       "src": "1359:34:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_RoundData_$2019_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_RoundData_$2042_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct LibTournament.RoundData storage ref) returns (uint256)"
                       }
                     },
-                    "id": 7784,
+                    "id": 7840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1616,7 +1616,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7785,
+                  "id": 7841,
                   "nodeType": "ExpressionStatement",
                   "src": "1359:41:32"
                 },
@@ -1624,7 +1624,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "30",
-                    "id": 7786,
+                    "id": 7842,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1639,30 +1639,30 @@
                     },
                     "value": "0"
                   },
-                  "functionReturnParameters": 7738,
-                  "id": 7787,
+                  "functionReturnParameters": 7794,
+                  "id": 7843,
                   "nodeType": "Return",
                   "src": "1410:8:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7789,
+            "id": 7845,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createRound",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7735,
+              "id": 7791,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7728,
+                  "id": 7784,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1027:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1671,7 +1671,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7727,
+                    "id": 7783,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1027:7:32",
@@ -1686,10 +1686,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7730,
+                  "id": 7786,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1041:14:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1698,7 +1698,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7729,
+                    "id": 7785,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1041:7:32",
@@ -1713,26 +1713,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7732,
+                  "id": 7788,
                   "name": "info",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1057:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Info_$4786_storage_ptr",
+                    "typeIdentifier": "t_struct$_Info_$4834_storage_ptr",
                     "typeString": "struct MatryxPlatform.Info"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7731,
+                    "id": 7787,
                     "name": "MatryxPlatform.Info",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4786,
+                    "referencedDeclaration": 4834,
                     "src": "1057:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Info_$4786_storage_ptr",
+                      "typeIdentifier": "t_struct$_Info_$4834_storage_ptr",
                       "typeString": "struct MatryxPlatform.Info"
                     }
                   },
@@ -1741,26 +1741,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7734,
+                  "id": 7790,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1091:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7733,
+                    "id": 7789,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "1091:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -1771,15 +1771,15 @@
               "src": "1026:98:32"
             },
             "returnParameters": {
-              "id": 7738,
+              "id": 7794,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7737,
+                  "id": 7793,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1141:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1788,7 +1788,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7736,
+                    "id": 7792,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1141:7:32",
@@ -1803,14 +1803,14 @@
               ],
               "src": "1140:9:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "1006:419:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7791,
+        "scope": 7847,
         "src": "433:995:32"
       }
     ],
@@ -1820,17 +1820,17 @@
     "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibTournament2.sol",
     "exportedSymbols": {
       "ITournament2": [
-        7673
+        7729
       ],
       "LibTournament2": [
-        7790
+        7846
       ]
     },
-    "id": 7791,
+    "id": 7847,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7649,
+        "id": 7705,
         "literals": [
           "solidity",
           "^",
@@ -1841,7 +1841,7 @@
         "src": "0:23:32"
       },
       {
-        "id": 7650,
+        "id": 7706,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -1852,10 +1852,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
         "file": "../MatryxPlatform.sol",
-        "id": 7651,
+        "id": 7707,
         "nodeType": "ImportDirective",
-        "scope": 7791,
-        "sourceUnit": 5175,
+        "scope": 7847,
+        "sourceUnit": 5231,
         "src": "59:31:32",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1863,10 +1863,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibTournament.sol",
         "file": "../LibTournament.sol",
-        "id": 7652,
+        "id": 7708,
         "nodeType": "ImportDirective",
-        "scope": 7791,
-        "sourceUnit": 4586,
+        "scope": 7847,
+        "sourceUnit": 4634,
         "src": "91:30:32",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1877,9 +1877,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7673,
+        "id": 7729,
         "linearizedBaseContracts": [
-          7673
+          7729
         ],
         "name": "ITournament2",
         "nodeType": "ContractDefinition",
@@ -1887,44 +1887,44 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7657,
+            "id": 7713,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getInfo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7653,
+              "id": 7709,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "168:2:32"
             },
             "returnParameters": {
-              "id": 7656,
+              "id": 7712,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7655,
+                  "id": 7711,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7657,
+                  "scope": 7713,
                   "src": "194:35:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TournamentInfo_$1952_memory_ptr",
+                    "typeIdentifier": "t_struct$_TournamentInfo_$1975_memory_ptr",
                     "typeString": "struct LibTournament.TournamentInfo"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7654,
+                    "id": 7710,
                     "name": "LibTournament.TournamentInfo",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1952,
+                    "referencedDeclaration": 1975,
                     "src": "194:28:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage_ptr",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage_ptr",
                       "typeString": "struct LibTournament.TournamentInfo"
                     }
                   },
@@ -1934,7 +1934,7 @@
               ],
               "src": "193:37:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "152:79:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1943,44 +1943,44 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7662,
+            "id": 7718,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRounds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7658,
+              "id": 7714,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "254:2:32"
             },
             "returnParameters": {
-              "id": 7661,
+              "id": 7717,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7660,
+                  "id": 7716,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7662,
+                  "scope": 7718,
                   "src": "280:33:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RoundDetails_$2001_memory_ptr",
+                    "typeIdentifier": "t_struct$_RoundDetails_$2024_memory_ptr",
                     "typeString": "struct LibTournament.RoundDetails"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7659,
+                    "id": 7715,
                     "name": "LibTournament.RoundDetails",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2001,
+                    "referencedDeclaration": 2024,
                     "src": "280:26:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage_ptr",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage_ptr",
                       "typeString": "struct LibTournament.RoundDetails"
                     }
                   },
@@ -1990,7 +1990,7 @@
               ],
               "src": "279:35:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "236:79:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -1999,28 +1999,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7667,
+            "id": 7723,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7663,
+              "id": 7719,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "339:2:32"
             },
             "returnParameters": {
-              "id": 7666,
+              "id": 7722,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7665,
+                  "id": 7721,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7667,
+                  "scope": 7723,
                   "src": "365:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2029,7 +2029,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7664,
+                    "id": 7720,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "365:7:32",
@@ -2044,7 +2044,7 @@
               ],
               "src": "364:9:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "320:54:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2053,28 +2053,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7672,
+            "id": 7728,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "createRound",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7668,
+              "id": 7724,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "399:2:32"
             },
             "returnParameters": {
-              "id": 7671,
+              "id": 7727,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7670,
+                  "id": 7726,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7672,
+                  "scope": 7728,
                   "src": "420:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2083,7 +2083,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7669,
+                    "id": 7725,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "420:7:32",
@@ -2098,14 +2098,14 @@
               ],
               "src": "419:9:32"
             },
-            "scope": 7673,
+            "scope": 7729,
             "src": "379:50:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7791,
+        "scope": 7847,
         "src": "123:308:32"
       },
       {
@@ -2114,16 +2114,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7790,
+        "id": 7846,
         "linearizedBaseContracts": [
-          7790
+          7846
         ],
         "name": "LibTournament2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7690,
+              "id": 7746,
               "nodeType": "Block",
               "src": "595:51:32",
               "statements": [
@@ -2136,39 +2136,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7684,
+                          "id": 7740,
                           "name": "data",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7679,
+                          "referencedDeclaration": 7735,
                           "src": "612:4:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                            "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                             "typeString": "struct MatryxPlatform.Data storage pointer"
                           }
                         },
-                        "id": 7685,
+                        "id": 7741,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "tournaments",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4800,
+                        "referencedDeclaration": 4848,
                         "src": "612:16:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                           "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                         }
                       },
-                      "id": 7687,
+                      "id": 7743,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7686,
+                        "id": 7742,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7675,
+                        "referencedDeclaration": 7731,
                         "src": "629:4:32",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2182,48 +2182,48 @@
                       "nodeType": "IndexAccess",
                       "src": "612:22:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                        "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                         "typeString": "struct LibTournament.TournamentData storage ref"
                       }
                     },
-                    "id": 7688,
+                    "id": 7744,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "info",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 1961,
+                    "referencedDeclaration": 1984,
                     "src": "612:27:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage",
                       "typeString": "struct LibTournament.TournamentInfo storage ref"
                     }
                   },
-                  "functionReturnParameters": 7683,
-                  "id": 7689,
+                  "functionReturnParameters": 7739,
+                  "id": 7745,
                   "nodeType": "Return",
                   "src": "605:34:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7691,
+            "id": 7747,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getInfo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7680,
+              "id": 7736,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7675,
+                  "id": 7731,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "480:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2232,7 +2232,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7674,
+                    "id": 7730,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "480:7:32",
@@ -2247,10 +2247,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7677,
+                  "id": 7733,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "494:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2259,7 +2259,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7676,
+                    "id": 7732,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:7:32",
@@ -2274,26 +2274,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7679,
+                  "id": 7735,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "503:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7678,
+                    "id": 7734,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "503:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -2304,31 +2304,31 @@
               "src": "479:57:32"
             },
             "returnParameters": {
-              "id": 7683,
+              "id": 7739,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7682,
+                  "id": 7738,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7691,
+                  "scope": 7747,
                   "src": "558:35:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TournamentInfo_$1952_memory_ptr",
+                    "typeIdentifier": "t_struct$_TournamentInfo_$1975_memory_ptr",
                     "typeString": "struct LibTournament.TournamentInfo"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7681,
+                    "id": 7737,
                     "name": "LibTournament.TournamentInfo",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1952,
+                    "referencedDeclaration": 1975,
                     "src": "558:28:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TournamentInfo_$1952_storage_ptr",
+                      "typeIdentifier": "t_struct$_TournamentInfo_$1975_storage_ptr",
                       "typeString": "struct LibTournament.TournamentInfo"
                     }
                   },
@@ -2338,7 +2338,7 @@
               ],
               "src": "557:37:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "463:183:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -2346,7 +2346,7 @@
           },
           {
             "body": {
-              "id": 7711,
+              "id": 7767,
               "nodeType": "Block",
               "src": "784:64:32",
               "statements": [
@@ -2363,39 +2363,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7702,
+                              "id": 7758,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7697,
+                              "referencedDeclaration": 7753,
                               "src": "801:4:32",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                                "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                                 "typeString": "struct MatryxPlatform.Data storage pointer"
                               }
                             },
-                            "id": 7703,
+                            "id": 7759,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "tournaments",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4800,
+                            "referencedDeclaration": 4848,
                             "src": "801:16:32",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                               "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                             }
                           },
-                          "id": 7705,
+                          "id": 7761,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 7704,
+                            "id": 7760,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7693,
+                            "referencedDeclaration": 7749,
                             "src": "818:4:32",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -2409,29 +2409,29 @@
                           "nodeType": "IndexAccess",
                           "src": "801:22:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                            "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                             "typeString": "struct LibTournament.TournamentData storage ref"
                           }
                         },
-                        "id": 7706,
+                        "id": 7762,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rounds",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1966,
+                        "referencedDeclaration": 1989,
                         "src": "801:29:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2019_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2042_storage_$dyn_storage",
                           "typeString": "struct LibTournament.RoundData storage ref[] storage ref"
                         }
                       },
-                      "id": 7708,
+                      "id": 7764,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "30",
-                        "id": 7707,
+                        "id": 7763,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2453,48 +2453,48 @@
                       "nodeType": "IndexAccess",
                       "src": "801:32:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RoundData_$2019_storage",
+                        "typeIdentifier": "t_struct$_RoundData_$2042_storage",
                         "typeString": "struct LibTournament.RoundData storage ref"
                       }
                     },
-                    "id": 7709,
+                    "id": 7765,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "details",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2014,
+                    "referencedDeclaration": 2037,
                     "src": "801:40:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage",
                       "typeString": "struct LibTournament.RoundDetails storage ref"
                     }
                   },
-                  "functionReturnParameters": 7701,
-                  "id": 7710,
+                  "functionReturnParameters": 7757,
+                  "id": 7766,
                   "nodeType": "Return",
                   "src": "794:47:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7712,
+            "id": 7768,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRounds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7698,
+              "id": 7754,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7693,
+                  "id": 7749,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "671:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2503,7 +2503,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7692,
+                    "id": 7748,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "671:7:32",
@@ -2518,10 +2518,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7695,
+                  "id": 7751,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "685:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2530,7 +2530,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7694,
+                    "id": 7750,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "685:7:32",
@@ -2545,26 +2545,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7697,
+                  "id": 7753,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "694:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7696,
+                    "id": 7752,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "694:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -2575,31 +2575,31 @@
               "src": "670:57:32"
             },
             "returnParameters": {
-              "id": 7701,
+              "id": 7757,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7700,
+                  "id": 7756,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7712,
+                  "scope": 7768,
                   "src": "749:33:32",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_RoundDetails_$2001_memory_ptr",
+                    "typeIdentifier": "t_struct$_RoundDetails_$2024_memory_ptr",
                     "typeString": "struct LibTournament.RoundDetails"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7699,
+                    "id": 7755,
                     "name": "LibTournament.RoundDetails",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2001,
+                    "referencedDeclaration": 2024,
                     "src": "749:26:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RoundDetails_$2001_storage_ptr",
+                      "typeIdentifier": "t_struct$_RoundDetails_$2024_storage_ptr",
                       "typeString": "struct LibTournament.RoundDetails"
                     }
                   },
@@ -2609,7 +2609,7 @@
               ],
               "src": "748:35:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "652:196:32",
             "stateMutability": "view",
             "superFunction": null,
@@ -2617,7 +2617,7 @@
           },
           {
             "body": {
-              "id": 7725,
+              "id": 7781,
               "nodeType": "Block",
               "src": "956:44:32",
               "statements": [
@@ -2625,7 +2625,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "3939303030303030303030303030303030303030",
-                    "id": 7723,
+                    "id": 7779,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2640,30 +2640,30 @@
                     },
                     "value": "99000000000000000000"
                   },
-                  "functionReturnParameters": 7722,
-                  "id": 7724,
+                  "functionReturnParameters": 7778,
+                  "id": 7780,
                   "nodeType": "Return",
                   "src": "966:27:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7726,
+            "id": 7782,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7719,
+              "id": 7775,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7714,
+                  "id": 7770,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "874:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2672,7 +2672,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7713,
+                    "id": 7769,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "874:7:32",
@@ -2687,10 +2687,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7716,
+                  "id": 7772,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "888:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2699,7 +2699,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7715,
+                    "id": 7771,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "888:7:32",
@@ -2714,26 +2714,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7718,
+                  "id": 7774,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "897:27:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7717,
+                    "id": 7773,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "897:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -2744,15 +2744,15 @@
               "src": "873:52:32"
             },
             "returnParameters": {
-              "id": 7722,
+              "id": 7778,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7721,
+                  "id": 7777,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7726,
+                  "scope": 7782,
                   "src": "947:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2761,7 +2761,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7720,
+                    "id": 7776,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "947:7:32",
@@ -2776,7 +2776,7 @@
               ],
               "src": "946:9:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "854:146:32",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2784,37 +2784,37 @@
           },
           {
             "body": {
-              "id": 7788,
+              "id": 7844,
               "nodeType": "Block",
               "src": "1150:275:32",
               "statements": [
                 {
                   "assignments": [
-                    7742
+                    7798
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7742,
+                      "id": 7798,
                       "name": "round",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7788,
+                      "scope": 7844,
                       "src": "1160:36:32",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                        "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                         "typeString": "struct LibTournament.RoundData"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 7741,
+                        "id": 7797,
                         "name": "LibTournament.RoundData",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2019,
+                        "referencedDeclaration": 2042,
                         "src": "1160:23:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_storage_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_storage_ptr",
                           "typeString": "struct LibTournament.RoundData"
                         }
                       },
@@ -2822,7 +2822,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7743,
+                  "id": 7799,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1160:36:32"
@@ -2830,7 +2830,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7750,
+                    "id": 7806,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2841,39 +2841,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7744,
+                          "id": 7800,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1206:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7747,
+                        "id": 7803,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1206:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7748,
+                      "id": 7804,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "start",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1994,
+                      "referencedDeclaration": 2017,
                       "src": "1206:19:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2885,7 +2885,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7749,
+                      "id": 7805,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2906,14 +2906,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7751,
+                  "id": 7807,
                   "nodeType": "ExpressionStatement",
                   "src": "1206:27:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7758,
+                    "id": 7814,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2924,39 +2924,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7752,
+                          "id": 7808,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1243:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7755,
+                        "id": 7811,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1243:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7756,
+                      "id": 7812,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "duration",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1996,
+                      "referencedDeclaration": 2019,
                       "src": "1243:22:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2968,7 +2968,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7757,
+                      "id": 7813,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2989,14 +2989,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7759,
+                  "id": 7815,
                   "nodeType": "ExpressionStatement",
                   "src": "1243:30:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7766,
+                    "id": 7822,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3007,39 +3007,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7760,
+                          "id": 7816,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1283:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7763,
+                        "id": 7819,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1283:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7764,
+                      "id": 7820,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "review",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1998,
+                      "referencedDeclaration": 2021,
                       "src": "1283:20:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3051,7 +3051,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7765,
+                      "id": 7821,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3072,14 +3072,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7767,
+                  "id": 7823,
                   "nodeType": "ExpressionStatement",
                   "src": "1283:28:32"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7774,
+                    "id": 7830,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3090,39 +3090,39 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 7768,
+                          "id": 7824,
                           "name": "round",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7742,
+                          "referencedDeclaration": 7798,
                           "src": "1321:5:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                            "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                             "typeString": "struct LibTournament.RoundData memory"
                           }
                         },
-                        "id": 7771,
+                        "id": 7827,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "details",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2014,
+                        "referencedDeclaration": 2037,
                         "src": "1321:13:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundDetails_$2001_memory",
+                          "typeIdentifier": "t_struct$_RoundDetails_$2024_memory",
                           "typeString": "struct LibTournament.RoundDetails memory"
                         }
                       },
-                      "id": 7772,
+                      "id": 7828,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "bounty",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2000,
+                      "referencedDeclaration": 2023,
                       "src": "1321:20:32",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3134,7 +3134,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "3132333435",
-                      "id": 7773,
+                      "id": 7829,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3155,7 +3155,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7775,
+                  "id": 7831,
                   "nodeType": "ExpressionStatement",
                   "src": "1321:28:32"
                 },
@@ -3165,14 +3165,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 7783,
+                        "id": 7839,
                         "name": "round",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7742,
+                        "referencedDeclaration": 7798,
                         "src": "1394:5:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                           "typeString": "struct LibTournament.RoundData memory"
                         }
                       }
@@ -3180,7 +3180,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_RoundData_$2019_memory_ptr",
+                          "typeIdentifier": "t_struct$_RoundData_$2042_memory_ptr",
                           "typeString": "struct LibTournament.RoundData memory"
                         }
                       ],
@@ -3192,39 +3192,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7776,
+                              "id": 7832,
                               "name": "data",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7734,
+                              "referencedDeclaration": 7790,
                               "src": "1359:4:32",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                                "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                                 "typeString": "struct MatryxPlatform.Data storage pointer"
                               }
                             },
-                            "id": 7779,
+                            "id": 7835,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "tournaments",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4800,
+                            "referencedDeclaration": 4848,
                             "src": "1359:16:32",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$1982_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_TournamentData_$2005_storage_$",
                               "typeString": "mapping(address => struct LibTournament.TournamentData storage ref)"
                             }
                           },
-                          "id": 7780,
+                          "id": 7836,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 7778,
+                            "id": 7834,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7728,
+                            "referencedDeclaration": 7784,
                             "src": "1376:4:32",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -3238,25 +3238,25 @@
                           "nodeType": "IndexAccess",
                           "src": "1359:22:32",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_TournamentData_$1982_storage",
+                            "typeIdentifier": "t_struct$_TournamentData_$2005_storage",
                             "typeString": "struct LibTournament.TournamentData storage ref"
                           }
                         },
-                        "id": 7781,
+                        "id": 7837,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rounds",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1966,
+                        "referencedDeclaration": 1989,
                         "src": "1359:29:32",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2019_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_RoundData_$2042_storage_$dyn_storage",
                           "typeString": "struct LibTournament.RoundData storage ref[] storage ref"
                         }
                       },
-                      "id": 7782,
+                      "id": 7838,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3266,11 +3266,11 @@
                       "referencedDeclaration": null,
                       "src": "1359:34:32",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_RoundData_$2019_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_RoundData_$2042_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct LibTournament.RoundData storage ref) returns (uint256)"
                       }
                     },
-                    "id": 7784,
+                    "id": 7840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3284,7 +3284,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7785,
+                  "id": 7841,
                   "nodeType": "ExpressionStatement",
                   "src": "1359:41:32"
                 },
@@ -3292,7 +3292,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "30",
-                    "id": 7786,
+                    "id": 7842,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -3307,30 +3307,30 @@
                     },
                     "value": "0"
                   },
-                  "functionReturnParameters": 7738,
-                  "id": 7787,
+                  "functionReturnParameters": 7794,
+                  "id": 7843,
                   "nodeType": "Return",
                   "src": "1410:8:32"
                 }
               ]
             },
             "documentation": null,
-            "id": 7789,
+            "id": 7845,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createRound",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7735,
+              "id": 7791,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7728,
+                  "id": 7784,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1027:12:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3339,7 +3339,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7727,
+                    "id": 7783,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1027:7:32",
@@ -3354,10 +3354,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7730,
+                  "id": 7786,
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1041:14:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3366,7 +3366,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7729,
+                    "id": 7785,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1041:7:32",
@@ -3381,26 +3381,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7732,
+                  "id": 7788,
                   "name": "info",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1057:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Info_$4786_storage_ptr",
+                    "typeIdentifier": "t_struct$_Info_$4834_storage_ptr",
                     "typeString": "struct MatryxPlatform.Info"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7731,
+                    "id": 7787,
                     "name": "MatryxPlatform.Info",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4786,
+                    "referencedDeclaration": 4834,
                     "src": "1057:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Info_$4786_storage_ptr",
+                      "typeIdentifier": "t_struct$_Info_$4834_storage_ptr",
                       "typeString": "struct MatryxPlatform.Info"
                     }
                   },
@@ -3409,26 +3409,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7734,
+                  "id": 7790,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1091:32:32",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7733,
+                    "id": 7789,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4844,
+                    "referencedDeclaration": 4892,
                     "src": "1091:19:32",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4844_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -3439,15 +3439,15 @@
               "src": "1026:98:32"
             },
             "returnParameters": {
-              "id": 7738,
+              "id": 7794,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7737,
+                  "id": 7793,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7789,
+                  "scope": 7845,
                   "src": "1141:7:32",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3456,7 +3456,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7736,
+                    "id": 7792,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1141:7:32",
@@ -3471,14 +3471,14 @@
               ],
               "src": "1140:9:32"
             },
-            "scope": 7790,
+            "scope": 7846,
             "src": "1006:419:32",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7791,
+        "scope": 7847,
         "src": "433:995:32"
       }
     ],
@@ -3490,7 +3490,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-15T16:49:03.061Z",
+  "updatedAt": "2019-03-21T18:00:09.522Z",
   "devdoc": {
     "methods": {}
   },
