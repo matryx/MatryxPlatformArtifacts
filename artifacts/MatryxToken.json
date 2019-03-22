@@ -555,14 +555,14 @@
     "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/MatryxToken.sol",
     "exportedSymbols": {
       "MatryxToken": [
-        5951
+        6007
       ]
     },
-    "id": 5952,
+    "id": 6008,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5927,
+        "id": 5983,
         "literals": [
           "solidity",
           "^",
@@ -575,10 +575,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/MintableToken.sol",
         "file": "./MintableToken.sol",
-        "id": 5928,
+        "id": 5984,
         "nodeType": "ImportDirective",
-        "scope": 5952,
-        "sourceUnit": 6042,
+        "scope": 6008,
+        "sourceUnit": 6098,
         "src": "25:29:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -586,10 +586,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/UpgradeableToken.sol",
         "file": "./UpgradeableToken.sol",
-        "id": 5929,
+        "id": 5985,
         "nodeType": "ImportDirective",
-        "scope": 5952,
-        "sourceUnit": 6583,
+        "scope": 6008,
+        "sourceUnit": 6639,
         "src": "55:32:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -600,17 +600,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5930,
+              "id": 5986,
               "name": "MintableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6041,
+              "referencedDeclaration": 6097,
               "src": "147:13:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MintableToken_$6041",
+                "typeIdentifier": "t_contract$_MintableToken_$6097",
                 "typeString": "contract MintableToken"
               }
             },
-            "id": 5931,
+            "id": 5987,
             "nodeType": "InheritanceSpecifier",
             "src": "147:13:14"
           },
@@ -618,55 +618,55 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5932,
+              "id": 5988,
               "name": "UpgradeableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6582,
+              "referencedDeclaration": 6638,
               "src": "162:16:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_UpgradeableToken_$6582",
+                "typeIdentifier": "t_contract$_UpgradeableToken_$6638",
                 "typeString": "contract UpgradeableToken"
               }
             },
-            "id": 5933,
+            "id": 5989,
             "nodeType": "InheritanceSpecifier",
             "src": "162:16:14"
           }
         ],
         "contractDependencies": [
-          5805,
-          5866,
-          5878,
-          6041,
-          6179,
-          6361,
-          6582,
-          6779
+          5861,
+          5922,
+          5934,
+          6097,
+          6235,
+          6417,
+          6638,
+          6835
         ],
         "contractKind": "contract",
         "documentation": "Matryx Ethereum token.",
         "fullyImplemented": true,
-        "id": 5951,
+        "id": 6007,
         "linearizedBaseContracts": [
-          5951,
-          6582,
-          6041,
-          6179,
-          6361,
-          5805,
-          5878,
-          5866,
-          6779
+          6007,
+          6638,
+          6097,
+          6235,
+          6417,
+          5861,
+          5934,
+          5922,
+          6835
         ],
         "name": "MatryxToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 5936,
+            "id": 5992,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "183:34:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -675,7 +675,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5934,
+              "id": 5990,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "183:6:14",
@@ -687,7 +687,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d6174727978546f6b656e",
-              "id": 5935,
+              "id": 5991,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -706,10 +706,10 @@
           },
           {
             "constant": false,
-            "id": 5939,
+            "id": 5995,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "221:28:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -718,7 +718,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5937,
+              "id": 5993,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "221:6:14",
@@ -730,7 +730,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d5458",
-              "id": 5938,
+              "id": 5994,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -749,10 +749,10 @@
           },
           {
             "constant": false,
-            "id": 5942,
+            "id": 5998,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "253:25:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -761,7 +761,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5940,
+              "id": 5996,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "253:4:14",
@@ -773,7 +773,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 5941,
+              "id": 5997,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -792,13 +792,13 @@
           },
           {
             "body": {
-              "id": 5949,
+              "id": 6005,
               "nodeType": "Block",
               "src": "392:6:14",
               "statements": []
             },
             "documentation": null,
-            "id": 5950,
+            "id": 6006,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -808,18 +808,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 5945,
+                      "id": 6001,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7805,
+                      "referencedDeclaration": 7861,
                       "src": "380:3:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 5946,
+                    "id": 6002,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -834,17 +834,17 @@
                     }
                   }
                 ],
-                "id": 5947,
+                "id": 6003,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5944,
+                  "id": 6000,
                   "name": "UpgradeableToken",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6582,
+                  "referencedDeclaration": 6638,
                   "src": "363:16:14",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_UpgradeableToken_$6582_$",
+                    "typeIdentifier": "t_type$_t_contract$_UpgradeableToken_$6638_$",
                     "typeString": "type(contract UpgradeableToken)"
                   }
                 },
@@ -855,25 +855,25 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5943,
+              "id": 5999,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "353:2:14"
             },
             "returnParameters": {
-              "id": 5948,
+              "id": 6004,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "392:0:14"
             },
-            "scope": 5951,
+            "scope": 6007,
             "src": "342:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5952,
+        "scope": 6008,
         "src": "123:277:14"
       }
     ],
@@ -883,14 +883,14 @@
     "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/MatryxToken.sol",
     "exportedSymbols": {
       "MatryxToken": [
-        5951
+        6007
       ]
     },
-    "id": 5952,
+    "id": 6008,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5927,
+        "id": 5983,
         "literals": [
           "solidity",
           "^",
@@ -903,10 +903,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/MintableToken.sol",
         "file": "./MintableToken.sol",
-        "id": 5928,
+        "id": 5984,
         "nodeType": "ImportDirective",
-        "scope": 5952,
-        "sourceUnit": 6042,
+        "scope": 6008,
+        "sourceUnit": 6098,
         "src": "25:29:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -914,10 +914,10 @@
       {
         "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxToken/UpgradeableToken.sol",
         "file": "./UpgradeableToken.sol",
-        "id": 5929,
+        "id": 5985,
         "nodeType": "ImportDirective",
-        "scope": 5952,
-        "sourceUnit": 6583,
+        "scope": 6008,
+        "sourceUnit": 6639,
         "src": "55:32:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -928,17 +928,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5930,
+              "id": 5986,
               "name": "MintableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6041,
+              "referencedDeclaration": 6097,
               "src": "147:13:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MintableToken_$6041",
+                "typeIdentifier": "t_contract$_MintableToken_$6097",
                 "typeString": "contract MintableToken"
               }
             },
-            "id": 5931,
+            "id": 5987,
             "nodeType": "InheritanceSpecifier",
             "src": "147:13:14"
           },
@@ -946,55 +946,55 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5932,
+              "id": 5988,
               "name": "UpgradeableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6582,
+              "referencedDeclaration": 6638,
               "src": "162:16:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_UpgradeableToken_$6582",
+                "typeIdentifier": "t_contract$_UpgradeableToken_$6638",
                 "typeString": "contract UpgradeableToken"
               }
             },
-            "id": 5933,
+            "id": 5989,
             "nodeType": "InheritanceSpecifier",
             "src": "162:16:14"
           }
         ],
         "contractDependencies": [
-          5805,
-          5866,
-          5878,
-          6041,
-          6179,
-          6361,
-          6582,
-          6779
+          5861,
+          5922,
+          5934,
+          6097,
+          6235,
+          6417,
+          6638,
+          6835
         ],
         "contractKind": "contract",
         "documentation": "Matryx Ethereum token.",
         "fullyImplemented": true,
-        "id": 5951,
+        "id": 6007,
         "linearizedBaseContracts": [
-          5951,
-          6582,
-          6041,
-          6179,
-          6361,
-          5805,
-          5878,
-          5866,
-          6779
+          6007,
+          6638,
+          6097,
+          6235,
+          6417,
+          5861,
+          5934,
+          5922,
+          6835
         ],
         "name": "MatryxToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 5936,
+            "id": 5992,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "183:34:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1003,7 +1003,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5934,
+              "id": 5990,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "183:6:14",
@@ -1015,7 +1015,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d6174727978546f6b656e",
-              "id": 5935,
+              "id": 5991,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1034,10 +1034,10 @@
           },
           {
             "constant": false,
-            "id": 5939,
+            "id": 5995,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "221:28:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1046,7 +1046,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5937,
+              "id": 5993,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "221:6:14",
@@ -1058,7 +1058,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "4d5458",
-              "id": 5938,
+              "id": 5994,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1077,10 +1077,10 @@
           },
           {
             "constant": false,
-            "id": 5942,
+            "id": 5998,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 5951,
+            "scope": 6007,
             "src": "253:25:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1089,7 +1089,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5940,
+              "id": 5996,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "253:4:14",
@@ -1101,7 +1101,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 5941,
+              "id": 5997,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1120,13 +1120,13 @@
           },
           {
             "body": {
-              "id": 5949,
+              "id": 6005,
               "nodeType": "Block",
               "src": "392:6:14",
               "statements": []
             },
             "documentation": null,
-            "id": 5950,
+            "id": 6006,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -1136,18 +1136,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 5945,
+                      "id": 6001,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7805,
+                      "referencedDeclaration": 7861,
                       "src": "380:3:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 5946,
+                    "id": 6002,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1162,17 +1162,17 @@
                     }
                   }
                 ],
-                "id": 5947,
+                "id": 6003,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 5944,
+                  "id": 6000,
                   "name": "UpgradeableToken",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6582,
+                  "referencedDeclaration": 6638,
                   "src": "363:16:14",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_UpgradeableToken_$6582_$",
+                    "typeIdentifier": "t_type$_t_contract$_UpgradeableToken_$6638_$",
                     "typeString": "type(contract UpgradeableToken)"
                   }
                 },
@@ -1183,25 +1183,25 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5943,
+              "id": 5999,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "353:2:14"
             },
             "returnParameters": {
-              "id": 5948,
+              "id": 6004,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "392:0:14"
             },
-            "scope": 5951,
+            "scope": 6007,
             "src": "342:56:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 5952,
+        "scope": 6008,
         "src": "123:277:14"
       }
     ],
@@ -1213,7 +1213,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-15T16:42:39.680Z",
+  "updatedAt": "2019-03-21T17:47:27.204Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
