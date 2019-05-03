@@ -1,0 +1,2413 @@
+{
+  "contractName": "LibCommitUpgradeTransition",
+  "abi": [],
+  "bytecode": "0x61020d610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c8063fe0fbca31461003a575b600080fd5b81801561004657600080fd5b5061005a610055366004610100565b61005c565b005b6000818152600683016020526040902080546001600160a01b038581169116146100a457604051600160e51b62461bcd02815260040161009b9061019a565b60405180910390fd5b600881015482905b80156100d85760009182526006850160205260409091206001600b8201556009015490600019016100ac565b50505050505050565b60006100ed82356101b9565b9392505050565b60006100ed82356101c4565b6000806000806080858703121561011657600080fd5b600061012287876100e1565b9450506020610133878288016100e1565b9350506040610144878288016100f4565b9250506060610155878288016100f4565b91505092959194509250565b600061016e601a836101b0565b7f4d757374206f776e20636f6d6d697420746f2075706772616465000000000000815260200192915050565b602080825281016101aa81610161565b92915050565b90815260200190565b60006101aa826101c7565b90565b6001600160a01b03169056fea265627a7a72305820543d4303a6fa776ed474dbdd1926b075bb8a34e8c1d1ad92185e306fc8354aee6c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c8063fe0fbca31461003a575b600080fd5b81801561004657600080fd5b5061005a610055366004610100565b61005c565b005b6000818152600683016020526040902080546001600160a01b038581169116146100a457604051600160e51b62461bcd02815260040161009b9061019a565b60405180910390fd5b600881015482905b80156100d85760009182526006850160205260409091206001600b8201556009015490600019016100ac565b50505050505050565b60006100ed82356101b9565b9392505050565b60006100ed82356101c4565b6000806000806080858703121561011657600080fd5b600061012287876100e1565b9450506020610133878288016100e1565b9350506040610144878288016100f4565b9250506060610155878288016100f4565b91505092959194509250565b600061016e601a836101b0565b7f4d757374206f776e20636f6d6d697420746f2075706772616465000000000000815260200192915050565b602080825281016101aa81610161565b92915050565b90815260200190565b60006101aa826101c7565b90565b6001600160a01b03169056fea265627a7a72305820543d4303a6fa776ed474dbdd1926b075bb8a34e8c1d1ad92185e306fc8354aee6c6578706572696d656e74616cf50037",
+  "sourceMap": "122:1004:30:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "122:1004:30:-;;;;;;;;;;;;;;;;;;;;;;;;523:601;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;523:601:30;;;;;;;;:::i;:::-;;;658:31;692:24;;;:12;;;:24;;;;;744:12;;-1:-1:-1;;;;;734:22:30;;;744:12;;734:22;726:61;;;;-1:-1:-1;;;;;726:61:30;;;;;;;;;;;;;;;;;854:13;;;;817:10;;837:281;869:5;;837:281;;896:31;930:22;;;:12;;;:22;;;;;;1045:1;1040:2;1023:20;;1016:31;1074:33;;;;-1:-1:-1;;876:3:30;837:281;;;;523:601;;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:118;;197:46;235:6;222:20;197:46;;426:663;;;;;604:3;592:9;583:7;579:23;575:33;572:2;;;621:1;618;611:12;572:2;656:1;673:53;718:7;698:9;673:53;;;663:63;;635:97;763:2;781:53;826:7;817:6;806:9;802:22;781:53;;;771:63;;742:98;871:2;889:76;957:7;948:6;937:9;933:22;889:76;;;879:86;;850:121;1002:2;1020:53;1065:7;1056:6;1045:9;1041:22;1020:53;;;1010:63;;981:98;566:523;;;;;;;;1097:364;;1257:67;1321:2;1316:3;1257:67;;;1357:66;1337:87;;1452:2;1443:12;;1243:218;-1:-1;;1243:218;1469:407;1660:2;1674:47;;;1645:18;;1735:131;1645:18;1735:131;;;1727:139;1631:245;-1:-1;;1631:245;1884:163;1987:19;;;2036:4;2027:14;;1980:67;2055:105;;2124:31;2149:5;2124:31;;2167:79;2236:5;2219:27;2362:128;-1:-1;;;;;2431:54;;2414:76",
+  "source": "pragma solidity ^0.5.7;\npragma experimental ABIEncoderV2;\n\nimport \"../MatryxSystem.sol\";\nimport \"../MatryxPlatform.sol\";\n\nlibrary LibCommitUpgradeTransition {\n\n    struct NewCommit\n    {\n        address owner;\n        uint256 timestamp;\n        bytes32 groupHash;\n        bytes32 commitHash;\n        string content;\n        uint256 value;\n        uint256 ownerTotalValue;\n        uint256 totalValue;\n        uint256 height;\n        bytes32 parentHash;\n        bytes32[] children;\n        uint256 upgradeVersion;\n    }\n\n    function upgradeCommitAndAncestry(address self, address sender, MatryxPlatform.Data storage data, bytes32 commitHash) public {\n        LibCommit.Commit storage commit = data.commits[commitHash];\n        require(sender == commit.owner, \"Must own commit to upgrade\");\n\n        bytes32 loopHash = commitHash;\n        for (uint256 i = commit.height; i > 0; i--) {\n\n            LibCommit.Commit storage commit = data.commits[loopHash];\n            // set upgradeVersion to 1\n            assembly { sstore(add(commit_slot, 11), 1) }\n\n            loopHash = data.commits[loopHash].parentHash;\n        }\n    }\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommitUpgradeTransition.sol",
+  "ast": {
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommitUpgradeTransition.sol",
+    "exportedSymbols": {
+      "LibCommitUpgradeTransition": [
+        7541
+      ]
+    },
+    "id": 7542,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7447,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:30"
+      },
+      {
+        "id": 7448,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:30"
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxSystem.sol",
+        "file": "../MatryxSystem.sol",
+        "id": 7449,
+        "nodeType": "ImportDirective",
+        "scope": 7542,
+        "sourceUnit": 5837,
+        "src": "59:29:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "file": "../MatryxPlatform.sol",
+        "id": 7450,
+        "nodeType": "ImportDirective",
+        "scope": 7542,
+        "sourceUnit": 5216,
+        "src": "89:31:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7541,
+        "linearizedBaseContracts": [
+          7541
+        ],
+        "name": "LibCommitUpgradeTransition",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "LibCommitUpgradeTransition.NewCommit",
+            "id": 7476,
+            "members": [
+              {
+                "constant": false,
+                "id": 7452,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "195:13:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7451,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:7:30",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7454,
+                "name": "timestamp",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "218:17:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7453,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "218:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7456,
+                "name": "groupHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "245:17:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7455,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "245:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7458,
+                "name": "commitHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "272:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7457,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "272:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7460,
+                "name": "content",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "300:14:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 7459,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "300:6:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7462,
+                "name": "value",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "324:13:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7461,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "324:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7464,
+                "name": "ownerTotalValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "347:23:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7463,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "347:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7466,
+                "name": "totalValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "380:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7465,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "380:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7468,
+                "name": "height",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "408:14:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7467,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "408:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7470,
+                "name": "parentHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "432:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7469,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "432:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7473,
+                "name": "children",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "460:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                  "typeString": "bytes32[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 7471,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "460:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 7472,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "460:9:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                    "typeString": "bytes32[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7475,
+                "name": "upgradeVersion",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "488:22:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7474,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "488:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "NewCommit",
+            "nodeType": "StructDefinition",
+            "scope": 7541,
+            "src": "164:353:30",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 7539,
+              "nodeType": "Block",
+              "src": "648:476:30",
+              "statements": [
+                {
+                  "assignments": [
+                    7490
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 7490,
+                      "name": "commit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 7539,
+                      "src": "658:31:30",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                        "typeString": "struct LibCommit.Commit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 7489,
+                        "name": "LibCommit.Commit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 177,
+                        "src": "658:16:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                          "typeString": "struct LibCommit.Commit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 7495,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7491,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7482,
+                        "src": "692:4:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                          "typeString": "struct MatryxPlatform.Data storage pointer"
+                        }
+                      },
+                      "id": 7492,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "commits",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4819,
+                      "src": "692:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                        "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                      }
+                    },
+                    "id": 7494,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 7493,
+                      "name": "commitHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7484,
+                      "src": "705:10:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "692:24:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Commit_$177_storage",
+                      "typeString": "struct LibCommit.Commit storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:58:30"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 7500,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 7497,
+                          "name": "sender",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7480,
+                          "src": "734:6:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 7498,
+                            "name": "commit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7490,
+                            "src": "744:6:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                              "typeString": "struct LibCommit.Commit storage pointer"
+                            }
+                          },
+                          "id": 7499,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "owner",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 158,
+                          "src": "744:12:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "734:22:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d757374206f776e20636f6d6d697420746f2075706772616465",
+                        "id": 7501,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "758:28:30",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_62a2de291de03440a9dd9d5b46b95632d65ebc6e0e9f171f51a9f74f298c7dfb",
+                          "typeString": "literal_string \"Must own commit to upgrade\""
+                        },
+                        "value": "Must own commit to upgrade"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_62a2de291de03440a9dd9d5b46b95632d65ebc6e0e9f171f51a9f74f298c7dfb",
+                          "typeString": "literal_string \"Must own commit to upgrade\""
+                        }
+                      ],
+                      "id": 7496,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        7960,
+                        7961
+                      ],
+                      "referencedDeclaration": 7961,
+                      "src": "726:7:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 7502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "726:61:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7503,
+                  "nodeType": "ExpressionStatement",
+                  "src": "726:61:30"
+                },
+                {
+                  "assignments": [
+                    7505
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 7505,
+                      "name": "loopHash",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 7539,
+                      "src": "798:16:30",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 7504,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "798:7:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 7507,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 7506,
+                    "name": "commitHash",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7484,
+                    "src": "817:10:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "798:29:30"
+                },
+                {
+                  "body": {
+                    "id": 7537,
+                    "nodeType": "Block",
+                    "src": "881:237:30",
+                    "statements": [
+                      {
+                        "assignments": [
+                          7522
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 7522,
+                            "name": "commit",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 7537,
+                            "src": "896:31:30",
+                            "stateVariable": false,
+                            "storageLocation": "storage",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                              "typeString": "struct LibCommit.Commit"
+                            },
+                            "typeName": {
+                              "contractScope": null,
+                              "id": 7521,
+                              "name": "LibCommit.Commit",
+                              "nodeType": "UserDefinedTypeName",
+                              "referencedDeclaration": 177,
+                              "src": "896:16:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                                "typeString": "struct LibCommit.Commit"
+                              }
+                            },
+                            "value": null,
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 7527,
+                        "initialValue": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 7523,
+                              "name": "data",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 7482,
+                              "src": "930:4:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                                "typeString": "struct MatryxPlatform.Data storage pointer"
+                              }
+                            },
+                            "id": 7524,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "commits",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4819,
+                            "src": "930:12:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                              "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                            }
+                          },
+                          "id": 7526,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 7525,
+                            "name": "loopHash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7505,
+                            "src": "943:8:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "930:22:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Commit_$177_storage",
+                            "typeString": "struct LibCommit.Commit storage ref"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "896:56:30"
+                      },
+                      {
+                        "externalReferences": [
+                          {
+                            "commit_slot": {
+                              "declaration": 7522,
+                              "isOffset": false,
+                              "isSlot": true,
+                              "src": "1027:11:30",
+                              "valueSize": 1
+                            }
+                          }
+                        ],
+                        "id": 7528,
+                        "nodeType": "InlineAssembly",
+                        "operations": "{\n    sstore(add(commit_slot, 11), 1)\n}",
+                        "src": "1005:66:30"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 7535,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 7529,
+                            "name": "loopHash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7505,
+                            "src": "1063:8:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 7530,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 7482,
+                                  "src": "1074:4:30",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                                    "typeString": "struct MatryxPlatform.Data storage pointer"
+                                  }
+                                },
+                                "id": 7531,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "commits",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 4819,
+                                "src": "1074:12:30",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                                  "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                                }
+                              },
+                              "id": 7533,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 7532,
+                                "name": "loopHash",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 7505,
+                                "src": "1087:8:30",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1074:22:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Commit_$177_storage",
+                                "typeString": "struct LibCommit.Commit storage ref"
+                              }
+                            },
+                            "id": 7534,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "parentHash",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 176,
+                            "src": "1074:33:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "src": "1063:44:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "id": 7536,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1063:44:30"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 7515,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 7513,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7509,
+                      "src": "869:1:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 7514,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "873:1:30",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "869:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 7538,
+                  "initializationExpression": {
+                    "assignments": [
+                      7509
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 7509,
+                        "name": "i",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 7538,
+                        "src": "842:9:30",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 7508,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "842:7:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 7512,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7510,
+                        "name": "commit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7490,
+                        "src": "854:6:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                          "typeString": "struct LibCommit.Commit storage pointer"
+                        }
+                      },
+                      "id": 7511,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "height",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 174,
+                      "src": "854:13:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "842:25:30"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 7517,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "--",
+                      "prefix": false,
+                      "src": "876:3:30",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 7516,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7509,
+                        "src": "876:1:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 7518,
+                    "nodeType": "ExpressionStatement",
+                    "src": "876:3:30"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "837:281:30"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7540,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeCommitAndAncestry",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7478,
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "557:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7480,
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "571:14:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7479,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7482,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "587:32:30",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                    "typeString": "struct MatryxPlatform.Data"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 7481,
+                    "name": "MatryxPlatform.Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4849,
+                    "src": "587:19:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                      "typeString": "struct MatryxPlatform.Data"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7484,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "621:18:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7483,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "621:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "556:84:30"
+            },
+            "returnParameters": {
+              "id": 7486,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "648:0:30"
+            },
+            "scope": 7541,
+            "src": "523:601:30",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7542,
+        "src": "122:1004:30"
+      }
+    ],
+    "src": "0:1127:30"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommitUpgradeTransition.sol",
+    "exportedSymbols": {
+      "LibCommitUpgradeTransition": [
+        7541
+      ]
+    },
+    "id": 7542,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7447,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:30"
+      },
+      {
+        "id": 7448,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:30"
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxSystem.sol",
+        "file": "../MatryxSystem.sol",
+        "id": 7449,
+        "nodeType": "ImportDirective",
+        "scope": 7542,
+        "sourceUnit": 5837,
+        "src": "59:29:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "file": "../MatryxPlatform.sol",
+        "id": 7450,
+        "nodeType": "ImportDirective",
+        "scope": 7542,
+        "sourceUnit": 5216,
+        "src": "89:31:30",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7541,
+        "linearizedBaseContracts": [
+          7541
+        ],
+        "name": "LibCommitUpgradeTransition",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "LibCommitUpgradeTransition.NewCommit",
+            "id": 7476,
+            "members": [
+              {
+                "constant": false,
+                "id": 7452,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "195:13:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 7451,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:7:30",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7454,
+                "name": "timestamp",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "218:17:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7453,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "218:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7456,
+                "name": "groupHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "245:17:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7455,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "245:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7458,
+                "name": "commitHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "272:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7457,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "272:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7460,
+                "name": "content",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "300:14:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 7459,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "300:6:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7462,
+                "name": "value",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "324:13:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7461,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "324:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7464,
+                "name": "ownerTotalValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "347:23:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7463,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "347:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7466,
+                "name": "totalValue",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "380:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7465,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "380:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7468,
+                "name": "height",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "408:14:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7467,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "408:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7470,
+                "name": "parentHash",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "432:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 7469,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "432:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7473,
+                "name": "children",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "460:18:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                  "typeString": "bytes32[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 7471,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "460:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 7472,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "460:9:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                    "typeString": "bytes32[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7475,
+                "name": "upgradeVersion",
+                "nodeType": "VariableDeclaration",
+                "scope": 7476,
+                "src": "488:22:30",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7474,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "488:7:30",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "NewCommit",
+            "nodeType": "StructDefinition",
+            "scope": 7541,
+            "src": "164:353:30",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 7539,
+              "nodeType": "Block",
+              "src": "648:476:30",
+              "statements": [
+                {
+                  "assignments": [
+                    7490
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 7490,
+                      "name": "commit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 7539,
+                      "src": "658:31:30",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                        "typeString": "struct LibCommit.Commit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 7489,
+                        "name": "LibCommit.Commit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 177,
+                        "src": "658:16:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                          "typeString": "struct LibCommit.Commit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 7495,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7491,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7482,
+                        "src": "692:4:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                          "typeString": "struct MatryxPlatform.Data storage pointer"
+                        }
+                      },
+                      "id": 7492,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "commits",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4819,
+                      "src": "692:12:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                        "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                      }
+                    },
+                    "id": 7494,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 7493,
+                      "name": "commitHash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7484,
+                      "src": "705:10:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "692:24:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Commit_$177_storage",
+                      "typeString": "struct LibCommit.Commit storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "658:58:30"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 7500,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 7497,
+                          "name": "sender",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 7480,
+                          "src": "734:6:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 7498,
+                            "name": "commit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7490,
+                            "src": "744:6:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                              "typeString": "struct LibCommit.Commit storage pointer"
+                            }
+                          },
+                          "id": 7499,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "owner",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 158,
+                          "src": "744:12:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "734:22:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4d757374206f776e20636f6d6d697420746f2075706772616465",
+                        "id": 7501,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "758:28:30",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_62a2de291de03440a9dd9d5b46b95632d65ebc6e0e9f171f51a9f74f298c7dfb",
+                          "typeString": "literal_string \"Must own commit to upgrade\""
+                        },
+                        "value": "Must own commit to upgrade"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_62a2de291de03440a9dd9d5b46b95632d65ebc6e0e9f171f51a9f74f298c7dfb",
+                          "typeString": "literal_string \"Must own commit to upgrade\""
+                        }
+                      ],
+                      "id": 7496,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        7960,
+                        7961
+                      ],
+                      "referencedDeclaration": 7961,
+                      "src": "726:7:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 7502,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "726:61:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 7503,
+                  "nodeType": "ExpressionStatement",
+                  "src": "726:61:30"
+                },
+                {
+                  "assignments": [
+                    7505
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 7505,
+                      "name": "loopHash",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 7539,
+                      "src": "798:16:30",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 7504,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "798:7:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 7507,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 7506,
+                    "name": "commitHash",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 7484,
+                    "src": "817:10:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "798:29:30"
+                },
+                {
+                  "body": {
+                    "id": 7537,
+                    "nodeType": "Block",
+                    "src": "881:237:30",
+                    "statements": [
+                      {
+                        "assignments": [
+                          7522
+                        ],
+                        "declarations": [
+                          {
+                            "constant": false,
+                            "id": 7522,
+                            "name": "commit",
+                            "nodeType": "VariableDeclaration",
+                            "scope": 7537,
+                            "src": "896:31:30",
+                            "stateVariable": false,
+                            "storageLocation": "storage",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                              "typeString": "struct LibCommit.Commit"
+                            },
+                            "typeName": {
+                              "contractScope": null,
+                              "id": 7521,
+                              "name": "LibCommit.Commit",
+                              "nodeType": "UserDefinedTypeName",
+                              "referencedDeclaration": 177,
+                              "src": "896:16:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                                "typeString": "struct LibCommit.Commit"
+                              }
+                            },
+                            "value": null,
+                            "visibility": "internal"
+                          }
+                        ],
+                        "id": 7527,
+                        "initialValue": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 7523,
+                              "name": "data",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 7482,
+                              "src": "930:4:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                                "typeString": "struct MatryxPlatform.Data storage pointer"
+                              }
+                            },
+                            "id": 7524,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "commits",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4819,
+                            "src": "930:12:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                              "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                            }
+                          },
+                          "id": 7526,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 7525,
+                            "name": "loopHash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7505,
+                            "src": "943:8:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "930:22:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Commit_$177_storage",
+                            "typeString": "struct LibCommit.Commit storage ref"
+                          }
+                        },
+                        "nodeType": "VariableDeclarationStatement",
+                        "src": "896:56:30"
+                      },
+                      {
+                        "externalReferences": [
+                          {
+                            "commit_slot": {
+                              "declaration": 7522,
+                              "isOffset": false,
+                              "isSlot": true,
+                              "src": "1027:11:30",
+                              "valueSize": 1
+                            }
+                          }
+                        ],
+                        "id": 7528,
+                        "nodeType": "InlineAssembly",
+                        "operations": "{\n    sstore(add(commit_slot, 11), 1)\n}",
+                        "src": "1005:66:30"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 7535,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 7529,
+                            "name": "loopHash",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 7505,
+                            "src": "1063:8:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 7530,
+                                  "name": "data",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 7482,
+                                  "src": "1074:4:30",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                                    "typeString": "struct MatryxPlatform.Data storage pointer"
+                                  }
+                                },
+                                "id": 7531,
+                                "isConstant": false,
+                                "isLValue": true,
+                                "isPure": false,
+                                "lValueRequested": false,
+                                "memberName": "commits",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": 4819,
+                                "src": "1074:12:30",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Commit_$177_storage_$",
+                                  "typeString": "mapping(bytes32 => struct LibCommit.Commit storage ref)"
+                                }
+                              },
+                              "id": 7533,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 7532,
+                                "name": "loopHash",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 7505,
+                                "src": "1087:8:30",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes32",
+                                  "typeString": "bytes32"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "1074:22:30",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Commit_$177_storage",
+                                "typeString": "struct LibCommit.Commit storage ref"
+                              }
+                            },
+                            "id": 7534,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "parentHash",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 176,
+                            "src": "1074:33:30",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "src": "1063:44:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "id": 7536,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1063:44:30"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 7515,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 7513,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7509,
+                      "src": "869:1:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 7514,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "873:1:30",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "869:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 7538,
+                  "initializationExpression": {
+                    "assignments": [
+                      7509
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 7509,
+                        "name": "i",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 7538,
+                        "src": "842:9:30",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 7508,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "842:7:30",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 7512,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7510,
+                        "name": "commit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7490,
+                        "src": "854:6:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
+                          "typeString": "struct LibCommit.Commit storage pointer"
+                        }
+                      },
+                      "id": 7511,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "height",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 174,
+                      "src": "854:13:30",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "842:25:30"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 7517,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "--",
+                      "prefix": false,
+                      "src": "876:3:30",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 7516,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7509,
+                        "src": "876:1:30",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 7518,
+                    "nodeType": "ExpressionStatement",
+                    "src": "876:3:30"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "837:281:30"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 7540,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeCommitAndAncestry",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7478,
+                  "name": "self",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "557:12:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7480,
+                  "name": "sender",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "571:14:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7479,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "571:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7482,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "587:32:30",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                    "typeString": "struct MatryxPlatform.Data"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 7481,
+                    "name": "MatryxPlatform.Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 4849,
+                    "src": "587:19:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
+                      "typeString": "struct MatryxPlatform.Data"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7484,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7540,
+                  "src": "621:18:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 7483,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "621:7:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "556:84:30"
+            },
+            "returnParameters": {
+              "id": 7486,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "648:0:30"
+            },
+            "scope": 7541,
+            "src": "523:601:30",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7542,
+        "src": "122:1004:30"
+      }
+    ],
+    "src": "0:1127:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-05-03T00:03:43.882Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
