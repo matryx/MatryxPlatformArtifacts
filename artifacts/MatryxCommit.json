@@ -23,38 +23,38 @@
       "type": "fallback"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516040806102d2833981018060405261002f9190810190610078565b60009190915560018054600160a060020a031916600160a060020a039092169190911790556100d2565b600061006582516100be565b9392505050565b600061006582516100cf565b6000806040838503121561008b57600080fd5b6000610097858561006c565b92505060206100a885828601610059565b9150509250929050565b600160a060020a031690565b60006100c9826100b2565b92915050565b90565b6101f1806100e16000396000f3fe608060405234801561001057600080fd5b50600080546001546040517fc53cfd9a00000000000000000000000000000000000000000000000000000000815291929173ffffffffffffffffffffffffffffffffffffffff9091169063c53cfd9a906100909085907f4d6174727978506c6174666f726d0000000000000000000000000000000000009060040161016f565b60206040518083038186803b1580156100a857600080fd5b505afa1580156100bc573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100e0919081019061013a565b90506040516000600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e801515610123573d82fd5b3d82f35b600061013382516101a6565b9392505050565b60006020828403121561014c57600080fd5b60006101588484610127565b949350505050565b6101698161018a565b82525050565b6040810161017d8285610160565b6101336020830184610160565b90565b73ffffffffffffffffffffffffffffffffffffffff1690565b60006101b18261018d565b9291505056fea265627a7a723058206ca4033d4e96330f295dac233732731640ba6c23e664979c5e73d6ca01dfcadf6c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600080546001546040517fc53cfd9a00000000000000000000000000000000000000000000000000000000815291929173ffffffffffffffffffffffffffffffffffffffff9091169063c53cfd9a906100909085907f4d6174727978506c6174666f726d0000000000000000000000000000000000009060040161016f565b60206040518083038186803b1580156100a857600080fd5b505afa1580156100bc573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100e0919081019061013a565b90506040516000600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e801515610123573d82fd5b3d82f35b600061013382516101a6565b9392505050565b60006020828403121561014c57600080fd5b60006101588484610127565b949350505050565b6101698161018a565b82525050565b6040810161017d8285610160565b6101336020830184610160565b90565b73ffffffffffffffffffffffffffffffffffffffff1690565b60006101b18261018d565b9291505056fea265627a7a723058206ca4033d4e96330f295dac233732731640ba6c23e664979c5e73d6ca01dfcadf6c6578706572696d656e74616cf50037",
-  "sourceMap": "143:141:6:-;;;190:92;8:9:-1;5:2;;;30:1;27;20:12;5:2;190:92:6;;;;;;;;;;;;;;;;;;;;;;274:4:7;:23;;;;307:11;:21;;-1:-1:-1;;;;;;307:21:7;-1:-1:-1;;;;;307:21:7;;;;;;;;;143:141:6;;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:122;;212:39;243:6;237:13;212:39;;263:399;;;395:2;383:9;374:7;370:23;366:32;363:2;;;411:1;408;401:12;363:2;446:1;463:64;519:7;499:9;463:64;;;453:74;;425:108;564:2;582:64;638:7;629:6;618:9;614:22;582:64;;;572:74;;543:109;357:305;;;;;;669:128;-1:-1;;;;;738:54;;721:76;804:105;;873:31;898:5;873:31;;;862:42;856:53;-1:-1;;856:53;916:79;985:5;968:27;;143:141:6;;;;;;",
-  "deployedSourceMap": "143:141:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;596:15:7;614:12;;669:11;;655:74;;;;;614:12;;596:15;669:11;;;;;655:38;;:74;;614:12;;703:25;;655:74;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;655:74:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;655:74:7;;;;;;;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;655:74:7;;;;;;;;;636:93;;780:4;774:11;;910:4;907:1;902:3;889:26;1009:6;1002:4;997:3;993:14;986:30;1110:7;1103:4;1098:3;1094:14;1087:31;1238:4;1224:12;1220:23;1214:4;1207;1202:3;1198:14;1185:59;1360:1;1357;1350:4;1336:12;1332:23;1327:3;1324:1;1314:8;1309:3;1304:58;1297:65;;1436:14;1433:1;1428:3;1413:38;1532:3;1525:11;1522:2;;;1551:14;1546:3;1539:27;1522:2;1630:14;1625:3;1618:27;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:263;;249:2;237:9;228:7;224:23;220:32;217:2;;;265:1;262;255:12;217:2;300:1;317:64;373:7;353:9;317:64;;;307:74;211:186;-1:-1;;;;211:186;404:110;477:31;502:5;477:31;;;472:3;465:44;459:55;;;638:294;774:2;759:18;;788:61;763:9;822:6;788:61;;;860:62;918:2;907:9;903:18;894:6;860:62;;939:79;1008:5;991:27;1025:128;1105:42;1094:54;;1077:76;1246:105;;1315:31;1340:5;1315:31;;;1304:42;1298:53;-1:-1;;1298:53",
-  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nimport \"./SafeMath.sol\";\nimport \"./LibCommit.sol\";\nimport \"./MatryxForwarder.sol\";\n\ncontract MatryxCommit is MatryxForwarder {\n    constructor (uint256 _version, address _system) MatryxForwarder(_version, _system) public {}\n}\n\ninterface IMatryxCommit {\n    function getCommit(bytes32 commitHash) external view returns (LibCommit.Commit memory commit);\n    function getBalance(bytes32 commitHash) external view returns (uint256);\n    function getCommitByContent(string calldata content) external view returns (LibCommit.Commit memory commit);\n    function getInitialCommits() external view returns (bytes32[] memory);\n    function getGroupMembers(bytes32 commitHash) external view returns (address[] memory);\n    function getSubmissionsForCommit(bytes32 commitHash) external view returns (bytes32[] memory);\n\n    function addGroupMember(bytes32 commitHash, address member) external;\n    function addGroupMembers(bytes32 commitHash, address[] calldata members) external;\n    function claimCommit(bytes32 commitHash) external;\n    function createCommit(bytes32 parentHash, bool isFork, bytes32 salt, string calldata content, uint256 value) external;\n    function createSubmission(address tAddress, string calldata content, bytes32 parentHash, bool isFork, bytes32 salt, string calldata commitContent, uint256 value) external;\n    function getAvailableRewardForUser(bytes32 commitHash, address user) external view returns (uint256);\n    function withdrawAvailableReward(bytes32 commitHash) external;\n}",
-  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxCommit.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806102ae833981018060405261002f9190810190610078565b600091909155600180546001600160a01b0319166001600160a01b039092169190911790556100d2565b600061006582516100b2565b9392505050565b600061006582516100cf565b6000806040838503121561008b57600080fd5b6000610097858561006c565b92505060206100a885828601610059565b9150509250929050565b60006100bd826100c3565b92915050565b6001600160a01b031690565b90565b6101cd806100e16000396000f3fe608060405234801561001057600080fd5b5060008054600154604051600160e11b63629e7ecd0281529192916001600160a01b039091169063c53cfd9a9061006d9085907f4d6174727978506c6174666f726d00000000000000000000000000000000000090600401610158565b60206040518083038186803b15801561008557600080fd5b505afa158015610099573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100bd9190810190610123565b9050604051600060043610156100d257600080fd5b600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e8061010c573d82fd5b3d82f35b600061011c8251610176565b9392505050565b60006020828403121561013557600080fd5b60006101418484610110565b949350505050565b61015281610173565b82525050565b604081016101668285610149565b61011c6020830184610149565b90565b600061018182610187565b92915050565b6001600160a01b03169056fea265627a7a72305820da0b39117771012ff5f8a10037a26e9b1cb2c538c5574487285be1db4e8a09656c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060008054600154604051600160e11b63629e7ecd0281529192916001600160a01b039091169063c53cfd9a9061006d9085907f4d6174727978506c6174666f726d00000000000000000000000000000000000090600401610158565b60206040518083038186803b15801561008557600080fd5b505afa158015610099573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100bd9190810190610123565b9050604051600060043610156100d257600080fd5b600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e8061010c573d82fd5b3d82f35b600061011c8251610176565b9392505050565b60006020828403121561013557600080fd5b60006101418484610110565b949350505050565b61015281610173565b82525050565b604081016101668285610149565b61011c6020830184610149565b90565b600061018182610187565b92915050565b6001600160a01b03169056fea265627a7a72305820da0b39117771012ff5f8a10037a26e9b1cb2c538c5574487285be1db4e8a09656c6578706572696d656e74616cf50037",
+  "sourceMap": "143:141:6:-;;;190:92;8:9:-1;5:2;;;30:1;27;20:12;5:2;190:92:6;;;;;;;;;;;;;;;;;;;;;;274:4:7;:23;;;;307:11;:21;;-1:-1:-1;;;;;;307:21:7;-1:-1:-1;;;;;307:21:7;;;;;;;;;143:141:6;;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:122;;212:39;243:6;237:13;212:39;;263:399;;;395:2;383:9;374:7;370:23;366:32;363:2;;;411:1;408;401:12;363:2;446:1;463:64;519:7;499:9;463:64;;;453:74;;425:108;564:2;582:64;638:7;629:6;618:9;614:22;582:64;;;572:74;;543:109;357:305;;;;;;669:105;;738:31;763:5;738:31;;;727:42;721:53;-1:-1;;721:53;781:128;-1:-1;;;;;850:54;;833:76;916:79;985:5;968:27;;143:141:6;;;;;;",
+  "deployedSourceMap": "143:141:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;596:15:7;614:12;;669:11;;655:74;;-1:-1:-1;;;;;655:74:7;;614:12;;596:15;-1:-1:-1;;;;;669:11:7;;;;655:38;;:74;;614:12;;703:25;;655:74;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;655:74:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;655:74:7;;;;;;;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;655:74:7;;;;;;;;;636:93;;780:4;774:11;;909:4;895:12;892:22;889:2;;;927:1;924;917:12;889:2;1011:4;1008:1;1003:3;990:26;1110:6;1103:4;1098:3;1094:14;1087:30;1211:7;1204:4;1199:3;1195:14;1188:31;1339:4;1325:12;1321:23;1315:4;1308;1303:3;1299:14;1286:59;1461:1;1458;1451:4;1437:12;1433:23;1428:3;1425:1;1415:8;1410:3;1405:58;1398:65;;1537:14;1534:1;1529:3;1514:38;1633:3;1623:2;;1652:14;1647:3;1640:27;1623:2;1731:14;1726:3;1719:27;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:263;;249:2;237:9;228:7;224:23;220:32;217:2;;;265:1;262;255:12;217:2;300:1;317:64;373:7;353:9;317:64;;;307:74;211:186;-1:-1;;;;211:186;404:120;487:31;512:5;487:31;;;482:3;475:44;469:55;;;658:324;804:2;789:18;;818:71;793:9;862:6;818:71;;;900:72;968:2;957:9;953:18;944:6;900:72;;989:79;1058:5;1041:27;1161:105;;1230:31;1255:5;1230:31;;;1219:42;1213:53;-1:-1;;1213:53;1273:128;-1:-1;;;;;1342:54;;1325:76",
+  "source": "pragma solidity ^0.5.7;\npragma experimental ABIEncoderV2;\n\nimport \"./SafeMath.sol\";\nimport \"./LibCommit.sol\";\nimport \"./MatryxForwarder.sol\";\n\ncontract MatryxCommit is MatryxForwarder {\n    constructor (uint256 _version, address _system) MatryxForwarder(_version, _system) public {}\n}\n\ninterface IMatryxCommit {\n    event GroupMemberAdded(bytes32 indexed commitHash, address indexed user);\n    event CommitClaimed(bytes32 commitHash);\n    event CommitCreated(bytes32 indexed parentHash, bytes32 commitHash, address indexed creator, bool indexed isFork);\n\n    function getCommit(bytes32 commitHash) external view returns (LibCommit.Commit memory commit);\n    function getBalance(bytes32 commitHash) external view returns (uint256);\n    function getCommitByContent(string calldata content) external view returns (LibCommit.Commit memory commit);\n    function getGroupMembers(bytes32 commitHash) external view returns (address[] memory);\n    function getSubmissionsForCommit(bytes32 commitHash) external view returns (bytes32[] memory);\n\n    function addGroupMember(bytes32 commitHash, address member) external;\n    function addGroupMembers(bytes32 commitHash, address[] calldata members) external;\n    function claimCommit(bytes32 commitHash) external;\n    function createCommit(bytes32 parentHash, bool isFork, bytes32 salt, string calldata content, uint256 value) external;\n    function createSubmission(address tAddress, string calldata content, bytes32 parentHash, bool isFork, bytes32 salt, string calldata commitContent, uint256 value) external;\n    function getAvailableRewardForUser(bytes32 commitHash, address user) external view returns (uint256);\n    function withdrawAvailableReward(bytes32 commitHash) external;\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxCommit.sol",
   "ast": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxCommit.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxCommit.sol",
     "exportedSymbols": {
       "IMatryxCommit": [
-        4762
+        4722
       ],
       "MatryxCommit": [
-        4654
+        4600
       ]
     },
-    "id": 4763,
+    "id": 4723,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4635,
+        "id": 4581,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:6"
       },
       {
-        "id": 4636,
+        "id": 4582,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -63,34 +63,34 @@
         "src": "24:33:6"
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/SafeMath.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/SafeMath.sol",
         "file": "./SafeMath.sol",
-        "id": 4637,
+        "id": 4583,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 7310,
+        "scope": 4723,
+        "sourceUnit": 7406,
         "src": "59:24:6",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibCommit.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/LibCommit.sol",
         "file": "./LibCommit.sol",
-        "id": 4638,
+        "id": 4584,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 1433,
+        "scope": 4723,
+        "sourceUnit": 1393,
         "src": "84:25:6",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxForwarder.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxForwarder.sol",
         "file": "./MatryxForwarder.sol",
-        "id": 4639,
+        "id": 4585,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 4818,
+        "scope": 4723,
+        "sourceUnit": 4778,
         "src": "110:31:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -101,44 +101,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4640,
+              "id": 4586,
               "name": "MatryxForwarder",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4817,
+              "referencedDeclaration": 4777,
               "src": "168:15:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MatryxForwarder_$4817",
+                "typeIdentifier": "t_contract$_MatryxForwarder_$4777",
                 "typeString": "contract MatryxForwarder"
               }
             },
-            "id": 4641,
+            "id": 4587,
             "nodeType": "InheritanceSpecifier",
             "src": "168:15:6"
           }
         ],
         "contractDependencies": [
-          4817
+          4777
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4654,
+        "id": 4600,
         "linearizedBaseContracts": [
-          4654,
-          4817
+          4600,
+          4777
         ],
         "name": "MatryxCommit",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4652,
+              "id": 4598,
               "nodeType": "Block",
               "src": "280:2:6",
               "statements": []
             },
             "documentation": null,
-            "id": 4653,
+            "id": 4599,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -146,11 +146,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 4648,
+                    "id": 4594,
                     "name": "_version",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4643,
+                    "referencedDeclaration": 4589,
                     "src": "254:8:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -159,11 +159,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 4649,
+                    "id": 4595,
                     "name": "_system",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4645,
+                    "referencedDeclaration": 4591,
                     "src": "264:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -171,17 +171,17 @@
                     }
                   }
                 ],
-                "id": 4650,
+                "id": 4596,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 4647,
+                  "id": 4593,
                   "name": "MatryxForwarder",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 4817,
+                  "referencedDeclaration": 4777,
                   "src": "238:15:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MatryxForwarder_$4817_$",
+                    "typeIdentifier": "t_type$_t_contract$_MatryxForwarder_$4777_$",
                     "typeString": "type(contract MatryxForwarder)"
                   }
                 },
@@ -192,15 +192,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4646,
+              "id": 4592,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4643,
+                  "id": 4589,
                   "name": "_version",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4653,
+                  "scope": 4599,
                   "src": "203:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -209,7 +209,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4642,
+                    "id": 4588,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "203:7:6",
@@ -223,10 +223,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4645,
+                  "id": 4591,
                   "name": "_system",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4653,
+                  "scope": 4599,
                   "src": "221:15:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -235,7 +235,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4644,
+                    "id": 4590,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "221:7:6",
@@ -252,19 +252,19 @@
               "src": "202:35:6"
             },
             "returnParameters": {
-              "id": 4651,
+              "id": 4597,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "280:0:6"
             },
-            "scope": 4654,
+            "scope": 4600,
             "src": "190:92:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4763,
+        "scope": 4723,
         "src": "143:141:6"
       },
       {
@@ -273,33 +273,31 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4762,
+        "id": 4722,
         "linearizedBaseContracts": [
-          4762
+          4722
         ],
         "name": "IMatryxCommit",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "body": null,
+            "anonymous": false,
             "documentation": null,
-            "id": 4661,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getCommit",
-            "nodeType": "FunctionDefinition",
+            "id": 4606,
+            "name": "GroupMemberAdded",
+            "nodeType": "EventDefinition",
             "parameters": {
-              "id": 4657,
+              "id": 4605,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4656,
+                  "id": 4602,
+                  "indexed": true,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4661,
-                  "src": "335:18:6",
+                  "scope": 4606,
+                  "src": "339:26:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -307,10 +305,80 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4655,
+                    "id": 4601,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "335:7:6",
+                    "src": "339:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4604,
+                  "indexed": true,
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4606,
+                  "src": "367:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4603,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "367:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "338:50:6"
+            },
+            "src": "316:73:6"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 4610,
+            "name": "CommitClaimed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4609,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4608,
+                  "indexed": false,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4610,
+                  "src": "414:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4607,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -320,34 +388,202 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "334:20:6"
+              "src": "413:20:6"
             },
-            "returnParameters": {
-              "id": 4660,
+            "src": "394:40:6"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 4620,
+            "name": "CommitCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4619,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4659,
+                  "id": 4612,
+                  "indexed": true,
+                  "name": "parentHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "459:26:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4611,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "459:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4614,
+                  "indexed": false,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "487:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4613,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "487:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4616,
+                  "indexed": true,
+                  "name": "creator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "507:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4615,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "507:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4618,
+                  "indexed": true,
+                  "name": "isFork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "532:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4617,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "532:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "458:94:6"
+            },
+            "src": "439:114:6"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4627,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4623,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4622,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4627,
+                  "src": "578:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4621,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:20:6"
+            },
+            "returnParameters": {
+              "id": 4626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4625,
                   "name": "commit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4661,
-                  "src": "378:30:6",
+                  "scope": 4627,
+                  "src": "621:30:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Commit_$180_memory_ptr",
+                    "typeIdentifier": "t_struct$_Commit_$177_memory_ptr",
                     "typeString": "struct LibCommit.Commit"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4658,
+                    "id": 4624,
                     "name": "LibCommit.Commit",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 180,
-                    "src": "378:16:6",
+                    "referencedDeclaration": 177,
+                    "src": "621:16:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Commit_$180_storage_ptr",
+                      "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
                       "typeString": "struct LibCommit.Commit"
                     }
                   },
@@ -355,10 +591,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "377:32:6"
+              "src": "620:32:6"
             },
-            "scope": 4762,
-            "src": "316:94:6",
+            "scope": 4722,
+            "src": "559:94:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -366,23 +602,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4668,
+            "id": 4634,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4664,
+              "id": 4630,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4663,
+                  "id": 4629,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4668,
-                  "src": "435:18:6",
+                  "scope": 4634,
+                  "src": "678:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -390,10 +626,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4662,
+                    "id": 4628,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "435:7:6",
+                    "src": "678:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -403,19 +639,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "434:20:6"
+              "src": "677:20:6"
             },
             "returnParameters": {
-              "id": 4667,
+              "id": 4633,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4666,
+                  "id": 4632,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4668,
-                  "src": "478:7:6",
+                  "scope": 4634,
+                  "src": "721:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -423,10 +659,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4665,
+                    "id": 4631,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "478:7:6",
+                    "src": "721:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -436,10 +672,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "477:9:6"
+              "src": "720:9:6"
             },
-            "scope": 4762,
-            "src": "415:72:6",
+            "scope": 4722,
+            "src": "658:72:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -447,23 +683,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4675,
+            "id": 4641,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getCommitByContent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4671,
+              "id": 4637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4670,
+                  "id": 4636,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4675,
-                  "src": "520:23:6",
+                  "scope": 4641,
+                  "src": "763:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -471,10 +707,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4669,
+                    "id": 4635,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "520:6:6",
+                    "src": "763:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -484,34 +720,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "519:25:6"
+              "src": "762:25:6"
             },
             "returnParameters": {
-              "id": 4674,
+              "id": 4640,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4673,
+                  "id": 4639,
                   "name": "commit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4675,
-                  "src": "568:30:6",
+                  "scope": 4641,
+                  "src": "811:30:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Commit_$180_memory_ptr",
+                    "typeIdentifier": "t_struct$_Commit_$177_memory_ptr",
                     "typeString": "struct LibCommit.Commit"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4672,
+                    "id": 4638,
                     "name": "LibCommit.Commit",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 180,
-                    "src": "568:16:6",
+                    "referencedDeclaration": 177,
+                    "src": "811:16:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Commit_$180_storage_ptr",
+                      "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
                       "typeString": "struct LibCommit.Commit"
                     }
                   },
@@ -519,10 +755,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "567:32:6"
+              "src": "810:32:6"
             },
-            "scope": 4762,
-            "src": "492:108:6",
+            "scope": 4722,
+            "src": "735:108:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -530,29 +766,148 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4681,
+            "id": 4649,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "getInitialCommits",
+            "name": "getGroupMembers",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4676,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "631:2:6"
-            },
-            "returnParameters": {
-              "id": 4680,
+              "id": 4644,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4679,
+                  "id": 4643,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4649,
+                  "src": "873:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4642,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "873:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "872:20:6"
+            },
+            "returnParameters": {
+              "id": 4648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4647,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4681,
-                  "src": "657:16:6",
+                  "scope": 4649,
+                  "src": "916:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 4645,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "916:7:6",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 4646,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "916:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "915:18:6"
+            },
+            "scope": 4722,
+            "src": "848:86:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4657,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSubmissionsForCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4652,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4651,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4657,
+                  "src": "972:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4650,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "972:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "971:20:6"
+            },
+            "returnParameters": {
+              "id": 4656,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4655,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4657,
+                  "src": "1015:16:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -561,19 +916,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 4677,
+                      "id": 4653,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "657:7:6",
+                      "src": "1015:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 4678,
+                    "id": 4654,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "657:9:6",
+                    "src": "1015:9:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -583,10 +938,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "656:18:6"
+              "src": "1014:18:6"
             },
-            "scope": 4762,
-            "src": "605:70:6",
+            "scope": 4722,
+            "src": "939:94:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -594,23 +949,301 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4689,
+            "id": 4664,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "getGroupMembers",
+            "name": "addGroupMember",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4684,
+              "id": 4662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4683,
+                  "id": 4659,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4689,
-                  "src": "705:18:6",
+                  "scope": 4664,
+                  "src": "1063:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4658,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1063:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4661,
+                  "name": "member",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4664,
+                  "src": "1083:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4660,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1083:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1062:36:6"
+            },
+            "returnParameters": {
+              "id": 4663,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1107:0:6"
+            },
+            "scope": 4722,
+            "src": "1039:69:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4672,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addGroupMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4666,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4672,
+                  "src": "1138:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4665,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1138:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4669,
+                  "name": "members",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4672,
+                  "src": "1158:26:6",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 4667,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1158:7:6",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 4668,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1158:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1137:48:6"
+            },
+            "returnParameters": {
+              "id": 4671,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1194:0:6"
+            },
+            "scope": 4722,
+            "src": "1113:82:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4677,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4675,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4674,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4677,
+                  "src": "1221:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4673,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1221:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1220:20:6"
+            },
+            "returnParameters": {
+              "id": 4676,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1249:0:6"
+            },
+            "scope": 4722,
+            "src": "1200:50:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4690,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4679,
+                  "name": "parentHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1277:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4678,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4681,
+                  "name": "isFork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1297:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4680,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1297:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4683,
+                  "name": "salt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1310:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -621,190 +1254,7 @@
                     "id": 4682,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "705:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "704:20:6"
-            },
-            "returnParameters": {
-              "id": 4688,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4687,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4689,
-                  "src": "748:16:6",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
-                    "typeString": "address[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4685,
-                      "name": "address",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "748:7:6",
-                      "stateMutability": "nonpayable",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "id": 4686,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "748:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                      "typeString": "address[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "747:18:6"
-            },
-            "scope": 4762,
-            "src": "680:86:6",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4697,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSubmissionsForCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4692,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4691,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4697,
-                  "src": "804:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4690,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "804:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "803:20:6"
-            },
-            "returnParameters": {
-              "id": 4696,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4695,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4697,
-                  "src": "847:16:6",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
-                    "typeString": "bytes32[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4693,
-                      "name": "bytes32",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "847:7:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bytes32",
-                        "typeString": "bytes32"
-                      }
-                    },
-                    "id": 4694,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "847:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
-                      "typeString": "bytes32[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "846:18:6"
-            },
-            "scope": 4762,
-            "src": "771:94:6",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4704,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "addGroupMember",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4702,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4699,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4704,
-                  "src": "895:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4698,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "895:7:6",
+                    "src": "1310:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -815,289 +1265,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4701,
-                  "name": "member",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4704,
-                  "src": "915:14:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 4700,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "915:7:6",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "894:36:6"
-            },
-            "returnParameters": {
-              "id": 4703,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "939:0:6"
-            },
-            "scope": 4762,
-            "src": "871:69:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4712,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "addGroupMembers",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4710,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4706,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4712,
-                  "src": "970:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4705,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "970:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4709,
-                  "name": "members",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4712,
-                  "src": "990:26:6",
-                  "stateVariable": false,
-                  "storageLocation": "calldata",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
-                    "typeString": "address[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4707,
-                      "name": "address",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "990:7:6",
-                      "stateMutability": "nonpayable",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "id": 4708,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "990:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                      "typeString": "address[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "969:48:6"
-            },
-            "returnParameters": {
-              "id": 4711,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1026:0:6"
-            },
-            "scope": 4762,
-            "src": "945:82:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4717,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "claimCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4715,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4714,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4717,
-                  "src": "1053:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4713,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1053:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1052:20:6"
-            },
-            "returnParameters": {
-              "id": 4716,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1081:0:6"
-            },
-            "scope": 4762,
-            "src": "1032:50:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4730,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "createCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4728,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4719,
-                  "name": "parentHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1109:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4718,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1109:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4721,
-                  "name": "isFork",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1129:11:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 4720,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1129:4:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4723,
-                  "name": "salt",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1142:12:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4722,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1142:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4725,
+                  "id": 4685,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1156:23:6",
+                  "scope": 4690,
+                  "src": "1324:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1105,10 +1277,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4724,
+                    "id": 4684,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1156:6:6",
+                    "src": "1324:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1119,11 +1291,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4727,
+                  "id": 4687,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1181:13:6",
+                  "scope": 4690,
+                  "src": "1349:13:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1131,10 +1303,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4726,
+                    "id": 4686,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1181:7:6",
+                    "src": "1349:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1144,16 +1316,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1108:87:6"
+              "src": "1276:87:6"
             },
             "returnParameters": {
-              "id": 4729,
+              "id": 4689,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1204:0:6"
+              "src": "1372:0:6"
             },
-            "scope": 4762,
-            "src": "1087:118:6",
+            "scope": 4722,
+            "src": "1255:118:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -1161,23 +1333,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4747,
+            "id": 4707,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "createSubmission",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4745,
+              "id": 4705,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4732,
+                  "id": 4692,
                   "name": "tAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1236:16:6",
+                  "scope": 4707,
+                  "src": "1404:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1185,10 +1357,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4731,
+                    "id": 4691,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1236:7:6",
+                    "src": "1404:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1200,11 +1372,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4734,
+                  "id": 4694,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1254:23:6",
+                  "scope": 4707,
+                  "src": "1422:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1212,10 +1384,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4733,
+                    "id": 4693,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1254:6:6",
+                    "src": "1422:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1226,11 +1398,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4736,
+                  "id": 4696,
                   "name": "parentHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1279:18:6",
+                  "scope": 4707,
+                  "src": "1447:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1238,10 +1410,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4735,
+                    "id": 4695,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1279:7:6",
+                    "src": "1447:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1252,11 +1424,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4738,
+                  "id": 4698,
                   "name": "isFork",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1299:11:6",
+                  "scope": 4707,
+                  "src": "1467:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1264,10 +1436,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4737,
+                    "id": 4697,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1299:4:6",
+                    "src": "1467:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1278,11 +1450,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4740,
+                  "id": 4700,
                   "name": "salt",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1312:12:6",
+                  "scope": 4707,
+                  "src": "1480:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1290,10 +1462,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4739,
+                    "id": 4699,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1312:7:6",
+                    "src": "1480:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1304,11 +1476,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4742,
+                  "id": 4702,
                   "name": "commitContent",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1326:29:6",
+                  "scope": 4707,
+                  "src": "1494:29:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1316,10 +1488,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4741,
+                    "id": 4701,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1326:6:6",
+                    "src": "1494:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1330,11 +1502,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4744,
+                  "id": 4704,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1357:13:6",
+                  "scope": 4707,
+                  "src": "1525:13:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1342,10 +1514,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4743,
+                    "id": 4703,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1357:7:6",
+                    "src": "1525:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1355,16 +1527,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1235:136:6"
+              "src": "1403:136:6"
             },
             "returnParameters": {
-              "id": 4746,
+              "id": 4706,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1380:0:6"
+              "src": "1548:0:6"
             },
-            "scope": 4762,
-            "src": "1210:171:6",
+            "scope": 4722,
+            "src": "1378:171:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -1372,23 +1544,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4756,
+            "id": 4716,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4752,
+              "id": 4712,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4749,
+                  "id": 4709,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1421:18:6",
+                  "scope": 4716,
+                  "src": "1589:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1396,10 +1568,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4748,
+                    "id": 4708,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1421:7:6",
+                    "src": "1589:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1410,11 +1582,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4751,
+                  "id": 4711,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1441:12:6",
+                  "scope": 4716,
+                  "src": "1609:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1422,10 +1594,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4750,
+                    "id": 4710,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1441:7:6",
+                    "src": "1609:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1436,19 +1608,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1420:34:6"
+              "src": "1588:34:6"
             },
             "returnParameters": {
-              "id": 4755,
+              "id": 4715,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4754,
+                  "id": 4714,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1478:7:6",
+                  "scope": 4716,
+                  "src": "1646:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1456,10 +1628,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4753,
+                    "id": 4713,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1478:7:6",
+                    "src": "1646:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1469,10 +1641,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1477:9:6"
+              "src": "1645:9:6"
             },
-            "scope": 4762,
-            "src": "1386:101:6",
+            "scope": 4722,
+            "src": "1554:101:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -1480,23 +1652,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4761,
+            "id": 4721,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "withdrawAvailableReward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4759,
+              "id": 4719,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4758,
+                  "id": 4718,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4761,
-                  "src": "1525:18:6",
+                  "scope": 4721,
+                  "src": "1693:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1504,10 +1676,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4757,
+                    "id": 4717,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1525:7:6",
+                    "src": "1693:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1517,53 +1689,53 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1524:20:6"
+              "src": "1692:20:6"
             },
             "returnParameters": {
-              "id": 4760,
+              "id": 4720,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1553:0:6"
+              "src": "1721:0:6"
             },
-            "scope": 4762,
-            "src": "1492:62:6",
+            "scope": 4722,
+            "src": "1660:62:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 4763,
-        "src": "286:1270:6"
+        "scope": 4723,
+        "src": "286:1438:6"
       }
     ],
-    "src": "0:1556:6"
+    "src": "0:1725:6"
   },
   "legacyAST": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxCommit.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxCommit.sol",
     "exportedSymbols": {
       "IMatryxCommit": [
-        4762
+        4722
       ],
       "MatryxCommit": [
-        4654
+        4600
       ]
     },
-    "id": 4763,
+    "id": 4723,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4635,
+        "id": 4581,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:6"
       },
       {
-        "id": 4636,
+        "id": 4582,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -1572,34 +1744,34 @@
         "src": "24:33:6"
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/SafeMath.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/SafeMath.sol",
         "file": "./SafeMath.sol",
-        "id": 4637,
+        "id": 4583,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 7310,
+        "scope": 4723,
+        "sourceUnit": 7406,
         "src": "59:24:6",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibCommit.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/LibCommit.sol",
         "file": "./LibCommit.sol",
-        "id": 4638,
+        "id": 4584,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 1433,
+        "scope": 4723,
+        "sourceUnit": 1393,
         "src": "84:25:6",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxForwarder.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxForwarder.sol",
         "file": "./MatryxForwarder.sol",
-        "id": 4639,
+        "id": 4585,
         "nodeType": "ImportDirective",
-        "scope": 4763,
-        "sourceUnit": 4818,
+        "scope": 4723,
+        "sourceUnit": 4778,
         "src": "110:31:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1610,44 +1782,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4640,
+              "id": 4586,
               "name": "MatryxForwarder",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4817,
+              "referencedDeclaration": 4777,
               "src": "168:15:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MatryxForwarder_$4817",
+                "typeIdentifier": "t_contract$_MatryxForwarder_$4777",
                 "typeString": "contract MatryxForwarder"
               }
             },
-            "id": 4641,
+            "id": 4587,
             "nodeType": "InheritanceSpecifier",
             "src": "168:15:6"
           }
         ],
         "contractDependencies": [
-          4817
+          4777
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4654,
+        "id": 4600,
         "linearizedBaseContracts": [
-          4654,
-          4817
+          4600,
+          4777
         ],
         "name": "MatryxCommit",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4652,
+              "id": 4598,
               "nodeType": "Block",
               "src": "280:2:6",
               "statements": []
             },
             "documentation": null,
-            "id": 4653,
+            "id": 4599,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -1655,11 +1827,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 4648,
+                    "id": 4594,
                     "name": "_version",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4643,
+                    "referencedDeclaration": 4589,
                     "src": "254:8:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1668,11 +1840,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 4649,
+                    "id": 4595,
                     "name": "_system",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4645,
+                    "referencedDeclaration": 4591,
                     "src": "264:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1680,17 +1852,17 @@
                     }
                   }
                 ],
-                "id": 4650,
+                "id": 4596,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 4647,
+                  "id": 4593,
                   "name": "MatryxForwarder",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 4817,
+                  "referencedDeclaration": 4777,
                   "src": "238:15:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MatryxForwarder_$4817_$",
+                    "typeIdentifier": "t_type$_t_contract$_MatryxForwarder_$4777_$",
                     "typeString": "type(contract MatryxForwarder)"
                   }
                 },
@@ -1701,15 +1873,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4646,
+              "id": 4592,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4643,
+                  "id": 4589,
                   "name": "_version",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4653,
+                  "scope": 4599,
                   "src": "203:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1718,7 +1890,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4642,
+                    "id": 4588,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "203:7:6",
@@ -1732,10 +1904,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 4645,
+                  "id": 4591,
                   "name": "_system",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4653,
+                  "scope": 4599,
                   "src": "221:15:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1744,7 +1916,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4644,
+                    "id": 4590,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "221:7:6",
@@ -1761,19 +1933,19 @@
               "src": "202:35:6"
             },
             "returnParameters": {
-              "id": 4651,
+              "id": 4597,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "280:0:6"
             },
-            "scope": 4654,
+            "scope": 4600,
             "src": "190:92:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 4763,
+        "scope": 4723,
         "src": "143:141:6"
       },
       {
@@ -1782,33 +1954,31 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 4762,
+        "id": 4722,
         "linearizedBaseContracts": [
-          4762
+          4722
         ],
         "name": "IMatryxCommit",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "body": null,
+            "anonymous": false,
             "documentation": null,
-            "id": 4661,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getCommit",
-            "nodeType": "FunctionDefinition",
+            "id": 4606,
+            "name": "GroupMemberAdded",
+            "nodeType": "EventDefinition",
             "parameters": {
-              "id": 4657,
+              "id": 4605,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4656,
+                  "id": 4602,
+                  "indexed": true,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4661,
-                  "src": "335:18:6",
+                  "scope": 4606,
+                  "src": "339:26:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1816,10 +1986,80 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4655,
+                    "id": 4601,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "335:7:6",
+                    "src": "339:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4604,
+                  "indexed": true,
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4606,
+                  "src": "367:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4603,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "367:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "338:50:6"
+            },
+            "src": "316:73:6"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 4610,
+            "name": "CommitClaimed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4609,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4608,
+                  "indexed": false,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4610,
+                  "src": "414:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4607,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "414:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1829,34 +2069,202 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "334:20:6"
+              "src": "413:20:6"
             },
-            "returnParameters": {
-              "id": 4660,
+            "src": "394:40:6"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 4620,
+            "name": "CommitCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 4619,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4659,
+                  "id": 4612,
+                  "indexed": true,
+                  "name": "parentHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "459:26:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4611,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "459:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4614,
+                  "indexed": false,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "487:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4613,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "487:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4616,
+                  "indexed": true,
+                  "name": "creator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "507:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4615,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "507:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4618,
+                  "indexed": true,
+                  "name": "isFork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4620,
+                  "src": "532:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4617,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "532:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "458:94:6"
+            },
+            "src": "439:114:6"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4627,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4623,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4622,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4627,
+                  "src": "578:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4621,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "578:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "577:20:6"
+            },
+            "returnParameters": {
+              "id": 4626,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4625,
                   "name": "commit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4661,
-                  "src": "378:30:6",
+                  "scope": 4627,
+                  "src": "621:30:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Commit_$180_memory_ptr",
+                    "typeIdentifier": "t_struct$_Commit_$177_memory_ptr",
                     "typeString": "struct LibCommit.Commit"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4658,
+                    "id": 4624,
                     "name": "LibCommit.Commit",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 180,
-                    "src": "378:16:6",
+                    "referencedDeclaration": 177,
+                    "src": "621:16:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Commit_$180_storage_ptr",
+                      "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
                       "typeString": "struct LibCommit.Commit"
                     }
                   },
@@ -1864,10 +2272,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "377:32:6"
+              "src": "620:32:6"
             },
-            "scope": 4762,
-            "src": "316:94:6",
+            "scope": 4722,
+            "src": "559:94:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -1875,23 +2283,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4668,
+            "id": 4634,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getBalance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4664,
+              "id": 4630,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4663,
+                  "id": 4629,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4668,
-                  "src": "435:18:6",
+                  "scope": 4634,
+                  "src": "678:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1899,10 +2307,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4662,
+                    "id": 4628,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "435:7:6",
+                    "src": "678:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1912,19 +2320,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "434:20:6"
+              "src": "677:20:6"
             },
             "returnParameters": {
-              "id": 4667,
+              "id": 4633,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4666,
+                  "id": 4632,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4668,
-                  "src": "478:7:6",
+                  "scope": 4634,
+                  "src": "721:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1932,10 +2340,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4665,
+                    "id": 4631,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "478:7:6",
+                    "src": "721:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1945,10 +2353,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "477:9:6"
+              "src": "720:9:6"
             },
-            "scope": 4762,
-            "src": "415:72:6",
+            "scope": 4722,
+            "src": "658:72:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -1956,23 +2364,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4675,
+            "id": 4641,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getCommitByContent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4671,
+              "id": 4637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4670,
+                  "id": 4636,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4675,
-                  "src": "520:23:6",
+                  "scope": 4641,
+                  "src": "763:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -1980,10 +2388,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4669,
+                    "id": 4635,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "520:6:6",
+                    "src": "763:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1993,34 +2401,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "519:25:6"
+              "src": "762:25:6"
             },
             "returnParameters": {
-              "id": 4674,
+              "id": 4640,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4673,
+                  "id": 4639,
                   "name": "commit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4675,
-                  "src": "568:30:6",
+                  "scope": 4641,
+                  "src": "811:30:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Commit_$180_memory_ptr",
+                    "typeIdentifier": "t_struct$_Commit_$177_memory_ptr",
                     "typeString": "struct LibCommit.Commit"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 4672,
+                    "id": 4638,
                     "name": "LibCommit.Commit",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 180,
-                    "src": "568:16:6",
+                    "referencedDeclaration": 177,
+                    "src": "811:16:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Commit_$180_storage_ptr",
+                      "typeIdentifier": "t_struct$_Commit_$177_storage_ptr",
                       "typeString": "struct LibCommit.Commit"
                     }
                   },
@@ -2028,10 +2436,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "567:32:6"
+              "src": "810:32:6"
             },
-            "scope": 4762,
-            "src": "492:108:6",
+            "scope": 4722,
+            "src": "735:108:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -2039,29 +2447,148 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4681,
+            "id": 4649,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "getInitialCommits",
+            "name": "getGroupMembers",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4676,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "631:2:6"
-            },
-            "returnParameters": {
-              "id": 4680,
+              "id": 4644,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4679,
+                  "id": 4643,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4649,
+                  "src": "873:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4642,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "873:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "872:20:6"
+            },
+            "returnParameters": {
+              "id": 4648,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4647,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4681,
-                  "src": "657:16:6",
+                  "scope": 4649,
+                  "src": "916:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 4645,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "916:7:6",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 4646,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "916:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "915:18:6"
+            },
+            "scope": 4722,
+            "src": "848:86:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4657,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSubmissionsForCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4652,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4651,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4657,
+                  "src": "972:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4650,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "972:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "971:20:6"
+            },
+            "returnParameters": {
+              "id": 4656,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4655,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4657,
+                  "src": "1015:16:6",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2070,19 +2597,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 4677,
+                      "id": 4653,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "657:7:6",
+                      "src": "1015:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 4678,
+                    "id": 4654,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "657:9:6",
+                    "src": "1015:9:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -2092,10 +2619,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "656:18:6"
+              "src": "1014:18:6"
             },
-            "scope": 4762,
-            "src": "605:70:6",
+            "scope": 4722,
+            "src": "939:94:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -2103,23 +2630,301 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4689,
+            "id": 4664,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "getGroupMembers",
+            "name": "addGroupMember",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4684,
+              "id": 4662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4683,
+                  "id": 4659,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4689,
-                  "src": "705:18:6",
+                  "scope": 4664,
+                  "src": "1063:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4658,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1063:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4661,
+                  "name": "member",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4664,
+                  "src": "1083:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4660,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1083:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1062:36:6"
+            },
+            "returnParameters": {
+              "id": 4663,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1107:0:6"
+            },
+            "scope": 4722,
+            "src": "1039:69:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4672,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addGroupMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4666,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4672,
+                  "src": "1138:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4665,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1138:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4669,
+                  "name": "members",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4672,
+                  "src": "1158:26:6",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 4667,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1158:7:6",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 4668,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1158:9:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1137:48:6"
+            },
+            "returnParameters": {
+              "id": 4671,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1194:0:6"
+            },
+            "scope": 4722,
+            "src": "1113:82:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4677,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4675,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4674,
+                  "name": "commitHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4677,
+                  "src": "1221:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4673,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1221:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1220:20:6"
+            },
+            "returnParameters": {
+              "id": 4676,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1249:0:6"
+            },
+            "scope": 4722,
+            "src": "1200:50:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4690,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createCommit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4679,
+                  "name": "parentHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1277:18:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4678,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1277:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4681,
+                  "name": "isFork",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1297:11:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 4680,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1297:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4683,
+                  "name": "salt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4690,
+                  "src": "1310:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2130,190 +2935,7 @@
                     "id": 4682,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "705:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "704:20:6"
-            },
-            "returnParameters": {
-              "id": 4688,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4687,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4689,
-                  "src": "748:16:6",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
-                    "typeString": "address[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4685,
-                      "name": "address",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "748:7:6",
-                      "stateMutability": "nonpayable",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "id": 4686,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "748:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                      "typeString": "address[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "747:18:6"
-            },
-            "scope": 4762,
-            "src": "680:86:6",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4697,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSubmissionsForCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4692,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4691,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4697,
-                  "src": "804:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4690,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "804:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "803:20:6"
-            },
-            "returnParameters": {
-              "id": 4696,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4695,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4697,
-                  "src": "847:16:6",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_bytes32_$dyn_memory_ptr",
-                    "typeString": "bytes32[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4693,
-                      "name": "bytes32",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "847:7:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bytes32",
-                        "typeString": "bytes32"
-                      }
-                    },
-                    "id": 4694,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "847:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
-                      "typeString": "bytes32[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "846:18:6"
-            },
-            "scope": 4762,
-            "src": "771:94:6",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4704,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "addGroupMember",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4702,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4699,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4704,
-                  "src": "895:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4698,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "895:7:6",
+                    "src": "1310:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2324,289 +2946,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4701,
-                  "name": "member",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4704,
-                  "src": "915:14:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 4700,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "915:7:6",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "894:36:6"
-            },
-            "returnParameters": {
-              "id": 4703,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "939:0:6"
-            },
-            "scope": 4762,
-            "src": "871:69:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4712,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "addGroupMembers",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4710,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4706,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4712,
-                  "src": "970:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4705,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "970:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4709,
-                  "name": "members",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4712,
-                  "src": "990:26:6",
-                  "stateVariable": false,
-                  "storageLocation": "calldata",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
-                    "typeString": "address[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 4707,
-                      "name": "address",
-                      "nodeType": "ElementaryTypeName",
-                      "src": "990:7:6",
-                      "stateMutability": "nonpayable",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "id": 4708,
-                    "length": null,
-                    "nodeType": "ArrayTypeName",
-                    "src": "990:9:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
-                      "typeString": "address[]"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "969:48:6"
-            },
-            "returnParameters": {
-              "id": 4711,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1026:0:6"
-            },
-            "scope": 4762,
-            "src": "945:82:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4717,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "claimCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4715,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4714,
-                  "name": "commitHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4717,
-                  "src": "1053:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4713,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1053:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1052:20:6"
-            },
-            "returnParameters": {
-              "id": 4716,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1081:0:6"
-            },
-            "scope": 4762,
-            "src": "1032:50:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 4730,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "createCommit",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 4728,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 4719,
-                  "name": "parentHash",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1109:18:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4718,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1109:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4721,
-                  "name": "isFork",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1129:11:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 4720,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1129:4:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4723,
-                  "name": "salt",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1142:12:6",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes32",
-                    "typeString": "bytes32"
-                  },
-                  "typeName": {
-                    "id": 4722,
-                    "name": "bytes32",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1142:7:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes32",
-                      "typeString": "bytes32"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 4725,
+                  "id": 4685,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1156:23:6",
+                  "scope": 4690,
+                  "src": "1324:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -2614,10 +2958,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4724,
+                    "id": 4684,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1156:6:6",
+                    "src": "1324:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2628,11 +2972,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4727,
+                  "id": 4687,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4730,
-                  "src": "1181:13:6",
+                  "scope": 4690,
+                  "src": "1349:13:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2640,10 +2984,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4726,
+                    "id": 4686,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1181:7:6",
+                    "src": "1349:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2653,16 +2997,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1108:87:6"
+              "src": "1276:87:6"
             },
             "returnParameters": {
-              "id": 4729,
+              "id": 4689,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1204:0:6"
+              "src": "1372:0:6"
             },
-            "scope": 4762,
-            "src": "1087:118:6",
+            "scope": 4722,
+            "src": "1255:118:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -2670,23 +3014,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4747,
+            "id": 4707,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "createSubmission",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4745,
+              "id": 4705,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4732,
+                  "id": 4692,
                   "name": "tAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1236:16:6",
+                  "scope": 4707,
+                  "src": "1404:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2694,10 +3038,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4731,
+                    "id": 4691,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1236:7:6",
+                    "src": "1404:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2709,11 +3053,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4734,
+                  "id": 4694,
                   "name": "content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1254:23:6",
+                  "scope": 4707,
+                  "src": "1422:23:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -2721,10 +3065,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4733,
+                    "id": 4693,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1254:6:6",
+                    "src": "1422:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2735,11 +3079,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4736,
+                  "id": 4696,
                   "name": "parentHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1279:18:6",
+                  "scope": 4707,
+                  "src": "1447:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2747,10 +3091,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4735,
+                    "id": 4695,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1279:7:6",
+                    "src": "1447:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2761,11 +3105,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4738,
+                  "id": 4698,
                   "name": "isFork",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1299:11:6",
+                  "scope": 4707,
+                  "src": "1467:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2773,10 +3117,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 4737,
+                    "id": 4697,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1299:4:6",
+                    "src": "1467:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2787,11 +3131,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4740,
+                  "id": 4700,
                   "name": "salt",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1312:12:6",
+                  "scope": 4707,
+                  "src": "1480:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2799,10 +3143,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4739,
+                    "id": 4699,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1312:7:6",
+                    "src": "1480:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2813,11 +3157,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4742,
+                  "id": 4702,
                   "name": "commitContent",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1326:29:6",
+                  "scope": 4707,
+                  "src": "1494:29:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -2825,10 +3169,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4741,
+                    "id": 4701,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1326:6:6",
+                    "src": "1494:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2839,11 +3183,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4744,
+                  "id": 4704,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4747,
-                  "src": "1357:13:6",
+                  "scope": 4707,
+                  "src": "1525:13:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2851,10 +3195,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4743,
+                    "id": 4703,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1357:7:6",
+                    "src": "1525:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2864,16 +3208,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1235:136:6"
+              "src": "1403:136:6"
             },
             "returnParameters": {
-              "id": 4746,
+              "id": 4706,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1380:0:6"
+              "src": "1548:0:6"
             },
-            "scope": 4762,
-            "src": "1210:171:6",
+            "scope": 4722,
+            "src": "1378:171:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -2881,23 +3225,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4756,
+            "id": 4716,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4752,
+              "id": 4712,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4749,
+                  "id": 4709,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1421:18:6",
+                  "scope": 4716,
+                  "src": "1589:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2905,10 +3249,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4748,
+                    "id": 4708,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1421:7:6",
+                    "src": "1589:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2919,11 +3263,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 4751,
+                  "id": 4711,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1441:12:6",
+                  "scope": 4716,
+                  "src": "1609:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2931,10 +3275,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4750,
+                    "id": 4710,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1441:7:6",
+                    "src": "1609:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2945,19 +3289,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1420:34:6"
+              "src": "1588:34:6"
             },
             "returnParameters": {
-              "id": 4755,
+              "id": 4715,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4754,
+                  "id": 4714,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4756,
-                  "src": "1478:7:6",
+                  "scope": 4716,
+                  "src": "1646:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2965,10 +3309,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4753,
+                    "id": 4713,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1478:7:6",
+                    "src": "1646:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2978,10 +3322,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1477:9:6"
+              "src": "1645:9:6"
             },
-            "scope": 4762,
-            "src": "1386:101:6",
+            "scope": 4722,
+            "src": "1554:101:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
@@ -2989,23 +3333,23 @@
           {
             "body": null,
             "documentation": null,
-            "id": 4761,
+            "id": 4721,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "withdrawAvailableReward",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4759,
+              "id": 4719,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4758,
+                  "id": 4718,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4761,
-                  "src": "1525:18:6",
+                  "scope": 4721,
+                  "src": "1693:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3013,10 +3357,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 4757,
+                    "id": 4717,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1525:7:6",
+                    "src": "1693:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3026,41 +3370,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1524:20:6"
+              "src": "1692:20:6"
             },
             "returnParameters": {
-              "id": 4760,
+              "id": 4720,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1553:0:6"
+              "src": "1721:0:6"
             },
-            "scope": 4762,
-            "src": "1492:62:6",
+            "scope": 4722,
+            "src": "1660:62:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 4763,
-        "src": "286:1270:6"
+        "scope": 4723,
+        "src": "286:1438:6"
       }
     ],
-    "src": "0:1556:6"
+    "src": "0:1725:6"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
   "networks": {
     "3": {
       "events": {},
       "links": {},
-      "address": "0x9357F51C1122d58565a358326f6275f1211BdC43",
-      "transactionHash": "0x44c499b6bacc591b532904a24e75d185f9895770d96b6eba34139a01b367d63d"
+      "address": "0xb6798fb6e0df70Ec099947ffe5FDc8853Ef19fD9",
+      "transactionHash": "0x47cd17e7bca5cb76a49d0d54b44b42d384608abf776aa9cb7e08645ca2c16d13"
     }
   },
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-21T17:52:57.418Z",
+  "updatedAt": "2019-05-03T00:46:41.547Z",
   "devdoc": {
     "methods": {}
   },

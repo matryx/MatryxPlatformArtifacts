@@ -1,74 +1,38 @@
 {
   "contractName": "LibCommit2",
-  "abi": [
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "self",
-          "type": "address"
-        },
-        {
-          "name": "",
-          "type": "address"
-        },
-        {
-          "name": "",
-          "type": "MatryxPlatform.Data storage"
-        },
-        {
-          "name": "commitHash",
-          "type": "bytes32"
-        },
-        {
-          "name": "user",
-          "type": "address"
-        }
-      ],
-      "name": "getAvailableRewardForUser",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    }
-  ],
-  "bytecode": "0x6101a8610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100575763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634f4abca8811461005c575b600080fd5b61006f61006a3660046100af565b610085565b60405161007c9190610133565b60405180910390f35b602a95945050505050565b600061009c8235610163565b9392505050565b600061009c8235610160565b600080600080600060a086880312156100c757600080fd5b60006100d38888610090565b95505060206100e488828901610090565b94505060406100f5888289016100a3565b9350506060610106888289016100a3565b925050608061011788828901610090565b9150509295509295909350565b61012d81610160565b82525050565b602081016101418284610124565b92915050565b73ffffffffffffffffffffffffffffffffffffffff1690565b90565b60006101418261014756fea265627a7a723058206e52f99f45c14694bc6402d602a4438017b07f69b22fa82a6bdb98a83af57e6b6c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100575763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634f4abca8811461005c575b600080fd5b61006f61006a3660046100af565b610085565b60405161007c9190610133565b60405180910390f35b602a95945050505050565b600061009c8235610163565b9392505050565b600061009c8235610160565b600080600080600060a086880312156100c757600080fd5b60006100d38888610090565b95505060206100e488828901610090565b94505060406100f5888289016100a3565b9350506060610106888289016100a3565b925050608061011788828901610090565b9150509295509295909350565b61012d81610160565b82525050565b602081016101418284610124565b92915050565b73ffffffffffffffffffffffffffffffffffffffff1690565b90565b60006101418261014756fea265627a7a723058206e52f99f45c14694bc6402d602a4438017b07f69b22fa82a6bdb98a83af57e6b6c6578706572696d656e74616cf50037",
-  "sourceMap": "206:204:29:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
-  "deployedSourceMap": "206:204:29:-;;;;;;;;;;;;;;;;;;;;;;;;;;231:177;;;;;;;;;;;;;;;;;;;;;;;;;;;399:2;231:177;;;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:118;;197:46;235:6;222:20;197:46;;426:789;;;;;;621:3;609:9;600:7;596:23;592:33;589:2;;;638:1;635;628:12;589:2;673:1;690:53;735:7;715:9;690:53;;;680:63;;652:97;780:2;798:53;843:7;834:6;823:9;819:22;798:53;;;788:63;;759:98;888:2;906:76;974:7;965:6;954:9;950:22;906:76;;;896:86;;867:121;1019:2;1037:53;1082:7;1073:6;1062:9;1058:22;1037:53;;;1027:63;;998:98;1127:3;1146:53;1191:7;1182:6;1171:9;1167:22;1146:53;;;1136:63;;1106:99;583:632;;;;;;;;;1222:118;1303:31;1328:5;1303:31;;;1298:3;1291:44;1285:55;;;1347:209;1463:2;1448:18;;1477:69;1452:9;1519:6;1477:69;;;1434:122;;;;;1563:128;1643:42;1632:54;;1615:76;1698:79;1767:5;1750:27;1784:105;;1853:31;1878:5;1853:31;",
-  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nimport \"../MatryxPlatform.sol\";\n\ninterface ICommit2 {\n    function getAvailableRewardForUser(bytes32, address) external pure returns (uint256);\n}\n\nlibrary LibCommit2 {\n    function getAvailableRewardForUser(address self, address, MatryxPlatform.Data storage, bytes32 commitHash, address user) public pure returns (uint256) {\n        return 42;\n    }\n}\n",
-  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+  "abi": [],
+  "bytecode": "0x610173610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c80634f4abca81461003a575b600080fd5b61004d61004836600461008d565b610063565b60405161005a9190610111565b60405180910390f35b602a95945050505050565b600061007a8235610128565b9392505050565b600061007a8235610125565b600080600080600060a086880312156100a557600080fd5b60006100b1888861006e565b95505060206100c28882890161006e565b94505060406100d388828901610081565b93505060606100e488828901610081565b92505060806100f58882890161006e565b9150509295509295909350565b61010b81610125565b82525050565b6020810161011f8284610102565b92915050565b90565b60006001600160a01b03821661011f56fea265627a7a72305820dbb75ffaf24b76bba94762fc2043f5f5964ce876227c90bccf66bd35348b10476c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c80634f4abca81461003a575b600080fd5b61004d61004836600461008d565b610063565b60405161005a9190610111565b60405180910390f35b602a95945050505050565b600061007a8235610128565b9392505050565b600061007a8235610125565b600080600080600060a086880312156100a557600080fd5b60006100b1888861006e565b95505060206100c28882890161006e565b94505060406100d388828901610081565b93505060606100e488828901610081565b92505060806100f58882890161006e565b9150509295509295909350565b61010b81610125565b82525050565b6020810161011f8284610102565b92915050565b90565b60006001600160a01b03821661011f56fea265627a7a72305820dbb75ffaf24b76bba94762fc2043f5f5964ce876227c90bccf66bd35348b10476c6578706572696d656e74616cf50037",
+  "sourceMap": "206:204:29:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "206:204:29:-;;;;;;;;;;;;;;;;;;;;;;;;231:177;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;399:2;231:177;;;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:118;;197:46;235:6;222:20;197:46;;426:789;;;;;;621:3;609:9;600:7;596:23;592:33;589:2;;;638:1;635;628:12;589:2;673:1;690:53;735:7;715:9;690:53;;;680:63;;652:97;780:2;798:53;843:7;834:6;823:9;819:22;798:53;;;788:63;;759:98;888:2;906:76;974:7;965:6;954:9;950:22;906:76;;;896:86;;867:121;1019:2;1037:53;1082:7;1073:6;1062:9;1058:22;1037:53;;;1027:63;;998:98;1127:3;1146:53;1191:7;1182:6;1171:9;1167:22;1146:53;;;1136:63;;1106:99;583:632;;;;;;;;;1222:128;1313:31;1338:5;1313:31;;;1308:3;1301:44;1295:55;;;1357:229;1483:2;1468:18;;1497:79;1472:9;1549:6;1497:79;;;1454:132;;;;;1593:79;1662:5;1645:27;1679:105;;-1:-1;;;;;2055:54;;1748:31;2038:76",
+  "source": "pragma solidity ^0.5.7;\npragma experimental ABIEncoderV2;\n\nimport \"../MatryxPlatform.sol\";\n\ninterface ICommit2 {\n    function getAvailableRewardForUser(bytes32, address) external pure returns (uint256);\n}\n\nlibrary LibCommit2 {\n    function getAvailableRewardForUser(address self, address, MatryxPlatform.Data storage, bytes32 commitHash, address user) public pure returns (uint256) {\n        return 42;\n    }\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
   "ast": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
     "exportedSymbols": {
       "ICommit2": [
-        7330
+        7426
       ],
       "LibCommit2": [
-        7349
+        7445
       ]
     },
-    "id": 7350,
+    "id": 7446,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7318,
+        "id": 7414,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:29"
       },
       {
-        "id": 7319,
+        "id": 7415,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -77,12 +41,12 @@
         "src": "24:33:29"
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxPlatform.sol",
         "file": "../MatryxPlatform.sol",
-        "id": 7320,
+        "id": 7416,
         "nodeType": "ImportDirective",
-        "scope": 7350,
-        "sourceUnit": 5231,
+        "scope": 7446,
+        "sourceUnit": 5216,
         "src": "59:31:29",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,9 +57,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7330,
+        "id": 7426,
         "linearizedBaseContracts": [
-          7330
+          7426
         ],
         "name": "ICommit2",
         "nodeType": "ContractDefinition",
@@ -103,22 +67,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7329,
+            "id": 7425,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7325,
+              "id": 7421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7322,
+                  "id": 7418,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "152:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -127,7 +91,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7321,
+                    "id": 7417,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:7:29",
@@ -141,10 +105,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7324,
+                  "id": 7420,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "161:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -153,7 +117,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7323,
+                    "id": 7419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "161:7:29",
@@ -170,15 +134,15 @@
               "src": "151:18:29"
             },
             "returnParameters": {
-              "id": 7328,
+              "id": 7424,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7327,
+                  "id": 7423,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "193:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -187,7 +151,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7326,
+                    "id": 7422,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "193:7:29",
@@ -202,14 +166,14 @@
               ],
               "src": "192:9:29"
             },
-            "scope": 7330,
+            "scope": 7426,
             "src": "117:85:29",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7350,
+        "scope": 7446,
         "src": "92:112:29"
       },
       {
@@ -218,16 +182,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7349,
+        "id": 7445,
         "linearizedBaseContracts": [
-          7349
+          7445
         ],
         "name": "LibCommit2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7347,
+              "id": 7443,
               "nodeType": "Block",
               "src": "382:26:29",
               "statements": [
@@ -235,7 +199,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "3432",
-                    "id": 7345,
+                    "id": 7441,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -250,30 +214,30 @@
                     },
                     "value": "42"
                   },
-                  "functionReturnParameters": 7344,
-                  "id": 7346,
+                  "functionReturnParameters": 7440,
+                  "id": 7442,
                   "nodeType": "Return",
                   "src": "392:9:29"
                 }
               ]
             },
             "documentation": null,
-            "id": 7348,
+            "id": 7444,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7341,
+              "id": 7437,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7332,
+                  "id": 7428,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "266:12:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -282,7 +246,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7331,
+                    "id": 7427,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "266:7:29",
@@ -297,10 +261,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7334,
+                  "id": 7430,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "280:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -309,7 +273,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7333,
+                    "id": 7429,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "280:7:29",
@@ -324,26 +288,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7336,
+                  "id": 7432,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "289:27:29",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7335,
+                    "id": 7431,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4892,
+                    "referencedDeclaration": 4849,
                     "src": "289:19:29",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -352,10 +316,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7338,
+                  "id": 7434,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "318:18:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -364,7 +328,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7337,
+                    "id": 7433,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "318:7:29",
@@ -378,10 +342,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7340,
+                  "id": 7436,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "338:12:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -390,7 +354,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7339,
+                    "id": 7435,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "338:7:29",
@@ -407,15 +371,15 @@
               "src": "265:86:29"
             },
             "returnParameters": {
-              "id": 7344,
+              "id": 7440,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7343,
+                  "id": 7439,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "373:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -424,7 +388,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7342,
+                    "id": 7438,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "373:7:29",
@@ -439,45 +403,45 @@
               ],
               "src": "372:9:29"
             },
-            "scope": 7349,
+            "scope": 7445,
             "src": "231:177:29",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7350,
+        "scope": 7446,
         "src": "206:204:29"
       }
     ],
     "src": "0:411:29"
   },
   "legacyAST": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/test-contracts/LibCommit2.sol",
     "exportedSymbols": {
       "ICommit2": [
-        7330
+        7426
       ],
       "LibCommit2": [
-        7349
+        7445
       ]
     },
-    "id": 7350,
+    "id": 7446,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7318,
+        "id": 7414,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:29"
       },
       {
-        "id": 7319,
+        "id": 7415,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -486,12 +450,12 @@
         "src": "24:33:29"
       },
       {
-        "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/MatryxPlatform.sol",
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxPlatform.sol",
         "file": "../MatryxPlatform.sol",
-        "id": 7320,
+        "id": 7416,
         "nodeType": "ImportDirective",
-        "scope": 7350,
-        "sourceUnit": 5231,
+        "scope": 7446,
+        "sourceUnit": 5216,
         "src": "59:31:29",
         "symbolAliases": [],
         "unitAlias": ""
@@ -502,9 +466,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 7330,
+        "id": 7426,
         "linearizedBaseContracts": [
-          7330
+          7426
         ],
         "name": "ICommit2",
         "nodeType": "ContractDefinition",
@@ -512,22 +476,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7329,
+            "id": 7425,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7325,
+              "id": 7421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7322,
+                  "id": 7418,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "152:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -536,7 +500,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7321,
+                    "id": 7417,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:7:29",
@@ -550,10 +514,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7324,
+                  "id": 7420,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "161:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -562,7 +526,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7323,
+                    "id": 7419,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "161:7:29",
@@ -579,15 +543,15 @@
               "src": "151:18:29"
             },
             "returnParameters": {
-              "id": 7328,
+              "id": 7424,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7327,
+                  "id": 7423,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7329,
+                  "scope": 7425,
                   "src": "193:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -596,7 +560,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7326,
+                    "id": 7422,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "193:7:29",
@@ -611,14 +575,14 @@
               ],
               "src": "192:9:29"
             },
-            "scope": 7330,
+            "scope": 7426,
             "src": "117:85:29",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 7350,
+        "scope": 7446,
         "src": "92:112:29"
       },
       {
@@ -627,16 +591,16 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7349,
+        "id": 7445,
         "linearizedBaseContracts": [
-          7349
+          7445
         ],
         "name": "LibCommit2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7347,
+              "id": 7443,
               "nodeType": "Block",
               "src": "382:26:29",
               "statements": [
@@ -644,7 +608,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "3432",
-                    "id": 7345,
+                    "id": 7441,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -659,30 +623,30 @@
                     },
                     "value": "42"
                   },
-                  "functionReturnParameters": 7344,
-                  "id": 7346,
+                  "functionReturnParameters": 7440,
+                  "id": 7442,
                   "nodeType": "Return",
                   "src": "392:9:29"
                 }
               ]
             },
             "documentation": null,
-            "id": 7348,
+            "id": 7444,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAvailableRewardForUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7341,
+              "id": 7437,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7332,
+                  "id": 7428,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "266:12:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -691,7 +655,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7331,
+                    "id": 7427,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "266:7:29",
@@ -706,10 +670,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7334,
+                  "id": 7430,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "280:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -718,7 +682,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7333,
+                    "id": 7429,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "280:7:29",
@@ -733,26 +697,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 7336,
+                  "id": 7432,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "289:27:29",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
+                    "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
                     "typeString": "struct MatryxPlatform.Data"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7335,
+                    "id": 7431,
                     "name": "MatryxPlatform.Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 4892,
+                    "referencedDeclaration": 4849,
                     "src": "289:19:29",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Data_$4892_storage_ptr",
+                      "typeIdentifier": "t_struct$_Data_$4849_storage_ptr",
                       "typeString": "struct MatryxPlatform.Data"
                     }
                   },
@@ -761,10 +725,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7338,
+                  "id": 7434,
                   "name": "commitHash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "318:18:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -773,7 +737,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7337,
+                    "id": 7433,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "318:7:29",
@@ -787,10 +751,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 7340,
+                  "id": 7436,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "338:12:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -799,7 +763,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7339,
+                    "id": 7435,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "338:7:29",
@@ -816,15 +780,15 @@
               "src": "265:86:29"
             },
             "returnParameters": {
-              "id": 7344,
+              "id": 7440,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7343,
+                  "id": 7439,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7348,
+                  "scope": 7444,
                   "src": "373:7:29",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -833,7 +797,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7342,
+                    "id": 7438,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "373:7:29",
@@ -848,14 +812,14 @@
               ],
               "src": "372:9:29"
             },
-            "scope": 7349,
+            "scope": 7445,
             "src": "231:177:29",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7350,
+        "scope": 7446,
         "src": "206:204:29"
       }
     ],
@@ -863,11 +827,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-21T18:00:09.520Z",
+  "updatedAt": "2019-05-03T00:42:19.179Z",
   "devdoc": {
     "methods": {}
   },

@@ -1,35 +1,35 @@
 {
   "contractName": "LibGlobals",
   "abi": [],
-  "bytecode": "0x605a602c600b82828239805160001a60731460008114601c57601e565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a723058203e737101b35a3a520443bbef0749bedb51a60388c2f0e970f553e142c87d35f86c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a723058203e737101b35a3a520443bbef0749bedb51a60388c2f0e970f553e142c87d35f86c6578706572696d656e74616cf50037",
-  "sourceMap": "59:409:3:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
+  "bytecode": "0x605a6023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a7230582052efadecd957ec647af6bf1cb2507a30aa4b26ecff90c087c83060c9709fabbc6c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea265627a7a7230582052efadecd957ec647af6bf1cb2507a30aa4b26ecff90c087c83060c9709fabbc6c6578706572696d656e74616cf50037",
+  "sourceMap": "59:409:3:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
   "deployedSourceMap": "59:409:3:-;;;;;;;;",
-  "source": "pragma solidity ^0.5.0;\npragma experimental ABIEncoderV2;\n\nlibrary LibGlobals {\n    // optional uint256, to avoid default value being 0 messing things up\n    struct o_uint256 {\n        bool exists;\n        uint256 value;\n    }\n\n    enum RoundState { NotYetOpen, Unfunded, Open, InReview, HasWinners, Closed, Abandoned }\n    enum TournamentState { NotYetOpen, OnHold, Open, Closed, Abandoned}\n    enum SelectWinnerAction { DoNothing, StartNextRound, CloseTournament }\n}\n",
-  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibGlobals.sol",
+  "source": "pragma solidity ^0.5.7;\npragma experimental ABIEncoderV2;\n\nlibrary LibGlobals {\n    // optional uint256, to avoid default value being 0 messing things up\n    struct o_uint256 {\n        bool exists;\n        uint256 value;\n    }\n\n    enum RoundState { NotYetOpen, Unfunded, Open, InReview, HasWinners, Closed, Abandoned }\n    enum TournamentState { NotYetOpen, OnHold, Open, Closed, Abandoned}\n    enum SelectWinnerAction { DoNothing, StartNextRound, CloseTournament }\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/LibGlobals.sol",
   "ast": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibGlobals.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/LibGlobals.sol",
     "exportedSymbols": {
       "LibGlobals": [
-        1459
+        1419
       ]
     },
-    "id": 1460,
+    "id": 1420,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1434,
+        "id": 1394,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:3"
       },
       {
-        "id": 1435,
+        "id": 1395,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -43,23 +43,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1459,
+        "id": 1419,
         "linearizedBaseContracts": [
-          1459
+          1419
         ],
         "name": "LibGlobals",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "LibGlobals.o_uint256",
-            "id": 1440,
+            "id": 1400,
             "members": [
               {
                 "constant": false,
-                "id": 1437,
+                "id": 1397,
                 "name": "exists",
                 "nodeType": "VariableDeclaration",
-                "scope": 1440,
+                "scope": 1400,
                 "src": "185:11:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -68,7 +68,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1436,
+                  "id": 1396,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "185:4:3",
@@ -82,10 +82,10 @@
               },
               {
                 "constant": false,
-                "id": 1439,
+                "id": 1399,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 1440,
+                "scope": 1400,
                 "src": "206:13:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -94,7 +94,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1438,
+                  "id": 1398,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:7:3",
@@ -109,52 +109,52 @@
             ],
             "name": "o_uint256",
             "nodeType": "StructDefinition",
-            "scope": 1459,
+            "scope": 1419,
             "src": "158:68:3",
             "visibility": "public"
           },
           {
             "canonicalName": "LibGlobals.RoundState",
-            "id": 1448,
+            "id": 1408,
             "members": [
               {
-                "id": 1441,
+                "id": 1401,
                 "name": "NotYetOpen",
                 "nodeType": "EnumValue",
                 "src": "250:10:3"
               },
               {
-                "id": 1442,
+                "id": 1402,
                 "name": "Unfunded",
                 "nodeType": "EnumValue",
                 "src": "262:8:3"
               },
               {
-                "id": 1443,
+                "id": 1403,
                 "name": "Open",
                 "nodeType": "EnumValue",
                 "src": "272:4:3"
               },
               {
-                "id": 1444,
+                "id": 1404,
                 "name": "InReview",
                 "nodeType": "EnumValue",
                 "src": "278:8:3"
               },
               {
-                "id": 1445,
+                "id": 1405,
                 "name": "HasWinners",
                 "nodeType": "EnumValue",
                 "src": "288:10:3"
               },
               {
-                "id": 1446,
+                "id": 1406,
                 "name": "Closed",
                 "nodeType": "EnumValue",
                 "src": "300:6:3"
               },
               {
-                "id": 1447,
+                "id": 1407,
                 "name": "Abandoned",
                 "nodeType": "EnumValue",
                 "src": "308:9:3"
@@ -166,34 +166,34 @@
           },
           {
             "canonicalName": "LibGlobals.TournamentState",
-            "id": 1454,
+            "id": 1414,
             "members": [
               {
-                "id": 1449,
+                "id": 1409,
                 "name": "NotYetOpen",
                 "nodeType": "EnumValue",
                 "src": "347:10:3"
               },
               {
-                "id": 1450,
+                "id": 1410,
                 "name": "OnHold",
                 "nodeType": "EnumValue",
                 "src": "359:6:3"
               },
               {
-                "id": 1451,
+                "id": 1411,
                 "name": "Open",
                 "nodeType": "EnumValue",
                 "src": "367:4:3"
               },
               {
-                "id": 1452,
+                "id": 1412,
                 "name": "Closed",
                 "nodeType": "EnumValue",
                 "src": "373:6:3"
               },
               {
-                "id": 1453,
+                "id": 1413,
                 "name": "Abandoned",
                 "nodeType": "EnumValue",
                 "src": "381:9:3"
@@ -205,22 +205,22 @@
           },
           {
             "canonicalName": "LibGlobals.SelectWinnerAction",
-            "id": 1458,
+            "id": 1418,
             "members": [
               {
-                "id": 1455,
+                "id": 1415,
                 "name": "DoNothing",
                 "nodeType": "EnumValue",
                 "src": "422:9:3"
               },
               {
-                "id": 1456,
+                "id": 1416,
                 "name": "StartNextRound",
                 "nodeType": "EnumValue",
                 "src": "433:14:3"
               },
               {
-                "id": 1457,
+                "id": 1417,
                 "name": "CloseTournament",
                 "nodeType": "EnumValue",
                 "src": "449:15:3"
@@ -231,35 +231,35 @@
             "src": "396:70:3"
           }
         ],
-        "scope": 1460,
+        "scope": 1420,
         "src": "59:409:3"
       }
     ],
     "src": "0:469:3"
   },
   "legacyAST": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/LibGlobals.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/LibGlobals.sol",
     "exportedSymbols": {
       "LibGlobals": [
-        1459
+        1419
       ]
     },
-    "id": 1460,
+    "id": 1420,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1434,
+        "id": 1394,
         "literals": [
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:3"
       },
       {
-        "id": 1435,
+        "id": 1395,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -273,23 +273,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1459,
+        "id": 1419,
         "linearizedBaseContracts": [
-          1459
+          1419
         ],
         "name": "LibGlobals",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "LibGlobals.o_uint256",
-            "id": 1440,
+            "id": 1400,
             "members": [
               {
                 "constant": false,
-                "id": 1437,
+                "id": 1397,
                 "name": "exists",
                 "nodeType": "VariableDeclaration",
-                "scope": 1440,
+                "scope": 1400,
                 "src": "185:11:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -298,7 +298,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1436,
+                  "id": 1396,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "185:4:3",
@@ -312,10 +312,10 @@
               },
               {
                 "constant": false,
-                "id": 1439,
+                "id": 1399,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 1440,
+                "scope": 1400,
                 "src": "206:13:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -324,7 +324,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1438,
+                  "id": 1398,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:7:3",
@@ -339,52 +339,52 @@
             ],
             "name": "o_uint256",
             "nodeType": "StructDefinition",
-            "scope": 1459,
+            "scope": 1419,
             "src": "158:68:3",
             "visibility": "public"
           },
           {
             "canonicalName": "LibGlobals.RoundState",
-            "id": 1448,
+            "id": 1408,
             "members": [
               {
-                "id": 1441,
+                "id": 1401,
                 "name": "NotYetOpen",
                 "nodeType": "EnumValue",
                 "src": "250:10:3"
               },
               {
-                "id": 1442,
+                "id": 1402,
                 "name": "Unfunded",
                 "nodeType": "EnumValue",
                 "src": "262:8:3"
               },
               {
-                "id": 1443,
+                "id": 1403,
                 "name": "Open",
                 "nodeType": "EnumValue",
                 "src": "272:4:3"
               },
               {
-                "id": 1444,
+                "id": 1404,
                 "name": "InReview",
                 "nodeType": "EnumValue",
                 "src": "278:8:3"
               },
               {
-                "id": 1445,
+                "id": 1405,
                 "name": "HasWinners",
                 "nodeType": "EnumValue",
                 "src": "288:10:3"
               },
               {
-                "id": 1446,
+                "id": 1406,
                 "name": "Closed",
                 "nodeType": "EnumValue",
                 "src": "300:6:3"
               },
               {
-                "id": 1447,
+                "id": 1407,
                 "name": "Abandoned",
                 "nodeType": "EnumValue",
                 "src": "308:9:3"
@@ -396,34 +396,34 @@
           },
           {
             "canonicalName": "LibGlobals.TournamentState",
-            "id": 1454,
+            "id": 1414,
             "members": [
               {
-                "id": 1449,
+                "id": 1409,
                 "name": "NotYetOpen",
                 "nodeType": "EnumValue",
                 "src": "347:10:3"
               },
               {
-                "id": 1450,
+                "id": 1410,
                 "name": "OnHold",
                 "nodeType": "EnumValue",
                 "src": "359:6:3"
               },
               {
-                "id": 1451,
+                "id": 1411,
                 "name": "Open",
                 "nodeType": "EnumValue",
                 "src": "367:4:3"
               },
               {
-                "id": 1452,
+                "id": 1412,
                 "name": "Closed",
                 "nodeType": "EnumValue",
                 "src": "373:6:3"
               },
               {
-                "id": 1453,
+                "id": 1413,
                 "name": "Abandoned",
                 "nodeType": "EnumValue",
                 "src": "381:9:3"
@@ -435,22 +435,22 @@
           },
           {
             "canonicalName": "LibGlobals.SelectWinnerAction",
-            "id": 1458,
+            "id": 1418,
             "members": [
               {
-                "id": 1455,
+                "id": 1415,
                 "name": "DoNothing",
                 "nodeType": "EnumValue",
                 "src": "422:9:3"
               },
               {
-                "id": 1456,
+                "id": 1416,
                 "name": "StartNextRound",
                 "nodeType": "EnumValue",
                 "src": "433:14:3"
               },
               {
-                "id": 1457,
+                "id": 1417,
                 "name": "CloseTournament",
                 "nodeType": "EnumValue",
                 "src": "449:15:3"
@@ -461,7 +461,7 @@
             "src": "396:70:3"
           }
         ],
-        "scope": 1460,
+        "scope": 1420,
         "src": "59:409:3"
       }
     ],
@@ -469,11 +469,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-21T17:41:06.756Z",
+  "updatedAt": "2019-05-03T00:42:19.137Z",
   "devdoc": {
     "methods": {}
   },

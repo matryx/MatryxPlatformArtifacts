@@ -165,10 +165,10 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.5.0;\n\n/**\n * Matryx Ethereum token interface.\n */\ninterface IMatryxToken {\n  function balanceOf(address who) external view returns (uint256);\n  function allowance(address owner, address spender) external view returns (uint256);\n  function transferFrom(address from, address to, uint256 value) external returns (bool);\n  function transfer(address to, uint256 value) external returns (bool);\n  function approve(address spender, uint256 value) external returns (bool);\n  event Transfer(address indexed from, address indexed to, uint256 value);\n  event Approval(address indexed owner, address indexed spender, uint256 value);\n}\n",
-  "sourcePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/IMatryxToken.sol",
+  "source": "pragma solidity ^0.5.7;\n\n/**\n * Matryx Ethereum token interface.\n */\ninterface IMatryxToken {\n  function balanceOf(address who) external view returns (uint256);\n  function allowance(address owner, address spender) external view returns (uint256);\n  function transferFrom(address from, address to, uint256 value) external returns (bool);\n  function transfer(address to, uint256 value) external returns (bool);\n  function approve(address spender, uint256 value) external returns (bool);\n  event Transfer(address indexed from, address indexed to, uint256 value);\n  event Approval(address indexed owner, address indexed spender, uint256 value);\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/IMatryxToken.sol",
   "ast": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/IMatryxToken.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/IMatryxToken.sol",
     "exportedSymbols": {
       "IMatryxToken": [
         63
@@ -183,7 +183,7 @@
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:0"
@@ -947,7 +947,7 @@
     "src": "0:643:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/maxhoward/Desktop/Ethereum/MatryxPlatform/contracts/IMatryxToken.sol",
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/IMatryxToken.sol",
     "exportedSymbols": {
       "IMatryxToken": [
         63
@@ -962,7 +962,7 @@
           "solidity",
           "^",
           "0.5",
-          ".0"
+          ".7"
         ],
         "nodeType": "PragmaDirective",
         "src": "0:23:0"
@@ -1727,11 +1727,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-03-21T17:41:06.744Z",
+  "updatedAt": "2019-05-03T00:42:19.129Z",
   "devdoc": {
     "methods": {}
   },
