@@ -1,0 +1,1448 @@
+{
+  "contractName": "MatryxForwarder",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "_version",
+          "type": "uint256"
+        },
+        {
+          "name": "_system",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806102ae833981018060405261002f9190810190610078565b600091909155600180546001600160a01b0319166001600160a01b039092169190911790556100d2565b600061006582516100b2565b9392505050565b600061006582516100cf565b6000806040838503121561008b57600080fd5b6000610097858561006c565b92505060206100a885828601610059565b9150509250929050565b60006100bd826100c3565b92915050565b6001600160a01b031690565b90565b6101cd806100e16000396000f3fe608060405234801561001057600080fd5b5060008054600154604051600160e11b63629e7ecd0281529192916001600160a01b039091169063c53cfd9a9061006d9085907f4d6174727978506c6174666f726d00000000000000000000000000000000000090600401610158565b60206040518083038186803b15801561008557600080fd5b505afa158015610099573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100bd9190810190610123565b9050604051600060043610156100d257600080fd5b600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e8061010c573d82fd5b3d82f35b600061011c8251610176565b9392505050565b60006020828403121561013557600080fd5b60006101418484610110565b949350505050565b61015281610173565b82525050565b604081016101668285610149565b61011c6020830184610149565b90565b600061018182610187565b92915050565b6001600160a01b03169056fea265627a7a723058202cd662a62dc96053f48648ff1ce4d2e45c71a0f6aef5896223b2b58f130c6b526c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060008054600154604051600160e11b63629e7ecd0281529192916001600160a01b039091169063c53cfd9a9061006d9085907f4d6174727978506c6174666f726d00000000000000000000000000000000000090600401610158565b60206040518083038186803b15801561008557600080fd5b505afa158015610099573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052506100bd9190810190610123565b9050604051600060043610156100d257600080fd5b600460008337336004830152836024830152600436036004604484013760008060403601846000875af190503d6000833e8061010c573d82fd5b3d82f35b600061011c8251610176565b9392505050565b60006020828403121561013557600080fd5b60006101418484610110565b949350505050565b61015281610173565b82525050565b604081016101668285610149565b61011c6020830184610149565b90565b600061018182610187565b92915050565b6001600160a01b03169056fea265627a7a723058202cd662a62dc96053f48648ff1ce4d2e45c71a0f6aef5896223b2b58f130c6b526c6578706572696d656e74616cf50037",
+  "sourceMap": "89:1756:7:-;;;210:125;8:9:-1;5:2;;;30:1;27;20:12;5:2;210:125:7;;;;;;;;;;;;;;;;;;;;;;274:4;:23;;;;307:11;:21;;-1:-1:-1;;;;;;307:21:7;-1:-1:-1;;;;;307:21:7;;;;;;;;;89:1756;;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:122;;212:39;243:6;237:13;212:39;;263:399;;;395:2;383:9;374:7;370:23;366:32;363:2;;;411:1;408;401:12;363:2;446:1;463:64;519:7;499:9;463:64;;;453:74;;425:108;564:2;582:64;638:7;629:6;618:9;614:22;582:64;;;572:74;;543:109;357:305;;;;;;669:105;;738:31;763:5;738:31;;;727:42;721:53;-1:-1;;721:53;781:128;-1:-1;;;;;850:54;;833:76;916:79;985:5;968:27;;89:1756:7;;;;;;",
+  "deployedSourceMap": "89:1756:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;596:15:7;614:12;;669:11;;655:74;;-1:-1:-1;;;;;655:74:7;;614:12;;596:15;-1:-1:-1;;;;;669:11:7;;;;655:38;;:74;;614:12;;703:25;;655:74;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;655:74:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;655:74:7;;;;;;;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;655:74:7;;;;;;;;;636:93;;780:4;774:11;;909:4;895:12;892:22;889:2;;;927:1;924;917:12;889:2;1011:4;1008:1;1003:3;990:26;1110:6;1103:4;1098:3;1094:14;1087:30;1211:7;1204:4;1199:3;1195:14;1188:31;1339:4;1325:12;1321:23;1315:4;1308;1303:3;1299:14;1286:59;1461:1;1458;1451:4;1437:12;1433:23;1428:3;1425:1;1415:8;1410:3;1405:58;1398:65;;1537:14;1534:1;1529:3;1514:38;1633:3;1623:2;;1652:14;1647:3;1640:27;1623:2;1731:14;1726:3;1719:27;5:122:-1;;83:39;114:6;108:13;83:39;;;74:48;68:59;-1:-1;;;68:59;134:263;;249:2;237:9;228:7;224:23;220:32;217:2;;;265:1;262;255:12;217:2;300:1;317:64;373:7;353:9;317:64;;;307:74;211:186;-1:-1;;;;211:186;404:120;487:31;512:5;487:31;;;482:3;475:44;469:55;;;658:324;804:2;789:18;;818:71;793:9;862:6;818:71;;;900:72;968:2;957:9;953:18;944:6;900:72;;989:79;1058:5;1041:27;1161:105;;1230:31;1255:5;1230:31;;;1219:42;1213:53;-1:-1;;1213:53;1273:128;-1:-1;;;;;1342:54;;1325:76",
+  "source": "pragma solidity ^0.5.7;\npragma experimental ABIEncoderV2;\n\nimport \"./MatryxSystem.sol\";\n\ncontract MatryxForwarder {\n    struct Info {\n        uint256 version;\n        address system;\n    }\n\n    Info info;\n\n    constructor(uint256 _version, address _system) public {\n        info.version = _version;\n        info.system = _system;\n    }\n\n    /// @dev\n    /// Gets the address of the current version of Platform and forwards the\n    /// received calldata to this address. Injects msg.sender at the front so\n    /// Platform and libraries can know calling address\n    function () external {\n        uint256 version = info.version;\n        address platform = IMatryxSystem(info.system).getContract(version, bytes32(\"MatryxPlatform\"));\n\n        assembly {\n            let ptr := mload(0x40)\n            let res\n\n            // forward method to MatryxPlatform, injecting msg.sender\n            if lt(calldatasize, 0x04) { revert(0, 0) }                          // prevent underflow\n            calldatacopy(ptr, 0, 0x04)                                          // copy selector\n            mstore(add(ptr, 0x04), caller)                                      // inject msg.sender\n            mstore(add(ptr, 0x24), version)                                     // inject version\n            calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize, 0x04))         // copy calldata for forwarding\n            res := call(gas, platform, 0, ptr, add(calldatasize, 0x40), 0, 0)   // forward method to MatryxPlatform\n            returndatacopy(ptr, 0, returndatasize)                              // copy returndata into ptr\n\n            if iszero(res) { revert(ptr, returndatasize) }                      // safety check\n            return(ptr, returndatasize)                                         // return returndata from forwarded call\n        }\n    }\n}\n",
+  "sourcePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxForwarder.sol",
+  "ast": {
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxForwarder.sol",
+    "exportedSymbols": {
+      "MatryxForwarder": [
+        4788
+      ]
+    },
+    "id": 4789,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4735,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "id": 4736,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:7"
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxSystem.sol",
+        "file": "./MatryxSystem.sol",
+        "id": 4737,
+        "nodeType": "ImportDirective",
+        "scope": 4789,
+        "sourceUnit": 5854,
+        "src": "59:28:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 4788,
+        "linearizedBaseContracts": [
+          4788
+        ],
+        "name": "MatryxForwarder",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MatryxForwarder.Info",
+            "id": 4742,
+            "members": [
+              {
+                "constant": false,
+                "id": 4739,
+                "name": "version",
+                "nodeType": "VariableDeclaration",
+                "scope": 4742,
+                "src": "142:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4738,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:7:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 4741,
+                "name": "system",
+                "nodeType": "VariableDeclaration",
+                "scope": 4742,
+                "src": "167:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 4740,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "167:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Info",
+            "nodeType": "StructDefinition",
+            "scope": 4788,
+            "src": "120:68:7",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 4744,
+            "name": "info",
+            "nodeType": "VariableDeclaration",
+            "scope": 4788,
+            "src": "194:9:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Info_$4742_storage",
+              "typeString": "struct MatryxForwarder.Info"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4743,
+              "name": "Info",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4742,
+              "src": "194:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Info_$4742_storage_ptr",
+                "typeString": "struct MatryxForwarder.Info"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4763,
+              "nodeType": "Block",
+              "src": "264:71:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 4751,
+                        "name": "info",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4744,
+                        "src": "274:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Info_$4742_storage",
+                          "typeString": "struct MatryxForwarder.Info storage ref"
+                        }
+                      },
+                      "id": 4753,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "version",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4739,
+                      "src": "274:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4754,
+                      "name": "_version",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4746,
+                      "src": "289:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "274:23:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "274:23:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 4757,
+                        "name": "info",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4744,
+                        "src": "307:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Info_$4742_storage",
+                          "typeString": "struct MatryxForwarder.Info storage ref"
+                        }
+                      },
+                      "id": 4759,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "system",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4741,
+                      "src": "307:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4760,
+                      "name": "_system",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4748,
+                      "src": "321:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "307:21:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 4762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "307:21:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4764,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4749,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4746,
+                  "name": "_version",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4764,
+                  "src": "222:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4745,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "222:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4748,
+                  "name": "_system",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4764,
+                  "src": "240:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4747,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "240:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "221:35:7"
+            },
+            "returnParameters": {
+              "id": 4750,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "264:0:7"
+            },
+            "scope": 4788,
+            "src": "210:125:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4786,
+              "nodeType": "Block",
+              "src": "586:1257:7",
+              "statements": [
+                {
+                  "assignments": [
+                    4768
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 4768,
+                      "name": "version",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 4786,
+                      "src": "596:15:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 4767,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "596:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 4771,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 4769,
+                      "name": "info",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4744,
+                      "src": "614:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Info_$4742_storage",
+                        "typeString": "struct MatryxForwarder.Info storage ref"
+                      }
+                    },
+                    "id": 4770,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "version",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 4739,
+                    "src": "614:12:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "596:30:7"
+                },
+                {
+                  "assignments": [
+                    4773
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 4773,
+                      "name": "platform",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 4786,
+                      "src": "636:16:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 4772,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "636:7:7",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 4784,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4779,
+                        "name": "version",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4768,
+                        "src": "694:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "4d6174727978506c6174666f726d",
+                            "id": 4781,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "711:16:7",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_stringliteral_c62bb7de67b5188da63a6729b1fc0faee77db3722bc720d0788559919b5c66e4",
+                              "typeString": "literal_string \"MatryxPlatform\""
+                            },
+                            "value": "MatryxPlatform"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_stringliteral_c62bb7de67b5188da63a6729b1fc0faee77db3722bc720d0788559919b5c66e4",
+                              "typeString": "literal_string \"MatryxPlatform\""
+                            }
+                          ],
+                          "id": 4780,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "703:7:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_bytes32_$",
+                            "typeString": "type(bytes32)"
+                          },
+                          "typeName": "bytes32"
+                        },
+                        "id": 4782,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "703:25:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 4775,
+                              "name": "info",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4744,
+                              "src": "669:4:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Info_$4742_storage",
+                                "typeString": "struct MatryxForwarder.Info storage ref"
+                              }
+                            },
+                            "id": 4776,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "system",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4741,
+                            "src": "669:11:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 4774,
+                          "name": "IMatryxSystem",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5349,
+                          "src": "655:13:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IMatryxSystem_$5349_$",
+                            "typeString": "type(contract IMatryxSystem)"
+                          }
+                        },
+                        "id": 4777,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "655:26:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IMatryxSystem_$5349",
+                          "typeString": "contract IMatryxSystem"
+                        }
+                      },
+                      "id": 4778,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getContract",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5283,
+                      "src": "655:38:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$_t_bytes32_$returns$_t_address_$",
+                        "typeString": "function (uint256,bytes32) view external returns (address)"
+                      }
+                    },
+                    "id": 4783,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "655:74:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "636:93:7"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "version": {
+                        "declaration": 4768,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1211:7:7",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "platform": {
+                        "declaration": 4773,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1415:8:7",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 4785,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    let ptr := mload(0x40)\n    let res\n    if lt(calldatasize(), 0x04)\n    {\n        revert(0, 0)\n    }\n    calldatacopy(ptr, 0, 0x04)\n    mstore(add(ptr, 0x04), caller())\n    mstore(add(ptr, 0x24), version)\n    calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize(), 0x04))\n    res := call(gas(), platform, 0, ptr, add(calldatasize(), 0x40), 0, 0)\n    returndatacopy(ptr, 0, returndatasize())\n    if iszero(res)\n    {\n        revert(ptr, returndatasize())\n    }\n    return(ptr, returndatasize())\n}",
+                  "src": "740:1103:7"
+                }
+              ]
+            },
+            "documentation": "@dev\n Gets the address of the current version of Platform and forwards the\n received calldata to this address. Injects msg.sender at the front so\n Platform and libraries can know calling address",
+            "id": 4787,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4765,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "574:2:7"
+            },
+            "returnParameters": {
+              "id": 4766,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "586:0:7"
+            },
+            "scope": 4788,
+            "src": "565:1278:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4789,
+        "src": "89:1756:7"
+      }
+    ],
+    "src": "0:1846:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxForwarder.sol",
+    "exportedSymbols": {
+      "MatryxForwarder": [
+        4788
+      ]
+    },
+    "id": 4789,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4735,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".7"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:7"
+      },
+      {
+        "id": 4736,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "24:33:7"
+      },
+      {
+        "absolutePath": "/Users/ajm13/Desktop/matryx/MatryxPlatform/contracts/MatryxSystem.sol",
+        "file": "./MatryxSystem.sol",
+        "id": 4737,
+        "nodeType": "ImportDirective",
+        "scope": 4789,
+        "sourceUnit": 5854,
+        "src": "59:28:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 4788,
+        "linearizedBaseContracts": [
+          4788
+        ],
+        "name": "MatryxForwarder",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "MatryxForwarder.Info",
+            "id": 4742,
+            "members": [
+              {
+                "constant": false,
+                "id": 4739,
+                "name": "version",
+                "nodeType": "VariableDeclaration",
+                "scope": 4742,
+                "src": "142:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4738,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:7:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 4741,
+                "name": "system",
+                "nodeType": "VariableDeclaration",
+                "scope": 4742,
+                "src": "167:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 4740,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "167:7:7",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Info",
+            "nodeType": "StructDefinition",
+            "scope": 4788,
+            "src": "120:68:7",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 4744,
+            "name": "info",
+            "nodeType": "VariableDeclaration",
+            "scope": 4788,
+            "src": "194:9:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Info_$4742_storage",
+              "typeString": "struct MatryxForwarder.Info"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4743,
+              "name": "Info",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 4742,
+              "src": "194:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Info_$4742_storage_ptr",
+                "typeString": "struct MatryxForwarder.Info"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4763,
+              "nodeType": "Block",
+              "src": "264:71:7",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4755,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 4751,
+                        "name": "info",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4744,
+                        "src": "274:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Info_$4742_storage",
+                          "typeString": "struct MatryxForwarder.Info storage ref"
+                        }
+                      },
+                      "id": 4753,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "version",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4739,
+                      "src": "274:12:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4754,
+                      "name": "_version",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4746,
+                      "src": "289:8:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "274:23:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 4756,
+                  "nodeType": "ExpressionStatement",
+                  "src": "274:23:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 4761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 4757,
+                        "name": "info",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4744,
+                        "src": "307:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Info_$4742_storage",
+                          "typeString": "struct MatryxForwarder.Info storage ref"
+                        }
+                      },
+                      "id": 4759,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "system",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4741,
+                      "src": "307:11:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 4760,
+                      "name": "_system",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4748,
+                      "src": "321:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "307:21:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 4762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "307:21:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4764,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4749,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4746,
+                  "name": "_version",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4764,
+                  "src": "222:16:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4745,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "222:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4748,
+                  "name": "_system",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4764,
+                  "src": "240:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4747,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "240:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "221:35:7"
+            },
+            "returnParameters": {
+              "id": 4750,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "264:0:7"
+            },
+            "scope": 4788,
+            "src": "210:125:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 4786,
+              "nodeType": "Block",
+              "src": "586:1257:7",
+              "statements": [
+                {
+                  "assignments": [
+                    4768
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 4768,
+                      "name": "version",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 4786,
+                      "src": "596:15:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 4767,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "596:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 4771,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 4769,
+                      "name": "info",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4744,
+                      "src": "614:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Info_$4742_storage",
+                        "typeString": "struct MatryxForwarder.Info storage ref"
+                      }
+                    },
+                    "id": 4770,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "version",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 4739,
+                    "src": "614:12:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "596:30:7"
+                },
+                {
+                  "assignments": [
+                    4773
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 4773,
+                      "name": "platform",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 4786,
+                      "src": "636:16:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 4772,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "636:7:7",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 4784,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 4779,
+                        "name": "version",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 4768,
+                        "src": "694:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "4d6174727978506c6174666f726d",
+                            "id": 4781,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "711:16:7",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_stringliteral_c62bb7de67b5188da63a6729b1fc0faee77db3722bc720d0788559919b5c66e4",
+                              "typeString": "literal_string \"MatryxPlatform\""
+                            },
+                            "value": "MatryxPlatform"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_stringliteral_c62bb7de67b5188da63a6729b1fc0faee77db3722bc720d0788559919b5c66e4",
+                              "typeString": "literal_string \"MatryxPlatform\""
+                            }
+                          ],
+                          "id": 4780,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "703:7:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_bytes32_$",
+                            "typeString": "type(bytes32)"
+                          },
+                          "typeName": "bytes32"
+                        },
+                        "id": 4782,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "703:25:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 4775,
+                              "name": "info",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4744,
+                              "src": "669:4:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Info_$4742_storage",
+                                "typeString": "struct MatryxForwarder.Info storage ref"
+                              }
+                            },
+                            "id": 4776,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "system",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4741,
+                            "src": "669:11:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 4774,
+                          "name": "IMatryxSystem",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5349,
+                          "src": "655:13:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IMatryxSystem_$5349_$",
+                            "typeString": "type(contract IMatryxSystem)"
+                          }
+                        },
+                        "id": 4777,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "655:26:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IMatryxSystem_$5349",
+                          "typeString": "contract IMatryxSystem"
+                        }
+                      },
+                      "id": 4778,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getContract",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5283,
+                      "src": "655:38:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$_t_bytes32_$returns$_t_address_$",
+                        "typeString": "function (uint256,bytes32) view external returns (address)"
+                      }
+                    },
+                    "id": 4783,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "655:74:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "636:93:7"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "version": {
+                        "declaration": 4768,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1211:7:7",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "platform": {
+                        "declaration": 4773,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1415:8:7",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 4785,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    let ptr := mload(0x40)\n    let res\n    if lt(calldatasize(), 0x04)\n    {\n        revert(0, 0)\n    }\n    calldatacopy(ptr, 0, 0x04)\n    mstore(add(ptr, 0x04), caller())\n    mstore(add(ptr, 0x24), version)\n    calldatacopy(add(ptr, 0x44), 0x04, sub(calldatasize(), 0x04))\n    res := call(gas(), platform, 0, ptr, add(calldatasize(), 0x40), 0, 0)\n    returndatacopy(ptr, 0, returndatasize())\n    if iszero(res)\n    {\n        revert(ptr, returndatasize())\n    }\n    return(ptr, returndatasize())\n}",
+                  "src": "740:1103:7"
+                }
+              ]
+            },
+            "documentation": "@dev\n Gets the address of the current version of Platform and forwards the\n received calldata to this address. Injects msg.sender at the front so\n Platform and libraries can know calling address",
+            "id": 4787,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4765,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "574:2:7"
+            },
+            "returnParameters": {
+              "id": 4766,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "586:0:7"
+            },
+            "scope": 4788,
+            "src": "565:1278:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4789,
+        "src": "89:1756:7"
+      }
+    ],
+    "src": "0:1846:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.7+commit.6da8b019.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-05-09T20:36:15.136Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
